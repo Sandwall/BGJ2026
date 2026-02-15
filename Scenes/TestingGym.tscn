@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://byt3fggsovaqh"]
 
-[ext_resource type="Script" uid="uid://dy2oerujlkby3" path="res://Scripts/Player.gd" id="1_64q2b"]
+[ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_64q2b"]
 [ext_resource type="Texture2D" uid="uid://t6c6hckr7uvn" path="res://TestNoiseTex.tres" id="2_o2wg1"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_mqhs7"]
@@ -12,8 +12,6 @@ radiance_size = 1
 [sub_resource type="Environment" id="Environment_sckq8"]
 background_mode = 2
 sky = SubResource("Sky_0a7su")
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0f38m"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1c6xn"]
 albedo_texture = ExtResource("2_o2wg1")
@@ -32,15 +30,8 @@ points = PackedVector3Array(-8, 0, -8, -8, 0, 8, 8, 0, -8, 8, 0, 8)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=636785875]
 environment = SubResource("Environment_sckq8")
 
-[node name="Player" type="CharacterBody3D" parent="." unique_id=61784223]
+[node name="Player" parent="." unique_id=1703810380 instance=ExtResource("1_64q2b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-script = ExtResource("1_64q2b")
-
-[node name="Camera3D" type="Camera3D" parent="Player" unique_id=794922663]
-current = true
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=629865584]
-shape = SubResource("CapsuleShape3D_0f38m")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=164271045]
 mesh = SubResource("PlaneMesh_k43qj")
@@ -49,6 +40,3 @@ mesh = SubResource("PlaneMesh_k43qj")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=647843402]
 shape = SubResource("ConvexPolygonShape3D_2k0x5")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=447359987]
-transform = Transform3D(1, 0, 0, 0, 0.7965299, 0.6045991, 0, -0.6045991, 0.7965299, 0, 0, 0)

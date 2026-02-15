@@ -13,12 +13,13 @@ config_version=5
 config/name="BGJ2026"
 run/main_scene="uid://byt3fggsovaqh"
 config/features=PackedStringArray("4.6", "Forward Plus")
+run/max_fps=60
 config/icon="res://icon.svg"
 
 [autoload]
 
 WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
-Audiomanager="*uid://dak5ut1tt72vj"
+AudioManager="*uid://dak5ut1tt72vj"
 
 [display]
 
@@ -71,9 +72,11 @@ ui_down={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+anti_aliasing/quality/msaa_2d=2
+anti_aliasing/quality/msaa_3d=2
 
 [wwise]
 
 common_user_settings/root_output_path="res://Wwise/Soundbanks"
-project_settings/windows_platform_info="res://Wwise/resources/Windows.tres"
-project_settings/mac_platform_info="res://Wwise/resources/Mac.tres"
+project_settings/windows_platform_info="res://Wwise/Windows.tres"
+project_settings/mac_platform_info="res://Wwise/Mac.tres"
