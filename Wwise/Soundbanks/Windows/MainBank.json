@@ -1,0 +1,390 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2880737896",
+    "Type": "User",
+    "GUID": "{13A02C68-84E4-44A8-A55F-9AA7258B3F1E}",
+    "Language": "SFX",
+    "Hash": "{3D8EB271-7991-F871-F9B6-FB2EB0AE2897}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MainBank",
+    "ShortName": "MainBank",
+    "Path": "MainBank.bnk",
+    "Media": [
+     {
+      "Id": "748012067",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Drifting at Sea Final.wav",
+      "CachePath": "47/{47F922C0-EF9F-3396-AE87-F4DA4797B0CB}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4026999643",
+      "Name": "GLOBAL_StartGame",
+      "ObjectPath": "\\Events\\Events\\GLOBAL_StartGame",
+      "GUID": "{D799297A-58EA-4792-9065-A8FA69171B9E}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1763937959",
+         "Id": "2607556080",
+         "GUID": "{9782FDDE-FD03-4EA4-A51B-F3787DD63DB2}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "748012067"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1763937959",
+         "Id": "89505537",
+         "GUID": "{4479413F-B52A-4EF2-A8E1-8F41DC668DBD}"
+        },
+        "Children": []
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "1763937959",
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\States\\Main_States\\Menu",
+        "GUID": "{9782FDDE-FD03-4EA4-A51B-F3787DD63DB2}"
+       }
+      ]
+     },
+     {
+      "Id": "2538425816",
+      "Name": "PLAY_DX_Professional",
+      "ObjectPath": "\\Events\\Events\\DX\\PLAY_DX_Professional",
+      "GUID": "{01B638D7-8087-4B06-BE76-F08210571C36}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "508833130",
+      "Name": "PLAY_DX_Quirky",
+      "ObjectPath": "\\Events\\Events\\DX\\PLAY_DX_Quirky",
+      "GUID": "{8D2AF874-AEC9-409C-BC24-860DD42B0B49}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "705681828",
+      "Name": "PLAY_SFX_EmailWhoosh",
+      "ObjectPath": "\\Events\\Events\\SFX\\PLAY_SFX_EmailWhoosh",
+      "GUID": "{EA99DEDD-653C-4289-96AA-7DDCB6EB24ED}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "57417936",
+      "Name": "PLAY_SFX_Footstep",
+      "ObjectPath": "\\Events\\Events\\SFX\\Footsteps\\PLAY_SFX_Footstep",
+      "GUID": "{F857CE00-C988-4368-B2D4-4CC69D095AA6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4210552661",
+      "Name": "PLAY_SFX_UIBack",
+      "ObjectPath": "\\Events\\Events\\SFX\\UI\\PLAY_SFX_UIBack",
+      "GUID": "{9AFC8C6D-1E71-4BE7-B335-19C497CC8998}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "641861106",
+      "Name": "PLAY_SFX_UIHover",
+      "ObjectPath": "\\Events\\Events\\SFX\\UI\\PLAY_SFX_UIHover",
+      "GUID": "{800EDFA1-3CAE-4E88-B548-B76E7F019419}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1440132459",
+      "Name": "PLAY_SFX_UIMove",
+      "ObjectPath": "\\Events\\Events\\SFX\\UI\\PLAY_SFX_UIMove",
+      "GUID": "{515B5B5A-838B-4267-8EEF-A4B3FA4E0E41}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "808587124",
+      "Name": "PLAY_SFX_UISelect",
+      "ObjectPath": "\\Events\\Events\\SFX\\UI\\PLAY_SFX_UISelect",
+      "GUID": "{B117B8B0-770E-473D-9257-7FE29068502B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3396848926",
+      "Name": "STATE_MX_Exploration",
+      "ObjectPath": "\\Events\\Events\\MX\\Gameplay States\\STATE_MX_Exploration",
+      "GUID": "{7D9DF732-3627-476C-B449-7A8187CB2C37}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3572748042",
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Exploration",
+        "GUID": "{10425E2B-DCF8-4783-B73A-38853A068724}"
+       }
+      ]
+     },
+     {
+      "Id": "3737599319",
+      "Name": "STATE_MX_Gameplay",
+      "ObjectPath": "\\Events\\Events\\MX\\Game States\\STATE_MX_Gameplay",
+      "GUID": "{6343721D-3E5B-4BE6-B385-325C0D8DA43E}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "1763937959",
+        "Id": "89505537",
+        "Name": "Gameplay",
+        "ObjectPath": "\\States\\States\\Main_States\\Gameplay",
+        "GUID": "{4479413F-B52A-4EF2-A8E1-8F41DC668DBD}"
+       }
+      ]
+     },
+     {
+      "Id": "527025438",
+      "Name": "STATE_MX_Menu",
+      "ObjectPath": "\\Events\\Events\\MX\\Game States\\STATE_MX_Menu",
+      "GUID": "{200EAE80-EC9E-47A2-97B2-227C46B3B7E4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "1763937959",
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\States\\Main_States\\Menu",
+        "GUID": "{9782FDDE-FD03-4EA4-A51B-F3787DD63DB2}"
+       }
+      ]
+     },
+     {
+      "Id": "2355150710",
+      "Name": "STATE_MX_Professional",
+      "ObjectPath": "\\Events\\Events\\MX\\Gameplay States\\STATE_MX_Professional",
+      "GUID": "{858614C1-750B-43D0-A0C1-1BFE4B1558AD}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3572748042",
+        "Id": "1728336744",
+        "Name": "Professional",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Professional",
+        "GUID": "{A95E9D81-D7CF-4F1D-B037-D7C1D673AC67}"
+       }
+      ]
+     },
+     {
+      "Id": "3265558508",
+      "Name": "STATE_MX_Quirky",
+      "ObjectPath": "\\Events\\Events\\MX\\Gameplay States\\STATE_MX_Quirky",
+      "GUID": "{B0E7841C-84D4-4B20-BF45-EBECCBE43185}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3572748042",
+        "Id": "3370484346",
+        "Name": "Quirky",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Quirky",
+        "GUID": "{34E0120E-1A5E-49DD-B80F-0E31573C52EC}"
+       }
+      ]
+     },
+     {
+      "Id": "2978681817",
+      "Name": "SWITCH_SFX_Carpet",
+      "ObjectPath": "\\Events\\Events\\SFX\\Footsteps\\SWITCH_SFX_Carpet",
+      "GUID": "{6EAA6BD6-8A33-4FEA-A262-50E458409D00}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2385628198",
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Carpet",
+        "GUID": "{51FD39C1-1476-4B16-AE0F-58D955F23634}"
+       }
+      ]
+     },
+     {
+      "Id": "4053184047",
+      "Name": "SWITCH_SFX_Squelch",
+      "ObjectPath": "\\Events\\Events\\SFX\\Footsteps\\SWITCH_SFX_Squelch",
+      "GUID": "{A89F74C0-1C90-4D16-9477-5571C41B4C38}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2385628198",
+        "Id": "3648590788",
+        "Name": "Squelch",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Squelch",
+        "GUID": "{50A1C765-6810-4F53-8CD0-7290975BE693}"
+       }
+      ]
+     },
+     {
+      "Id": "1583889895",
+      "Name": "SWITCH_SFX_Stone",
+      "ObjectPath": "\\Events\\Events\\SFX\\Footsteps\\SWITCH_SFX_Stone",
+      "GUID": "{9CF60A80-C38A-4973-BE23-D5B148455BDF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetSwitch": [
+       {
+        "GroupId": "2385628198",
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Stone",
+        "GUID": "{CFAAD85C-1977-4552-87D8-6ADFA79FF383}"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1763937959",
+      "Name": "Main_States",
+      "ObjectPath": "\\States\\States\\Main_States",
+      "GUID": "{26240DE8-1141-47FD-BDCF-0147AA19FA72}",
+      "States": [
+       {
+        "Id": "89505537",
+        "Name": "Gameplay",
+        "ObjectPath": "\\States\\States\\Main_States\\Gameplay",
+        "GUID": "{4479413F-B52A-4EF2-A8E1-8F41DC668DBD}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\Main_States\\None",
+        "GUID": "{87F5B799-A5CE-4831-A0C0-97D55DD45E14}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\States\\Main_States\\Menu",
+        "GUID": "{9782FDDE-FD03-4EA4-A51B-F3787DD63DB2}"
+       }
+      ]
+     },
+     {
+      "Id": "3572748042",
+      "Name": "Gameplay_States",
+      "ObjectPath": "\\States\\States\\Gameplay_States",
+      "GUID": "{BDDA2816-200F-4D75-B64C-250AF187ACBF}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\None",
+        "GUID": "{BB468CD3-A960-422C-812E-6EF8F93F4974}"
+       },
+       {
+        "Id": "1728336744",
+        "Name": "Professional",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Professional",
+        "GUID": "{A95E9D81-D7CF-4F1D-B037-D7C1D673AC67}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Exploration",
+        "GUID": "{10425E2B-DCF8-4783-B73A-38853A068724}"
+       },
+       {
+        "Id": "3370484346",
+        "Name": "Quirky",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Quirky",
+        "GUID": "{34E0120E-1A5E-49DD-B80F-0E31573C52EC}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Switches\\Switches\\Footsteps",
+      "GUID": "{2AA1BAFA-20F6-46F3-B344-6F15B031730E}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Stone",
+        "GUID": "{CFAAD85C-1977-4552-87D8-6ADFA79FF383}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Carpet",
+        "GUID": "{51FD39C1-1476-4B16-AE0F-58D955F23634}"
+       },
+       {
+        "Id": "3648590788",
+        "Name": "Squelch",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Squelch",
+        "GUID": "{50A1C765-6810-4F53-8CD0-7290975BE693}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{2F6DB829-7881-F019-920E-E65FCE35DBFA}"
+ }
+}

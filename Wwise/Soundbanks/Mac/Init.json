@@ -1,0 +1,155 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{3430680F-48A5-D0B5-61F1-9C1C2085527D}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{1BCBA8CE-35B9-4B16-BFE1-43DDEFFC09AD}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{852F29B5-152D-48DB-85D2-F17FD297A492}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "GUID": "{218FDA6B-182C-41B1-BEB7-331B31DDCC50}"
+     },
+     {
+      "Id": "1685527054",
+      "Name": "MX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX",
+      "GUID": "{4EDB3CB6-EB7B-4F4E-91B9-2D2D7978F7C8}"
+     },
+     {
+      "Id": "1836525785",
+      "Name": "DX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\DX",
+      "GUID": "{F90EA0AB-5606-4B5C-9A05-F53148701236}"
+     },
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1763937959",
+      "Name": "Main_States",
+      "ObjectPath": "\\States\\States\\Main_States",
+      "GUID": "{26240DE8-1141-47FD-BDCF-0147AA19FA72}",
+      "States": [
+       {
+        "Id": "89505537",
+        "Name": "Gameplay",
+        "ObjectPath": "\\States\\States\\Main_States\\Gameplay",
+        "GUID": "{4479413F-B52A-4EF2-A8E1-8F41DC668DBD}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\Main_States\\None",
+        "GUID": "{87F5B799-A5CE-4831-A0C0-97D55DD45E14}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\States\\States\\Main_States\\Menu",
+        "GUID": "{9782FDDE-FD03-4EA4-A51B-F3787DD63DB2}"
+       }
+      ]
+     },
+     {
+      "Id": "3572748042",
+      "Name": "Gameplay_States",
+      "ObjectPath": "\\States\\States\\Gameplay_States",
+      "GUID": "{BDDA2816-200F-4D75-B64C-250AF187ACBF}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\None",
+        "GUID": "{BB468CD3-A960-422C-812E-6EF8F93F4974}"
+       },
+       {
+        "Id": "1728336744",
+        "Name": "Professional",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Professional",
+        "GUID": "{A95E9D81-D7CF-4F1D-B037-D7C1D673AC67}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Exploration",
+        "GUID": "{10425E2B-DCF8-4783-B73A-38853A068724}"
+       },
+       {
+        "Id": "3370484346",
+        "Name": "Quirky",
+        "ObjectPath": "\\States\\States\\Gameplay_States\\Quirky",
+        "GUID": "{34E0120E-1A5E-49DD-B80F-0E31573C52EC}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Switches\\Switches\\Footsteps",
+      "GUID": "{2AA1BAFA-20F6-46F3-B344-6F15B031730E}",
+      "Switches": [
+       {
+        "Id": "1216965916",
+        "Name": "Stone",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Stone",
+        "GUID": "{CFAAD85C-1977-4552-87D8-6ADFA79FF383}"
+       },
+       {
+        "Id": "2412606308",
+        "Name": "Carpet",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Carpet",
+        "GUID": "{51FD39C1-1476-4B16-AE0F-58D955F23634}"
+       },
+       {
+        "Id": "3648590788",
+        "Name": "Squelch",
+        "ObjectPath": "\\Switches\\Switches\\Footsteps\\Squelch",
+        "GUID": "{50A1C765-6810-4F53-8CD0-7290975BE693}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1EB85396-B2FB-093C-052D-7539D323D90E}"
+ }
+}

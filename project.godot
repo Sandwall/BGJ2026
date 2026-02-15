@@ -15,6 +15,11 @@ run/main_scene="uid://byt3fggsovaqh"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
+Audiomanager="*uid://dak5ut1tt72vj"
+
 [display]
 
 window/size/viewport_width=1280
@@ -66,3 +71,9 @@ ui_down={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+
+[wwise]
+
+common_user_settings/root_output_path="res://Wwise/Soundbanks"
+project_settings/windows_platform_info="res://Wwise/resources/Windows.tres"
+project_settings/mac_platform_info="res://Wwise/resources/Mac.tres"
