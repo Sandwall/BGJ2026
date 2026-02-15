@@ -30,6 +30,10 @@ window/size/viewport_height=720
 
 project/assembly_name="BGJ2026"
 
+[gui]
+
+theme/custom="uid://qcaxpbxknqu4"
+
 [input]
 
 ui_left={

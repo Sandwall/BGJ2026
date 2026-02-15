@@ -6,9 +6,19 @@
 
 [node name="Player" type="CharacterBody3D" unique_id=1703810380]
 script = ExtResource("1_70wq3")
+GROUND_ACCEL_TIME = null
+GROUND_DECEL_TIME = null
+GROUND_SPEED = null
+AIR_ACCEL_DECEL_TIME = null
+AIR_SPEED = null
+JUMP_VELOCITY = null
+cameraSens = null
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=649576102]
 current = true
+
+[node name="InteractCast" type="RayCast3D" parent="Camera3D" unique_id=979305698]
+target_position = Vector3(0, 0, -2)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1465559978]
 shape = SubResource("CapsuleShape3D_0f38m")

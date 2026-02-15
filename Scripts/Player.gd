@@ -1,17 +1,16 @@
 extends CharacterBody3D
 
+# node references
 @onready var cameraRef := $Camera3D
+@onready var viewCast := $Camera3D/InteractCast
 
 @export_group("Physics Constants")
 
-# self explanatory
 @export var GROUND_ACCEL_TIME := 0.05
 @export var GROUND_DECEL_TIME := 0.2
 @export var GROUND_SPEED := 4.5
-
 @export var AIR_ACCEL_DECEL_TIME := 0.25
 @export var AIR_SPEED := 3.0
-
 @export var JUMP_VELOCITY := 4.5
 
 @export_group("Camera Constants")
@@ -25,12 +24,20 @@ var prevMoveInput := Vector2.ZERO
 var lookInput := Vector2.ZERO
 var jumpClicked := false
 
+#
+# 
+#
+var currentEmail : EmailResource = null
+@onready var slowUpdate := Timer.new()
+
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event):
 	if event is InputEventMouseMotion:
 		lookInput += (event as InputEventMouseMotion).relative
+
+
 
 func _physics_process(delta):
 	# gather relevant inputs

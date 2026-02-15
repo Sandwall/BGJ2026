@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EmailResource" format=3 uid="uid://kp7t38wywoib"]
+
+[ext_resource type="Script" uid="uid://bf1ybiskyl8b7" path="res://Scripts/EmailResource.gd" id="1_5n0al"]
+
+[resource]
+script = ExtResource("1_5n0al")
+color = Color(0.5294118, 0.80784315, 0.92156863, 1)
+brightness = 1.0
+metadata/_custom_type_script = "uid://bf1ybiskyl8b7"
