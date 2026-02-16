@@ -69,6 +69,11 @@ ui_down={
 ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="world"
+3d_physics/layer_2="interact"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

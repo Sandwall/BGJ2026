@@ -3,14 +3,15 @@ extends CharacterBody3D
 # node references
 @onready var cameraRef := $Camera3D
 @onready var viewCast := $Camera3D/InteractCast
+@onready var targetOutline: MeshInstance3D = $TargetOutline
 
 @export_group("Physics Constants")
 
-@export var GROUND_ACCEL_TIME := 0.05
-@export var GROUND_DECEL_TIME := 0.2
-@export var GROUND_SPEED := 4.5
+@export var GROUND_ACCEL_TIME := 0.1
+@export var GROUND_DECEL_TIME := 0.3
+@export var GROUND_SPEED := 3.0
 @export var AIR_ACCEL_DECEL_TIME := 0.25
-@export var AIR_SPEED := 3.0
+@export var AIR_SPEED := 2.0
 @export var JUMP_VELOCITY := 4.5
 
 @export_group("Camera Constants")
@@ -24,11 +25,7 @@ var prevMoveInput := Vector2.ZERO
 var lookInput := Vector2.ZERO
 var jumpClicked := false
 
-#
-# 
-#
-var currentEmail : EmailResource = null
-@onready var slowUpdate := Timer.new()
+var currentEmail: EmailResource = null
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -37,9 +34,20 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		lookInput += (event as InputEventMouseMotion).relative
 
+func _process(_delta):
+	targetOutline.mesh = null
+	targetOutline.visible = false
 
+	var target = viewCast.get_collider() as Node3D
+	if target is CollisionObject3D:
+		if target.get_collision_layer_value(2): # interaction
+			if target.get_parent() is EmailServer:
+				var server := target.get_parent() as EmailServer
+				targetOutline.visible = true
+				targetOutline.mesh = server.meshInst.mesh
+				targetOutline.transform = server.global_transform
 
-func _physics_process(delta):
+func _physics_process(delta: float):
 	# gather relevant inputs
 	moveInput = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").limit_length(1.0)
 	lookInput *= cameraSens * delta # mouse input is done in the _input function...
@@ -50,35 +58,43 @@ func _physics_process(delta):
 	
 	# main movement code
 	var wantLateralVelocity := transform.basis * Vector3(moveInput.x, 0.0, moveInput.y)
+	var lateralVelocity := Vector2(velocity.x, velocity.z)
+	
+	var floorAccelDelta := GROUND_SPEED * delta / GROUND_ACCEL_TIME
+	var floorDecelDelta := GROUND_SPEED * delta / GROUND_DECEL_TIME
+	var airDelta := AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
 
 	if is_on_floor():
 		if moveInput.length_squared() > 0.0005:
-			velocity.x += wantLateralVelocity.x * GROUND_SPEED * delta / GROUND_ACCEL_TIME
-			velocity.z += wantLateralVelocity.z * GROUND_SPEED * delta / GROUND_ACCEL_TIME
+			lateralVelocity.x = move_toward(lateralVelocity.x, wantLateralVelocity.x * GROUND_SPEED, floorAccelDelta)
+			lateralVelocity.y = move_toward(lateralVelocity.y, wantLateralVelocity.z * GROUND_SPEED, floorAccelDelta)
 		else:
-			velocity.x = move_toward(velocity.x, 0.0, GROUND_SPEED * delta / GROUND_DECEL_TIME)
-			velocity.z = move_toward(velocity.z, 0.0, GROUND_SPEED * delta / GROUND_DECEL_TIME)
+			lateralVelocity.x = move_toward(lateralVelocity.x, 0.0, floorDecelDelta)
+			lateralVelocity.y = move_toward(lateralVelocity.y, 0.0, floorDecelDelta)
 
-		velocity.x = clampf(velocity.x, -GROUND_SPEED, GROUND_SPEED)
-		velocity.z = clampf(velocity.z, -GROUND_SPEED, GROUND_SPEED)
+		lateralVelocity = lateralVelocity.limit_length(GROUND_SPEED)
 
 		if jumpClicked:
 			velocity.y = JUMP_VELOCITY
+		else:
+			velocity.y = get_gravity().normalized().y
 	else:
 		velocity.y += get_gravity().y * delta
 
 		# player should be able to move as fast as they can on the air (albeit with some drag when turning)
 		# as they can in the air as long as they keep up some input
 		if moveInput.length_squared() > 0.0005:
-			velocity.x += wantLateralVelocity.x * AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
-			velocity.z += wantLateralVelocity.z * AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
-			velocity.x = clampf(velocity.x, -GROUND_SPEED, GROUND_SPEED)
-			velocity.z = clampf(velocity.z, -GROUND_SPEED, GROUND_SPEED)
+			lateralVelocity.x += wantLateralVelocity.x * AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
+			lateralVelocity.y += wantLateralVelocity.z * AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
+			lateralVelocity = lateralVelocity.limit_length(GROUND_SPEED)
 		else:
-			var wantClamped := Vector2(clampf(velocity.x, -AIR_SPEED, AIR_SPEED), clampf(velocity.z, -AIR_SPEED, AIR_SPEED))
-			velocity.x = move_toward(velocity.x, wantClamped.x, GROUND_SPEED * delta / AIR_ACCEL_DECEL_TIME)
-			velocity.z = move_toward(velocity.z, wantClamped.y, GROUND_SPEED * delta / AIR_ACCEL_DECEL_TIME)
+			var wantClamped := Vector2(clampf(lateralVelocity.x, -AIR_SPEED, AIR_SPEED), clampf(lateralVelocity.y, -AIR_SPEED, AIR_SPEED))
+			lateralVelocity.x = move_toward(lateralVelocity.x, wantClamped.x, GROUND_SPEED * delta / AIR_ACCEL_DECEL_TIME)
+			lateralVelocity.y = move_toward(lateralVelocity.y, wantClamped.y, GROUND_SPEED * delta / AIR_ACCEL_DECEL_TIME)
 
+	velocity.x = lateralVelocity.x
+	velocity.z = lateralVelocity.y
+	
 	move_and_slide()
 	
 	# after-update updates
