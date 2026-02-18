@@ -8,3 +8,6 @@ func _ready():
 
 func _process(delta):
 	pass
+
+func interact():
+	Main.inst.hud.display_test_email()

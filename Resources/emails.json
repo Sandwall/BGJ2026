@@ -1,3 +1,20 @@
 {
-	
+	"email1": {
+		"from": "dsmith@rchs.edu",
+		"to": "vickyyyyy2001@hotmail.com",
+		"contents": "Dear Victoria,\n\tI hope all is well. I discovered this address when cleaning out our room. It was wedged in the back corner, where you used to hide your illicit materials. I threw out what was left under there.\n\tI put your old gameboy in the giveaway pile. Your sketchbook I plan to keep.\n\tPlease let me know if there is anything else you would like me to hold on to.\n\tSincerely,\n\t“Duckie”",
+		"image": null
+	},
+	"email2": {
+		"from": "vickyyyyy2001@hotmail.com",
+		"to": "dsmith@rchs.edu",
+		"contents": null,
+		"image": "Resources/Attachments/meme.png"
+	},
+	"email3": {
+		"from": "dsmith@rchs.edu",
+		"to": "vickyyyyy2001@hotmail.com",
+		"contents" "Dear Victoria,\nI will take that image as meaning you do not care about any of your old belongings and will donate them/trash them as their condition dictates.\nHow have you been? What are you doing now?\nKindly,\nDuckie",
+		"image": null
+	}
 }

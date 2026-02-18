@@ -24,6 +24,7 @@ var moveInput := Vector2.ZERO
 var prevMoveInput := Vector2.ZERO
 var lookInput := Vector2.ZERO
 var jumpClicked := false
+var interactClicked := false
 
 var currentEmail: EmailResource = null
 
@@ -46,12 +47,15 @@ func _process(_delta):
 				targetOutline.visible = true
 				targetOutline.mesh = server.meshInst.mesh
 				targetOutline.transform = server.global_transform
+				if interactClicked:
+					server.interact()
 
 func _physics_process(delta: float):
 	# gather relevant inputs
 	moveInput = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").limit_length(1.0)
 	lookInput *= cameraSens * delta # mouse input is done in the _input function...
 	jumpClicked = Input.is_action_just_pressed("ui_accept")
+	interactClicked = Input.is_action_just_pressed("plr_interact")
 
 	# pre-update updates
 	update_camera()
