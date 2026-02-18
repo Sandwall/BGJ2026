@@ -8,6 +8,7 @@
 render_priority = 1
 transparency = 1
 shading_mode = 0
+albedo_color = Color(1, 0, 1, 1)
 grow = true
 grow_amount = 0.02
 stencil_mode = 3
@@ -28,7 +29,7 @@ albedo_color = Color(0, 0, 0, 0)
 grow_amount = 0.1
 stencil_mode = 1
 stencil_flags = 2
-stencil_color = Color(1, 1, 1, 1)
+stencil_color = Color(1, 0, 1, 1)
 stencil_outline_thickness = 0.02
 
 [node name="Player" type="CharacterBody3D" unique_id=1703810380]

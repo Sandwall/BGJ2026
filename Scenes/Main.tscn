@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://lknc1e8yatg"]
+
+[ext_resource type="Script" uid="uid://bldylc6f5dtgf" path="res://Scripts/Main.gd" id="1_rgh2o"]
+[ext_resource type="PackedScene" uid="uid://byt3fggsovaqh" path="res://Scenes/TestingGym.tscn" id="2_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://tsnvl1id1wr8" path="res://Scenes/HUD.tscn" id="3_kln2b"]
+
+[node name="Main" type="Node" unique_id=367523833]
+script = ExtResource("1_rgh2o")
+
+[node name="Persistent" type="Node" parent="." unique_id=2026146721]
+process_mode = 4
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1206231782]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+stretch_shrink = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1314756259]
+own_world_3d = true
+handle_input_locally = false
+canvas_item_default_texture_filter = 0
+oversampling = false
+size = Vector2i(640, 360)
+render_target_update_mode = 4
+
+[node name="TestingGym" parent="SubViewportContainer/SubViewport" unique_id=1026328435 instance=ExtResource("2_pbw6q")]
+process_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport" unique_id=887778436]
+
+[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer" unique_id=1138938546]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HUD" parent="." unique_id=1455864251 instance=ExtResource("3_kln2b")]
+visible = false

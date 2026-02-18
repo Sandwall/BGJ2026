@@ -1,6 +1,9 @@
 class_name EmailResource extends Resource
 
 @export var id: StringName
+@export var subject: String
+@export var fromAddress: String
+@export var toAddress: String
 @export var contents: String
 @export var color: Color
 @export var brightness: float

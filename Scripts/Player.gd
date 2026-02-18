@@ -1,4 +1,4 @@
-extends CharacterBody3D
+class_name Player extends CharacterBody3D
 
 # node references
 @onready var cameraRef := $Camera3D
@@ -84,11 +84,11 @@ func _physics_process(delta: float):
 		# player should be able to move as fast as they can on the air (albeit with some drag when turning)
 		# as they can in the air as long as they keep up some input
 		if moveInput.length_squared() > 0.0005:
-			lateralVelocity.x += wantLateralVelocity.x * AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
-			lateralVelocity.y += wantLateralVelocity.z * AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
+			lateralVelocity.x += wantLateralVelocity.x * airDelta
+			lateralVelocity.y += wantLateralVelocity.z * airDelta
 			lateralVelocity = lateralVelocity.limit_length(GROUND_SPEED)
 		else:
-			var wantClamped := Vector2(clampf(lateralVelocity.x, -AIR_SPEED, AIR_SPEED), clampf(lateralVelocity.y, -AIR_SPEED, AIR_SPEED))
+			var wantClamped := lateralVelocity.limit_length(AIR_SPEED)
 			lateralVelocity.x = move_toward(lateralVelocity.x, wantClamped.x, GROUND_SPEED * delta / AIR_ACCEL_DECEL_TIME)
 			lateralVelocity.y = move_toward(lateralVelocity.y, wantClamped.y, GROUND_SPEED * delta / AIR_ACCEL_DECEL_TIME)
 

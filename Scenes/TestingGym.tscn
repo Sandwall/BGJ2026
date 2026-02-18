@@ -66,13 +66,10 @@ height = 0.4
 [sub_resource type="SphereShape3D" id="SphereShape3D_k43qj"]
 radius = 0.2
 
-[node name="Node3D" type="Node3D" unique_id=1026328435]
+[node name="TestingGym" type="Node3D" unique_id=1026328435]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=636785875]
 environment = SubResource("Environment_sckq8")
-
-[node name="Player" parent="." unique_id=1703810380 instance=ExtResource("1_64q2b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="EmailManager" type="Node" parent="." unique_id=1572531954]
 script = ExtResource("3_o2wg1")
@@ -119,44 +116,5 @@ shape = SubResource("SphereShape3D_k43qj")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1854741270]
 transform = Transform3D(1, 0, 0, 0, -0.54902303, 0.83580726, 0, -0.83580726, -0.54902303, 0, 0, 0)
 
-[node name="HUD" type="Control" parent="." unique_id=2038522650]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="HUD" unique_id=1344160512]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_right = 1.0
-grow_horizontal = 0
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-
-[node name="IndicatorEmail" type="TextureRect" parent="HUD/MarginContainer" unique_id=981626845]
-custom_minimum_size = Vector2(64, 64)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = ExtResource("2_o2wg1")
-expand_mode = 1
-
-[node name="Crosshair" type="TextureRect" parent="HUD" unique_id=832975320]
-custom_minimum_size = Vector2(32, 32)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_o2wg1")
-expand_mode = 1
+[node name="Player" parent="." unique_id=1703810380 instance=ExtResource("1_64q2b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
