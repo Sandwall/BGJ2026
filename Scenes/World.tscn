@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_5cjrv"]
 [ext_resource type="PackedScene" uid="uid://xako6wm1jnwt" path="res://Scenes/Stage/DuckieStage01.tscn" id="3_5nsto"]
+[ext_resource type="PackedScene" uid="uid://djay3cdf7ofo3" path="res://Scenes/Stage/VictoriaStage01.tscn" id="3_gjpho"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -51,4 +52,4 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 
 [node name="VictoriaStage" type="Node3D" parent="." unique_id=2083918906]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 8, 0, 0)
 
-[node name="DuckieStage01" parent="VictoriaStage" unique_id=847207807 instance=ExtResource("3_5nsto")]
+[node name="VictoriaStage01" parent="VictoriaStage" unique_id=1806485018 instance=ExtResource("3_gjpho")]
