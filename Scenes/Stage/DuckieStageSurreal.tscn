@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://b6kpur7iwdl45"]
+
+[ext_resource type="PackedScene" uid="uid://dyfnfoe287n0e" path="res://Resources/Models/DuckieStages/DuckieSurreal.glb" id="1_m5g8p"]
+
+[node name="DuckieStageSurreal" type="Node3D" unique_id=1306688396]
+
+[node name="DuckieSurreal" parent="." unique_id=1038564518 instance=ExtResource("1_m5g8p")]

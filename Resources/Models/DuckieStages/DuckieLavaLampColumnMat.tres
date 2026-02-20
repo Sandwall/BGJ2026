@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cy46o3masf2ow"]
+
+[ext_resource type="Shader" uid="uid://c1wbp4d83pxwx" path="res://Resources/LavaLampColumn.gdshader" id="1_k4l0i"]
+[ext_resource type="Texture2D" uid="uid://crnj0ie6uid7g" path="res://Resources/Models/DuckieStages/LavaLamp.png" id="2_0n2st"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_k4l0i")
+shader_parameter/diffuse_texture = ExtResource("2_0n2st")
+shader_parameter/speed = 0.13

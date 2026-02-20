@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://qanilbdahy1v"]
+
+[ext_resource type="PackedScene" uid="uid://b1a4qqe3wag43" path="res://Resources/Models/DuckieStages/DuckieSpaceAge.glb" id="1_5iavv"]
+
+[node name="DuckieStageSpaceAge" type="Node3D" unique_id=414288361]
+
+[node name="DuckieSpaceAge" parent="." unique_id=190694463 instance=ExtResource("1_5iavv")]

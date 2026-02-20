@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bhm77tctxni61"]
+
+[ext_resource type="PackedScene" uid="uid://dpcjop8hkxis7" path="res://Resources/Models/DuckieStages/DuckieOffice.glb" id="1_yk0ef"]
+
+[node name="DuckieStageOffice" type="Node3D" unique_id=1367273004]
+
+[node name="DuckieOffice" parent="." unique_id=876340633 instance=ExtResource("1_yk0ef")]
