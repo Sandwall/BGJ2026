@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://lknc1e8yatg"]
 
 [ext_resource type="Script" uid="uid://bldylc6f5dtgf" path="res://Scripts/Main.gd" id="1_rgh2o"]
-[ext_resource type="PackedScene" uid="uid://byt3fggsovaqh" path="res://Scenes/TestingGym.tscn" id="2_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://b0urcnetw2ffk" path="res://Scenes/World.tscn" id="2_kln2b"]
 [ext_resource type="PackedScene" uid="uid://tsnvl1id1wr8" path="res://Scenes/HUD.tscn" id="3_kln2b"]
 
 [node name="Main" type="Node" unique_id=367523833]
@@ -17,23 +17,18 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 stretch = true
-stretch_shrink = 2
+stretch_shrink = 3
+mouse_target = true
 
 [node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=1314756259]
 own_world_3d = true
 handle_input_locally = false
 canvas_item_default_texture_filter = 0
+physics_object_picking = true
 oversampling = false
-size = Vector2i(640, 360)
+size = Vector2i(426, 240)
 render_target_update_mode = 4
 
-[node name="TestingGym" parent="SubViewportContainer/SubViewport" unique_id=1026328435 instance=ExtResource("2_pbw6q")]
-process_mode = 1
-
-[node name="CanvasLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport" unique_id=887778436]
-
-[node name="TextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer" unique_id=1138938546]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="World" parent="SubViewportContainer/SubViewport" unique_id=45579773 instance=ExtResource("2_kln2b")]
 
 [node name="HUD" parent="." unique_id=1455864251 instance=ExtResource("3_kln2b")]
