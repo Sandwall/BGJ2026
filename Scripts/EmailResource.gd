@@ -5,7 +5,7 @@ class_name EmailResource extends Resource
 @export var subject: String
 @export var fromAddress: String
 @export var toAddress: String
-@export var contents: String
+@export_multiline var contents: String
 
 @export var color: Color
 @export var brightness: float

@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://xako6wm1jnwt"]
+
+[ext_resource type="PackedScene" uid="uid://b7w2mew7kvdso" path="res://Resources/Models/test_region.glb" id="1_2kii2"]
+[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="2_ihghi"]
+[ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/email_pickup.gd" id="3_lc8k6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihghi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lc8k6"]
+size = Vector3(20.400005, 0.4765742, 20.400013)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lc8k6"]
+albedo_color = Color(0.1764706, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64q2b"]
+emission_enabled = true
+emission = Color(0, 0.65882355, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_lc8k6"]
+material = SubResource("StandardMaterial3D_64q2b")
+size = Vector3(2, 2, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4ni1k"]
+points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
+
+[node name="DuckieStage01" type="Node3D" unique_id=170864552]
+
+[node name="test_region" parent="." unique_id=1838555431 instance=ExtResource("1_2kii2")]
+
+[node name="Cube_002" parent="test_region" index="0" unique_id=1711877095]
+material_override = SubResource("StandardMaterial3D_ihghi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="test_region/Cube_002" index="0" unique_id=1750480022]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="test_region/Cube_002/StaticBody3D" unique_id=209656104]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9073486e-06, -0.23729025, 2.000002)
+shape = SubResource("BoxShape3D_lc8k6")
+
+[node name="SendBox" type="MeshInstance3D" parent="." unique_id=1135329688]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6819234, 0.41443968, 1.5086403)
+material_override = SubResource("StandardMaterial3D_lc8k6")
+mesh = SubResource("BoxMesh_lc8k6")
+script = ExtResource("2_ihghi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SendBox" unique_id=510817072]
+collision_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SendBox/StaticBody3D" unique_id=33321787]
+shape = SubResource("ConvexPolygonShape3D_4ni1k")
+
+[node name="EmailPickup" type="MeshInstance3D" parent="." unique_id=919890535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2828255, 0.4144404, 18.058298)
+mesh = SubResource("BoxMesh_lc8k6")
+script = ExtResource("3_lc8k6")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="EmailPickup" unique_id=910525111]
+collision_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EmailPickup/StaticBody3D" unique_id=1438596038]
+shape = SubResource("ConvexPolygonShape3D_4ni1k")
+
+[editable path="test_region"]

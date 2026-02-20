@@ -1,11 +1,27 @@
 class_name EmailManager extends Node
 
-@export var character1: EmailServer = null
-@export var character2: EmailServer = null
+signal email_picked_up(email: EmailResource)
+signal new_email(email: EmailResource)
 
+@export var email_order: Array[EmailResource]
 
-func _ready():
-	pass
+var current_email: EmailResource :
+	get():
+		if _index < email_order.size():
+			return email_order[_index]
+		return null
 
-func _process(delta):
-	pass
+var is_carrying_email: bool = false
+
+var _index: int = 0
+
+func pickup_email():
+	email_picked_up.emit(current_email)
+
+	is_carrying_email = true
+
+func submit_email():
+	_index += 1
+	new_email.emit(current_email)
+
+	is_carrying_email = false

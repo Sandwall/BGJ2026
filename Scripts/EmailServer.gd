@@ -3,11 +3,5 @@ class_name EmailServer extends MeshInstance3D
 
 @onready var meshInst: MeshInstance3D = self
 
-func _ready():
-	pass
-
-func _process(delta):
-	pass
-
 func interact():
 	Main.inst.hud.display_test_email()

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b0urcnetw2ffk"]
 
 [ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_5cjrv"]
-[ext_resource type="Script" uid="uid://cved2jand7o8e" path="res://Scripts/EmailServer.gd" id="2_j0p05"]
+[ext_resource type="PackedScene" uid="uid://xako6wm1jnwt" path="res://Scenes/Stage/DuckieStage01.tscn" id="3_5nsto"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -24,28 +24,6 @@ size = Vector2(16, 16)
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p70al"]
 points = PackedVector3Array(-8, 0, -8, -8, 0, 8, 8, 0, -8, 8, 0, 8)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64q2b"]
-emission_enabled = true
-emission = Color(0, 0.65882355, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_5nsto"]
-material = SubResource("StandardMaterial3D_64q2b")
-size = Vector3(2, 2, 0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gjpho"]
-points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqhs7"]
-emission_enabled = true
-emission = Color(0.6136489, 0.52244884, 0.4521845, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_p70al"]
-material = SubResource("StandardMaterial3D_mqhs7")
-size = Vector3(2, 2, 0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_45d1s"]
-points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
-
 [node name="World" type="Node3D" unique_id=45579773]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2094952620]
@@ -65,24 +43,12 @@ mesh = SubResource("PlaneMesh_gjpho")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" unique_id=1148750088]
 shape = SubResource("ConvexPolygonShape3D_p70al")
 
-[node name="D_Server" type="MeshInstance3D" parent="." unique_id=2105719280]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41443968, -5.6561837)
-mesh = SubResource("BoxMesh_5nsto")
-script = ExtResource("2_j0p05")
+[node name="DuckieStage" type="Node3D" parent="." unique_id=1804239352]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, 0)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="D_Server" unique_id=1351903737]
-collision_layer = 3
+[node name="DuckieStage01" parent="DuckieStage" unique_id=170864552 instance=ExtResource("3_5nsto")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="D_Server/StaticBody3D" unique_id=949714810]
-shape = SubResource("ConvexPolygonShape3D_gjpho")
+[node name="VictoriaStage" type="Node3D" parent="." unique_id=2083918906]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 8, 0, 0)
 
-[node name="V_Server" type="MeshInstance3D" parent="." unique_id=1523050250]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41443968, 5.3154616)
-mesh = SubResource("BoxMesh_p70al")
-script = ExtResource("2_j0p05")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="V_Server" unique_id=660709727]
-collision_layer = 3
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="V_Server/StaticBody3D" unique_id=2143336396]
-shape = SubResource("ConvexPolygonShape3D_45d1s")
+[node name="DuckieStage01" parent="VictoriaStage" unique_id=847207807 instance=ExtResource("3_5nsto")]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EmailResource" format=3 uid="uid://dfnwsnkyy64hf"]
+
+[ext_resource type="Script" uid="uid://bf1ybiskyl8b7" path="res://Scripts/EmailResource.gd" id="1_1xwsv"]
+
+[resource]
+script = ExtResource("1_1xwsv")
+id = &"email_02"
+subject = "[MISSING SUBJECT]"
+fromAddress = "vickyyyyy2001@hotmail.com"
+toAddress = "dsmith@rchs.edu"
+contents = "meme.png"
+metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

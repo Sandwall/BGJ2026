@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dxjx7nbbbth2m"]
+
+[ext_resource type="Script" uid="uid://dd6jcfnyxkoke" path="res://Scripts/EmailManager.gd" id="1_wg6ps"]
+[ext_resource type="Script" uid="uid://bf1ybiskyl8b7" path="res://Scripts/EmailResource.gd" id="2_efss2"]
+[ext_resource type="Resource" uid="uid://bpv68bhlomao8" path="res://Resources/Emails/Email01.tres" id="3_fqrrj"]
+[ext_resource type="Resource" uid="uid://dfnwsnkyy64hf" path="res://Resources/Emails/Email02.tres" id="4_nbtdr"]
+[ext_resource type="Resource" uid="uid://tio8uxxer6ro" path="res://Resources/Emails/Email03.tres" id="5_6sgb3"]
+
+[node name="EmailManager" type="Node" unique_id=1592708895]
+script = ExtResource("1_wg6ps")
+email_order = Array[ExtResource("2_efss2")]([ExtResource("3_fqrrj"), ExtResource("4_nbtdr"), ExtResource("5_6sgb3")])

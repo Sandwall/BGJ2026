@@ -42,13 +42,21 @@ func _process(_delta):
 	var target = viewCast.get_collider() as Node3D
 	if target is CollisionObject3D:
 		if target.get_collision_layer_value(2): # interaction
-			if target.get_parent() is EmailServer:
-				var server := target.get_parent() as EmailServer
+			if target.get_parent() is MeshInstance3D:
+				var target_mesh = target.get_parent() as MeshInstance3D
 				targetOutline.visible = true
-				targetOutline.mesh = server.meshInst.mesh
-				targetOutline.transform = server.global_transform
+				targetOutline.mesh = target_mesh.mesh
+				targetOutline.transform = target_mesh.global_transform
 				if interactClicked:
-					server.interact()
+					if target_mesh.has_method("interact"):
+						target_mesh.interact()
+			# if target.get_parent() is EmailServer:
+			# 	var server := target.get_parent() as EmailServer
+			# 	targetOutline.visible = true
+			# 	targetOutline.mesh = server.meshInst.mesh
+			# 	targetOutline.transform = server.global_transform
+			# 	if interactClicked:
+			# 		server.interact()
 
 func _physics_process(delta: float):
 	# gather relevant inputs

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="EmailResource" format=3 uid="uid://bpv68bhlomao8"]
+
+[ext_resource type="Script" uid="uid://bf1ybiskyl8b7" path="res://Scripts/EmailResource.gd" id="1_wi7k3"]
+
+[resource]
+script = ExtResource("1_wi7k3")
+id = &"email_01"
+subject = "[MISSING SUBJECT]"
+fromAddress = "dsmith@rchs.edu"
+toAddress = "vickyyyyy2001@hotmail.com"
+contents = "Dear Victoria,
+I hope all is well. I discovered this address when cleaning out our room. It was wedged in the back corner, where you used to hide your illicit materials. I threw out what was left under there.
+I put your old gameboy in the giveaway pile. Your sketchbook I plan to keep.
+	Please let me know if there is anything else you would like me to hold on to.
+Sincerely,
+“Duckie”"
+metadata/_custom_type_script = "uid://bf1ybiskyl8b7"
