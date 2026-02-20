@@ -1,12 +1,12 @@
-class_name HUD extends Control
+class_name HUD extends CanvasLayer
 
-@onready var dboxContainer := $DialogueBox/NinePatchRect/MarginContainer/VBoxContainer
+@export var vbox_container : VBoxContainer
 
 func display_email(email: EmailResource):
-	dboxContainer.get_node("From").text = "From: " + email.fromAddress
-	dboxContainer.get_node("To").text = "To: " + email.toAddress
-	dboxContainer.get_node("Subject").text = "Subject: " + email.subject
-	dboxContainer.get_node("Contents").text = email.contents
+	vbox_container.get_node("From").text = "From: " + email.fromAddress
+	vbox_container.get_node("To").text = "To: " + email.toAddress
+	vbox_container.get_node("Subject").text = "Subject: " + email.subject
+	vbox_container.get_node("Contents").text = email.contents
 	$AnimationPlayer.play("DisplayDialog")
 
 func display_test_email():
