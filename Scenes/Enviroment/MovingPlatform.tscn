@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://b7cylcievqyc5"]
 
 [ext_resource type="PackedScene" uid="uid://djshnwgb5kj7l" path="res://Resources/Models/InterconnectStage/Platform.glb" id="1_5sa3q"]
+[ext_resource type="Script" uid="uid://isbmtj3sn6gm" path="res://Scripts/MovingPlatform.gd" id="1_jjlio"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_h06qm"]
 size = Vector3(2, 0.19999999, 4)
 
-[node name="Platform" type="Node3D" unique_id=859398829]
+[node name="Platform" type="PathFollow3D" unique_id=1889139088]
+script = ExtResource("1_jjlio")
 
 [node name="Platform" parent="." unique_id=2108940440 instance=ExtResource("1_5sa3q")]
 
