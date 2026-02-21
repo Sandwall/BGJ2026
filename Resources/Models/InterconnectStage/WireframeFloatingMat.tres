@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://jtfbsvppqn5v"]
+
+[ext_resource type="Shader" uid="uid://8ls824qu8ql" path="res://Resources/Models/InterconnectStage/Wireframe.gdshader" id="1_ujlpl"]
+[ext_resource type="Texture2D" uid="uid://bl18rtpi1efk6" path="res://Resources/Models/InterconnectStage/Interconnect_WireframeTexture.png" id="2_ir35x"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ujlpl")
+shader_parameter/albedo_texture = ExtResource("2_ir35x")
+shader_parameter/shake_amount = 1.0
+shader_parameter/shake_speed = 0.15

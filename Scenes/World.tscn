@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://b0urcnetw2ffk"]
 
 [ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_5cjrv"]
-[ext_resource type="PackedScene" uid="uid://xako6wm1jnwt" path="res://Scenes/Stage/DuckieStage01.tscn" id="3_5nsto"]
-[ext_resource type="PackedScene" uid="uid://djay3cdf7ofo3" path="res://Scenes/Stage/VictoriaStage01.tscn" id="3_gjpho"]
+[ext_resource type="PackedScene" uid="uid://bhm77tctxni61" path="res://Scenes/Stage/DuckieStageOffice.tscn" id="2_gjpho"]
+[ext_resource type="PackedScene" uid="uid://qanilbdahy1v" path="res://Scenes/Stage/DuckieStageSpaceAge.tscn" id="3_p70al"]
+[ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -19,12 +20,6 @@ ssao_enabled = true
 glow_enabled = true
 fog_enabled = true
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_gjpho"]
-size = Vector2(16, 16)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p70al"]
-points = PackedVector3Array(-8, 0, -8, -8, 0, 8, 8, 0, -8, 8, 0, 8)
-
 [node name="World" type="Node3D" unique_id=45579773]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2094952620]
@@ -36,20 +31,14 @@ transform = Transform3D(1, 0, 0, 0, -0.54902303, 0.83580726, 0, -0.83580726, -0.
 [node name="Player" parent="." unique_id=1703810380 instance=ExtResource("1_5cjrv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
-[node name="Floor" type="MeshInstance3D" parent="." unique_id=1969656277]
-mesh = SubResource("PlaneMesh_gjpho")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Floor" unique_id=1877065739]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D" unique_id=1148750088]
-shape = SubResource("ConvexPolygonShape3D_p70al")
-
 [node name="DuckieStage" type="Node3D" parent="." unique_id=1804239352]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -8, 0, 0)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.496911e-07, 0, -40.085136)
 
-[node name="DuckieStage01" parent="DuckieStage" unique_id=170864552 instance=ExtResource("3_5nsto")]
+[node name="DuckieStageOffice" parent="DuckieStage" unique_id=1367273004 instance=ExtResource("2_gjpho")]
 
 [node name="VictoriaStage" type="Node3D" parent="." unique_id=2083918906]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 8, 0, 0)
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.496911e-07, 0, 40.146286)
 
-[node name="VictoriaStage01" parent="VictoriaStage" unique_id=1806485018 instance=ExtResource("3_gjpho")]
+[node name="DuckieStageSpaceAge" parent="VictoriaStage" unique_id=414288361 instance=ExtResource("3_p70al")]
+
+[node name="InterconnectStage" parent="." unique_id=338793185 instance=ExtResource("4_45d1s")]
