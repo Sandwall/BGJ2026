@@ -1,0 +1,23 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://c64ec56prgnmg"]
+
+[ext_resource type="Texture2D" uid="uid://bxl72aspymwhc" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/ASCIIFire1.png" id="1_s0n7c"]
+[ext_resource type="Texture2D" uid="uid://cemfulw2xr0x1" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/ASCIIFire2.png" id="2_0fbih"]
+[ext_resource type="Texture2D" uid="uid://cjrt7hpp26vwd" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/ASCIIFire3.png" id="3_r7rxq"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_smffo"]
+frames = 3
+frame_0/texture = ExtResource("1_s0n7c")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_0fbih")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("3_r7rxq")
+frame_2/duration = 0.25
+
+[resource]
+transparency = 1
+cull_mode = 2
+shading_mode = 2
+albedo_texture = SubResource("AnimatedTexture_smffo")
+emission_enabled = true
+emission_texture = SubResource("AnimatedTexture_smffo")
+texture_filter = 2

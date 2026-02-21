@@ -99,5 +99,5 @@ textures/light_projectors/filter=2
 [wwise]
 
 common_user_settings/root_output_path="res://Wwise/Soundbanks"
-project_settings/windows_platform_info="res://Wwise/Windows.tres"
-project_settings/mac_platform_info="res://Wwise/Mac.tres"
+project_settings/windows_platform_info="res://Wwise/resources/Windows.tres"
+project_settings/mac_platform_info="res://Wwise/resources/Mac.tres"

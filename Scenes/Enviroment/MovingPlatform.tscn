@@ -13,6 +13,7 @@ script = ExtResource("1_jjlio")
 
 [node name="AnimatableBody3D" type="AnimatableBody3D" parent="Platform/Platform" parent_id_path=PackedInt32Array(2108940440, 451252864) index="0" unique_id=1117184828]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.099999994, 0)
+sync_to_physics = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Platform/Platform/AnimatableBody3D" unique_id=766034810]
 shape = SubResource("BoxShape3D_h06qm")

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://pyo8hh6njkkh"]
+
+[ext_resource type="PackedScene" uid="uid://8x0yewprnhn0" path="res://Resources/Models/InterconnectStage/FireWall.glb" id="1_w875g"]
+[ext_resource type="Script" uid="uid://dvpg67mll4ikp" path="res://Scripts/Firewall.gd" id="2_pu0yg"]
+[ext_resource type="Shader" uid="uid://cayq6jnlfe747" path="res://Resources/Firewall.gdshader" id="2_w875g"]
+[ext_resource type="Texture2D" uid="uid://bgpaa7dm6ihi1" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/FirewallTexture.tres" id="3_udhvb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_udhvb"]
+render_priority = 0
+shader = ExtResource("2_w875g")
+shader_parameter/tex = ExtResource("3_udhvb")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_w875g"]
+size = Vector3(4.799, 0.336, 4.799)
+
+[node name="FireWall2" unique_id=1513712859 instance=ExtResource("1_w875g")]
+script = ExtResource("2_pu0yg")
+
+[node name="FireWall" parent="." index="0" unique_id=1274153842]
+surface_material_override/0 = SubResource("ShaderMaterial_udhvb")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=1957765734]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=24650952]
+transform = Transform3D(-1, -1.629207e-07, -1.629207e-07, 1.629207e-07, 0, -1, 1.629207e-07, -1, 0, -0.005399324, 2.4171207, -0.00064369355)
+shape = SubResource("BoxShape3D_w875g")
