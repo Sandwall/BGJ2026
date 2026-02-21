@@ -1,4 +1,5 @@
 shader_type spatial;
+render_mode unshaded;
 
 uniform sampler2D albedo_texture;
 uniform float shake_amount = 0;
@@ -17,7 +18,7 @@ void fragment() {
 	ALBEDO = texture(albedo_texture, UV).rgb;
 	
 	float cutoff = smoothstep(0, -30, world_position.y);
-	ALBEDO = mix(ALBEDO, vec3(0.0), cutoff);
+	ALBEDO = mix(ALBEDO, vec3(0.0), cutoff) * 2.0;
 	
 	EMISSION = ALBEDO;
 }

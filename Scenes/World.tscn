@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://b0urcnetw2ffk"]
 
 [ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_5cjrv"]
-[ext_resource type="Script" uid="uid://byyorc4pos538" path="res://Scripts/StoryManager.gd" id="1_q2d71"]
+[ext_resource type="Script" path="res://Scripts/StoryManager.gd" id="1_q2d71"]
 [ext_resource type="PackedScene" uid="uid://bhm77tctxni61" path="res://Scenes/Stage/DuckieStageOffice.tscn" id="2_gjpho"]
 [ext_resource type="PackedScene" uid="uid://qanilbdahy1v" path="res://Scenes/Stage/DuckieStageSpaceAge.tscn" id="3_p70al"]
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
 [ext_resource type="PackedScene" uid="uid://cewhef2lpvpru" path="res://Scenes/Enviroment/Platform.tscn" id="5_p70al"]
-[ext_resource type="Script" uid="uid://d0sdi3ppa8gg4" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
-[ext_resource type="Script" uid="uid://bf8jqwk1701ou" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
+[ext_resource type="Script" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
+[ext_resource type="Script" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
