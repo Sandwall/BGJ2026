@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://qanilbdahy1v"]
 
 [ext_resource type="PackedScene" uid="uid://b1a4qqe3wag43" path="res://Resources/Models/DuckieStages/DuckieSpaceAge.glb" id="1_5iavv"]
+[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="2_km3le"]
+[ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/EmailPickup.gd" id="3_nyhi3"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_nhynw"]
 points = PackedVector3Array(0.6567916, 1.4705752, -0.16347581, -0.7699735, 0.87678874, -0.07049674, -0.7295352, 0.82153636, -0.19316065, 0.45699245, 0.4870158, -0.010196538, 0.1515806, 1.0016999, -0.7749149, -0.2916893, 1.8950816, -0.009946813, -0.22015676, 1.6287527, -0.5415736, -0.2803903, 0.68558896, -0.62977314, -0.44568497, 0.48017243, -0.006152643, 0.55971426, 0.73904765, -0.45763543, 0.33768952, 1.8654876, -0.009673061, 0.3754656, 1.5141622, -0.5412255, -0.53736, 1.2318456, -0.54285413, 0.7648502, 0.8433294, -0.0060066176, 0.12452685, 0.5309076, -0.51671, -0.64691925, 1.5326276, -0.012636616, 0.0661287, 1.8794547, -0.3116565, 0.65151155, 1.1459261, -0.4287701, -0.16219862, 1.258526, -0.7381325, 0.12652755, 0.34278885, -0.012863806, -0.3434775, 0.5022993, -0.34110996, -0.45939675, 1.6712464, -0.312129, -0.42088193, 0.91759396, -0.6564926, -0.6882687, 1.2036909, -0.34164718, 0.12111916, 1.5454258, -0.6278682, 0.76225185, 1.2363517, -0.0073312586, -0.60507196, 0.73751694, -0.39955953, 0.4357869, 1.0602624, -0.6567798, 0.23701794, 0.74375063, -0.68687516, 0.36027166, 1.7927604, -0.2525952, 0.5089462, 0.5561645, -0.2521379, 0.09850039, 1.9619826, -0.006643456)
@@ -74,6 +76,20 @@ radius = 1.2
 [sub_resource type="BoxShape3D" id="BoxShape3D_nhynw"]
 size = Vector3(1.2, 2.4020507, 0.6)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftw4p"]
+albedo_color = Color(0.1764706, 1, 1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64q2b"]
+emission_enabled = true
+emission = Color(0, 0.65882355, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_fnkg6"]
+material = SubResource("StandardMaterial3D_64q2b")
+size = Vector3(2, 2, 0.5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a7ve0"]
+points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
+
 [node name="DuckieStageSpaceAge" type="Node3D" unique_id=414288361]
 
 [node name="DuckieSpaceAge" parent="." unique_id=190694463 instance=ExtResource("1_5iavv")]
@@ -120,7 +136,10 @@ shape = SubResource("ConvexPolygonShape3D_xloi8")
 [node name="CollisionShape3D8" type="CollisionShape3D" parent="DuckieSpaceAge/Cylinder/StaticBody3D" unique_id=665381720]
 shape = SubResource("ConvexPolygonShape3D_oop73")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSpaceAge/Cylinder_001" parent_id_path=PackedInt32Array(190694463, 1694622057) index="0" unique_id=492785626]
+[node name="Cylinder_001" parent="DuckieSpaceAge" index="3" unique_id=1694622057]
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0.0041725137, -0.022245884, 4.465758)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSpaceAge/Cylinder_001" index="0" unique_id=492785626]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSpaceAge/Cylinder_001/StaticBody3D" unique_id=1743063099]
 shape = SubResource("ConvexPolygonShape3D_5ow42")
@@ -177,5 +196,40 @@ shape = SubResource("CylinderShape3D_mmisq")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2134019787]
 transform = Transform3D(-0.77745616, 0, -0.6289372, 0, 1, 0, 0.6289372, 0, -0.77745616, 3.7660675, 1.2010254, 7.430994)
 shape = SubResource("BoxShape3D_nhynw")
+
+[node name="SendBox" type="MeshInstance3D" parent="." unique_id=106259635]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2741625, 0.41443968, 1.2523866)
+material_override = SubResource("StandardMaterial3D_ftw4p")
+mesh = SubResource("BoxMesh_fnkg6")
+script = ExtResource("2_km3le")
+host_email = "dsmith@rchs.edu"
+
+[node name="StaticBody3D" type="StaticBody3D" parent="SendBox" unique_id=1768982777]
+collision_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="SendBox/StaticBody3D" unique_id=1501152098]
+shape = SubResource("ConvexPolygonShape3D_a7ve0")
+
+[node name="Label3D" type="Label3D" parent="SendBox" unique_id=911934866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7156017, 0)
+text = "SEND"
+font_size = 167
+
+[node name="EmailPickup" type="MeshInstance3D" parent="." unique_id=500859439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.70813465, 0.41443944, 8.810501)
+mesh = SubResource("BoxMesh_fnkg6")
+script = ExtResource("3_nyhi3")
+start_available = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="EmailPickup" unique_id=1496858557]
+collision_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EmailPickup/StaticBody3D" unique_id=2096409346]
+shape = SubResource("ConvexPolygonShape3D_a7ve0")
+
+[node name="Label3D2" type="Label3D" parent="EmailPickup" unique_id=680572478]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.716, 0)
+text = "PICKUP"
+font_size = 167
 
 [editable path="DuckieSpaceAge"]

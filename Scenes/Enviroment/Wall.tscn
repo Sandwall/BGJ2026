@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://13rb6aiq25xy"]
+
+[ext_resource type="PackedScene" uid="uid://dsoedjsoi8rmf" path="res://Resources/Models/InterconnectStage/Wall.glb" id="1_4e2wt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4e2wt"]
+size = Vector3(6, 4, 0.20000017)
+
+[node name="Wall" type="Node3D" unique_id=1364744415]
+
+[node name="Wall" parent="." unique_id=446904623 instance=ExtResource("1_4e2wt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Wall/Wall" parent_id_path=PackedInt32Array(446904623, 729228678) index="0" unique_id=827814035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9999999, -0.10000001)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall/Wall/StaticBody3D" unique_id=1106753267]
+shape = SubResource("BoxShape3D_4e2wt")
+
+[editable path="Wall"]

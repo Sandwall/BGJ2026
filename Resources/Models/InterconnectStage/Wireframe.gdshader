@@ -18,6 +18,7 @@ void fragment() {
 	
 	float cutoff = smoothstep(0, -30, world_position.y);
 	ALBEDO = mix(ALBEDO, vec3(0.0), cutoff);
+	ALPHA = 1.0 - cutoff;
 	
 	EMISSION = ALBEDO;
 }

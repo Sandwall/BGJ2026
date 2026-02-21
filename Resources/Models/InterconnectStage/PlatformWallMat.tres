@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://r51n6ms54h8k"]
+
+[ext_resource type="Shader" uid="uid://mhvmqqmf2bcf" path="res://Resources/Base.gdshader" id="1_015dt"]
+[ext_resource type="Texture2D" uid="uid://fjj5gckujj48" path="res://Resources/Models/InterconnectStage/Obstacles.png" id="2_83m2c"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_015dt")
+shader_parameter/diffuse_texture = ExtResource("2_83m2c")

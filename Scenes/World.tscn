@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bhm77tctxni61" path="res://Scenes/Stage/DuckieStageOffice.tscn" id="2_gjpho"]
 [ext_resource type="PackedScene" uid="uid://qanilbdahy1v" path="res://Scenes/Stage/DuckieStageSpaceAge.tscn" id="3_p70al"]
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
+[ext_resource type="PackedScene" uid="uid://cewhef2lpvpru" path="res://Scenes/Enviroment/Platform.tscn" id="5_p70al"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -12,13 +13,17 @@ sky_material = SubResource("PanoramaSkyMaterial_j0p05")
 radiance_size = 1
 
 [sub_resource type="Environment" id="Environment_5nsto"]
-background_mode = 2
+background_mode = 1
 sky = SubResource("Sky_0a7su")
 tonemap_mode = 2
 tonemap_exposure = 0.67
 ssao_enabled = true
 glow_enabled = true
 fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
+fog_depth_end = 160.0
 
 [node name="World" type="Node3D" unique_id=45579773]
 
@@ -29,7 +34,7 @@ environment = SubResource("Environment_5nsto")
 transform = Transform3D(1, 0, 0, 0, -0.54902303, 0.83580726, 0, -0.83580726, -0.54902303, 0, 0, 0)
 
 [node name="Player" parent="." unique_id=1703810380 instance=ExtResource("1_5cjrv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3.836317)
 
 [node name="DuckieStage" type="Node3D" parent="." unique_id=1804239352]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.496911e-07, 0, -40.085136)
@@ -42,3 +47,33 @@ transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.4
 [node name="DuckieStageSpaceAge" parent="VictoriaStage" unique_id=414288361 instance=ExtResource("3_p70al")]
 
 [node name="InterconnectStage" parent="." unique_id=338793185 instance=ExtResource("4_45d1s")]
+
+[node name="Platform" parent="InterconnectStage" unique_id=859398829 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -1.4376887)
+
+[node name="Platform2" parent="InterconnectStage" unique_id=1183953779 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 3.5337486)
+
+[node name="Platform3" parent="InterconnectStage" unique_id=1004886532 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 8.578266)
+
+[node name="Platform4" parent="InterconnectStage" unique_id=140619556 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 13.578266)
+
+[node name="Platform9" parent="InterconnectStage" unique_id=1776227859 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 18.525866)
+
+[node name="Platform10" parent="InterconnectStage" unique_id=1955719953 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.10033274, 22.955074)
+
+[node name="Platform5" parent="InterconnectStage" unique_id=280326438 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -6.421734)
+
+[node name="Platform6" parent="InterconnectStage" unique_id=606120791 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -11.379571)
+
+[node name="Platform7" parent="InterconnectStage" unique_id=796756811 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -16.515728)
+
+[node name="Platform8" parent="InterconnectStage" unique_id=1597597321 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -21.126675)
