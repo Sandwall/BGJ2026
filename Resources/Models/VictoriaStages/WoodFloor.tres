@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://h508jb6giu2k"]
+
+[ext_resource type="Texture2D" uid="uid://0yt6qr4gxt8e" path="res://Resources/Models/VictoriaStages/Woodfloor.png" id="1_i0nny"]
+
+[resource]
+resource_name = "WoodFloor"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_i0nny")
+metallic = 0.29706782
+roughness = 0.599386
+texture_filter = 2

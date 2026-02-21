@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b35jmrxmvmvks"]
+
+[resource]
+resource_name = "Scream"
+cull_mode = 2
+albedo_color = Color(0.880016, 0, 0.037184313, 1)
+metallic = 1.0
+roughness = 0.50305337

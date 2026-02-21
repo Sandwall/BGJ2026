@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bhu6455u884mb"]
+
+[ext_resource type="Shader" uid="uid://biee0wadp17c0" path="res://Resources/StudioLight.gdshader" id="1_jogb5"]
+[ext_resource type="Texture2D" uid="uid://dyanr82am7qnc" path="res://Resources/Models/VictoriaStages/StudioLightTexture.png" id="2_tnpms"]
+[ext_resource type="Texture2D" uid="uid://5e1fktge8hyk" path="res://Resources/Models/VictoriaStages/StudioLightTexture_Emission.png" id="3_vjmx7"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_jogb5")
+shader_parameter/diffuse_texture = ExtResource("2_tnpms")
+shader_parameter/emission_mask_texture = ExtResource("3_vjmx7")
+shader_parameter/roughness_mult = 0.3
+shader_parameter/metallic_mult = 1.0
+shader_parameter/emission_mult = 1.0

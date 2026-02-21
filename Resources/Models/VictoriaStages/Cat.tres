@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cj4mtab6137h3"]
+
+[ext_resource type="Texture2D" uid="uid://jgq0xiotgbep" path="res://Resources/Models/VictoriaStages/CAT_MILK.png" id="1_x8ivl"]
+
+[resource]
+resource_name = "Cat"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_x8ivl")
+metallic = 0.17557251
+roughness = 0.86106825
+texture_filter = 2

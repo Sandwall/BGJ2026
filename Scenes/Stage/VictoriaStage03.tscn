@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://cl3w7pyut1dyq"]
+
+[ext_resource type="PackedScene" uid="uid://dsdt40ncdnixc" path="res://Resources/Models/VictoriaStages/Stage3.gltf" id="1_rhykj"]
+
+[node name="VictoriaStage03" type="Node3D" unique_id=215926454]
+
+[node name="Stage3" parent="." unique_id=1305692141 instance=ExtResource("1_rhykj")]
+
+[node name="Point_028" parent="Stage3" index="78" unique_id=226674214]
+light_energy = 21.741
+
+[node name="Point_029" parent="Stage3" index="79" unique_id=2061687308]
+light_energy = 21.741
+
+[node name="Point_030" parent="Stage3" index="80" unique_id=533891926]
+light_energy = 21.741
+
+[node name="Point_031" parent="Stage3" index="81" unique_id=425915050]
+light_energy = 21.741
+
+[node name="Point_032" parent="Stage3" index="82" unique_id=1967985979]
+light_energy = 21.741
+
+[node name="Point_033" parent="Stage3" index="83" unique_id=1118684225]
+light_energy = 21.741
+
+[node name="Spot_054" parent="Stage3" index="84" unique_id=1523959219]
+light_energy = 21.741
+
+[node name="Spot_055" parent="Stage3" index="85" unique_id=719272166]
+light_energy = 21.741
+
+[node name="Spot_056" parent="Stage3" index="86" unique_id=2067749686]
+light_energy = 21.741
+
+[node name="Spot_057" parent="Stage3" index="87" unique_id=1754360848]
+light_energy = 21.741
+
+[node name="Spot_058" parent="Stage3" index="88" unique_id=1212238159]
+light_energy = 21.741
+
+[node name="Spot_059" parent="Stage3" index="89" unique_id=1600443573]
+light_energy = 21.741
+
+[node name="Spot_060" parent="Stage3" index="90" unique_id=1916486969]
+light_energy = 21.741
+
+[node name="Spot_061" parent="Stage3" index="91" unique_id=1203302630]
+light_energy = 21.741
+
+[node name="Spot_062" parent="Stage3" index="108" unique_id=2072391585]
+light_energy = 21.741
+
+[node name="Spot_063" parent="Stage3" index="109" unique_id=721341824]
+light_energy = 21.741
+
+[node name="Point_034" parent="Stage3" index="115" unique_id=445573977]
+light_energy = 21.741
+
+[node name="Spot_014" parent="Stage3" index="128" unique_id=706141829]
+light_energy = 21.741
+
+[node name="Spot_015" parent="Stage3" index="129" unique_id=291291975]
+light_energy = 21.741
+
+[node name="Point_035" parent="Stage3" index="138" unique_id=1663879779]
+light_energy = 21.741
+
+[node name="Spot_064" parent="Stage3" index="145" unique_id=839414339]
+light_energy = 21.741
+
+[node name="Spot_065" parent="Stage3" index="146" unique_id=1100715695]
+light_energy = 21.741
+
+[node name="Point_036" parent="Stage3" index="172" unique_id=1283951203]
+light_energy = 21.741
+
+[node name="Point_027" parent="Stage3" index="175" unique_id=995555672]
+light_energy = 21.741
+
+[editable path="Stage3"]

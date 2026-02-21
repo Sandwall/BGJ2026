@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://lc8lw26fi4qf"]
+
+[ext_resource type="Texture2D" uid="uid://dj5t0eb4novq2" path="res://Resources/Models/VictoriaStages/CouchAlt2Texture.png" id="1_e3olc"]
+
+[resource]
+resource_name = "Couch3"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_e3olc")
+metallic = 0.17557251
+roughness = 0.86106825
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+texture_filter = 2

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://qgc5brxafapg"]
+
+[ext_resource type="Texture2D" uid="uid://bwcg5mdr8wku0" path="res://Resources/Models/VictoriaStages/FunkyFloor3.png" id="1_b674t"]
+
+[resource]
+resource_name = "FunkyFloorAlt2"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_b674t")
+metallic = 0.29706782
+roughness = 0.599386
+texture_filter = 2

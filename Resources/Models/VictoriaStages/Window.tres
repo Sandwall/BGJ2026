@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b52t3exqc1mpy"]
+
+[ext_resource type="Texture2D" uid="uid://cyqw74ghvxr7d" path="res://Resources/Models/VictoriaStages/WindowTexture.png" id="1_gn4l0"]
+[ext_resource type="Texture2D" uid="uid://dbac32rlocwfn" path="res://Resources/Models/VictoriaStages/WindowTexture_Metalness-WindowTexture_Roughness.png" id="2_s2eav"]
+
+[resource]
+resource_name = "Window"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_gn4l0")
+metallic = 1.0
+metallic_texture = ExtResource("2_s2eav")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_s2eav")
+roughness_texture_channel = 1
+texture_filter = 2

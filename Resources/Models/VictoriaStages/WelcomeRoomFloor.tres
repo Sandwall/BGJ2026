@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://cu1s4epir5e3j"]
+
+[ext_resource type="Texture2D" uid="uid://880b5yvgr6ky" path="res://Resources/Models/VictoriaStages/WelcomeRoomFloor.png" id="1_sm1fh"]
+
+[resource]
+resource_name = "WelcomeRoomFloor"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_sm1fh")
+metallic = 0.175573
+texture_filter = 2

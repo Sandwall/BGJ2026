@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://dhnsrxbagojws"]
+
+[ext_resource type="PackedScene" uid="uid://buviru1a4ey6m" path="res://Resources/Models/VictoriaStages/Stage2.gltf" id="1_3rvul"]
+
+[node name="VictoriaStage02" type="Node3D" unique_id=1858577213]
+
+[node name="Stage2" parent="." unique_id=576196214 instance=ExtResource("1_3rvul")]
+
+[node name="Point_020" parent="Stage2" index="79" unique_id=1510985614]
+light_energy = 21.741
+
+[node name="Point_021" parent="Stage2" index="80" unique_id=1758801759]
+light_energy = 21.741
+
+[node name="Point_022" parent="Stage2" index="81" unique_id=1391397838]
+light_energy = 21.741
+
+[node name="Point_023" parent="Stage2" index="82" unique_id=511798066]
+light_energy = 21.741
+
+[node name="Point_024" parent="Stage2" index="83" unique_id=1043897338]
+light_energy = 21.741
+
+[node name="Point_025" parent="Stage2" index="84" unique_id=1951437547]
+light_energy = 21.741
+
+[node name="Spot_002" parent="Stage2" index="85" unique_id=1678109544]
+light_energy = 21.741
+
+[node name="Spot_003" parent="Stage2" index="86" unique_id=231206868]
+light_energy = 21.741
+
+[node name="Spot_046" parent="Stage2" index="87" unique_id=798145630]
+light_energy = 21.741
+
+[node name="Spot_047" parent="Stage2" index="88" unique_id=1031821864]
+light_energy = 21.741
+
+[node name="Spot_048" parent="Stage2" index="89" unique_id=1777852830]
+light_energy = 21.741
+
+[node name="Spot_049" parent="Stage2" index="90" unique_id=951654498]
+light_energy = 21.741
+
+[node name="Spot_050" parent="Stage2" index="91" unique_id=992616231]
+light_energy = 21.741
+
+[node name="Spot_051" parent="Stage2" index="92" unique_id=1632693428]
+light_energy = 21.741
+
+[node name="Spot_052" parent="Stage2" index="110" unique_id=1550847976]
+light_energy = 21.741
+
+[node name="Spot_053" parent="Stage2" index="111" unique_id=1065793575]
+light_energy = 21.741
+
+[node name="Point_026" parent="Stage2" index="117" unique_id=107359991]
+light_energy = 21.741
+
+[node name="Point_019" parent="Stage2" index="126" unique_id=213677693]
+light_energy = 21.741
+
+[editable path="Stage2"]

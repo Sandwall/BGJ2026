@@ -1,81 +1,54 @@
 [gd_scene format=3 uid="uid://djay3cdf7ofo3"]
 
-[ext_resource type="PackedScene" uid="uid://b7w2mew7kvdso" path="res://Resources/Models/test_region.glb" id="1_54o20"]
-[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="2_tfb8r"]
-[ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/EmailPickup.gd" id="3_8e60a"]
+[ext_resource type="PackedScene" uid="uid://cvduc8p5v57g0" path="res://Resources/Models/VictoriaStages/Stage1.gltf" id="1_k1l8y"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_54o20"]
-albedo_color = Color(1, 0.5176471, 0.19215687, 1)
+[node name="VictoriaStage01" type="Node3D" unique_id=1341088577]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lc8k6"]
-size = Vector3(20.400005, 0.4765742, 20.400013)
+[node name="Stage1" parent="." unique_id=1478590738 instance=ExtResource("1_k1l8y")]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lc8k6"]
-albedo_color = Color(0.1764706, 1, 1, 1)
+[node name="Point" parent="Stage1" index="79" unique_id=1005591668]
+light_energy = 21.7
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64q2b"]
-emission_enabled = true
-emission = Color(0, 0.65882355, 0, 1)
+[node name="Point_001" parent="Stage1" index="80" unique_id=154805638]
+light_energy = 21.7
 
-[sub_resource type="BoxMesh" id="BoxMesh_lc8k6"]
-material = SubResource("StandardMaterial3D_64q2b")
-size = Vector3(2, 2, 0.5)
+[node name="Point_002" parent="Stage1" index="81" unique_id=1497009236]
+light_energy = 21.7
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4ni1k"]
-points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
+[node name="Point_003" parent="Stage1" index="82" unique_id=1790671609]
+light_energy = 21.7
 
-[node name="VictoriaStage01" type="Node3D" unique_id=170864552]
+[node name="Point_017" parent="Stage1" index="83" unique_id=85438964]
+light_energy = 21.7
 
-[node name="test_region" parent="." unique_id=1838555431 instance=ExtResource("1_54o20")]
+[node name="Point_018" parent="Stage1" index="84" unique_id=1043890474]
+light_energy = 21.7
 
-[node name="Cube_002" parent="test_region" index="0" unique_id=1711877095]
-material_override = SubResource("StandardMaterial3D_54o20")
+[node name="Spot" parent="Stage1" index="85" unique_id=1795715297]
+light_energy = 21.7
 
-[node name="StaticBody3D" type="StaticBody3D" parent="test_region/Cube_002" index="0" unique_id=1750480022]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8)
+[node name="Spot_001" parent="Stage1" index="86" unique_id=763993663]
+light_energy = 21.7
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="test_region/Cube_002/StaticBody3D" unique_id=209656104]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9073486e-06, -0.23729025, 2.000002)
-shape = SubResource("BoxShape3D_lc8k6")
+[node name="Spot_004" parent="Stage1" index="87" unique_id=1542365163]
+light_energy = 21.7
 
-[node name="Label3D" type="Label3D" parent="test_region/Cube_002" index="1" unique_id=1850653991]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 6.7716713, -0.9387827)
-text = "vickyyyyy2001@hotmail.com"
-font_size = 190
+[node name="Spot_005" parent="Stage1" index="88" unique_id=1436950905]
+light_energy = 21.7
 
-[node name="SendBox" type="MeshInstance3D" parent="." unique_id=1135329688 node_paths=PackedStringArray("email_pickup")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6819234, 0.41443968, 1.5086403)
-material_override = SubResource("StandardMaterial3D_lc8k6")
-mesh = SubResource("BoxMesh_lc8k6")
-script = ExtResource("2_tfb8r")
-host_email = "vickyyyyy2001@hotmail.com"
-email_pickup = NodePath("../EmailPickup")
+[node name="Spot_006" parent="Stage1" index="89" unique_id=1652983634]
+light_energy = 21.7
 
-[node name="StaticBody3D" type="StaticBody3D" parent="SendBox" unique_id=510817072]
-collision_layer = 3
+[node name="Spot_007" parent="Stage1" index="90" unique_id=1409818803]
+light_energy = 21.7
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SendBox/StaticBody3D" unique_id=33321787]
-shape = SubResource("ConvexPolygonShape3D_4ni1k")
+[node name="Spot_008" parent="Stage1" index="91" unique_id=379337966]
+light_energy = 21.7
 
-[node name="Label3D" type="Label3D" parent="SendBox" unique_id=1981489693]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7156017, 0)
-text = "SEND"
-font_size = 167
+[node name="Spot_009" parent="Stage1" index="92" unique_id=1197917591]
+light_energy = 21.7
 
-[node name="EmailPickup" type="MeshInstance3D" parent="." unique_id=919890535]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2828255, 0.4144404, 18.058298)
-mesh = SubResource("BoxMesh_lc8k6")
-script = ExtResource("3_8e60a")
+[node name="Point_006" parent="Stage1" index="106" unique_id=32768919]
+light_energy = 21.7
 
-[node name="StaticBody3D" type="StaticBody3D" parent="EmailPickup" unique_id=910525111]
-collision_layer = 3
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EmailPickup/StaticBody3D" unique_id=1438596038]
-shape = SubResource("ConvexPolygonShape3D_4ni1k")
-
-[node name="Label3D" type="Label3D" parent="EmailPickup" unique_id=2107846755]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.7156017, 0)
-text = "PICKUP"
-font_size = 167
-
-[editable path="test_region"]
+[editable path="Stage1"]

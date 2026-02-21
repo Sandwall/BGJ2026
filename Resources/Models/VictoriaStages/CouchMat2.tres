@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bpc83lbhcgbaw"]
+
+[ext_resource type="Shader" uid="uid://mhvmqqmf2bcf" path="res://Resources/Base.gdshader" id="1_1hck3"]
+[ext_resource type="Texture2D" uid="uid://bb837yuxxo4e3" path="res://Resources/Models/VictoriaStages/CouchAltTexture.png" id="2_1hck3"]
+[ext_resource type="Texture2D" uid="uid://beapfnt6y23ik" path="res://Resources/Models/VictoriaStages/CouchTextureEmission.png" id="3_cmdfb"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_1hck3")
+shader_parameter/diffuse_texture = ExtResource("2_1hck3")
+shader_parameter/emission_mask_texture = ExtResource("3_cmdfb")
+shader_parameter/roughness_mult = 0.861
+shader_parameter/metallic_mult = 0.176
+shader_parameter/emission_mult = 1.0

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://slg7pdww23np"]
+
+[ext_resource type="Texture2D" uid="uid://dnjexqc2vehtu" path="res://Resources/Models/VictoriaStages/CLOCK.png" id="1_qbwlh"]
+
+[resource]
+resource_name = "Clock"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_qbwlh")
+metallic = 0.17557251
+roughness = 0.86106825
+texture_filter = 2

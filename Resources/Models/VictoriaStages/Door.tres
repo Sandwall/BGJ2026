@@ -1,0 +1,17 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dbxfnkoboht4h"]
+
+[ext_resource type="Texture2D" uid="uid://5fxmwpvn02ng" path="res://Resources/Models/VictoriaStages/DoorTexture.png" id="1_qr1e1"]
+[ext_resource type="Texture2D" uid="uid://dru8fe015rnix" path="res://Resources/Models/VictoriaStages/CurtainTexture_Metalness.png" id="2_n63qp"]
+
+[resource]
+resource_name = "Door"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_qr1e1")
+metallic = 1.0
+metallic_texture = ExtResource("2_n63qp")
+metallic_texture_channel = 2
+roughness = 0.86106825
+roughness_texture = ExtResource("2_n63qp")
+roughness_texture_channel = 1
+texture_filter = 2

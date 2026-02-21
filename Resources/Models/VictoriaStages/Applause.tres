@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://b0j8311010dra"]
+
+[resource]
+resource_name = "Applause"
+cull_mode = 2
+albedo_color = Color(0, 0.8797917, 0.01691398, 1)
+metallic = 0.9
+roughness = 0.60229003

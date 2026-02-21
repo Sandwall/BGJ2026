@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://doib47waamltd"]
+
+[ext_resource type="Texture2D" uid="uid://d15pu21mmmw2m" path="res://Resources/Models/VictoriaStages/TREE.png" id="1_kigkq"]
+
+[resource]
+resource_name = "Tree"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_kigkq")
+metallic = 0.17557251
+roughness = 0.86106825
+texture_filter = 2

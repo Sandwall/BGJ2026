@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bktpjdfjtrm4v"]
+
+[ext_resource type="Texture2D" uid="uid://rwkjvxmoedbu" path="res://Resources/Models/VictoriaStages/WelcomeRoomWall.png" id="1_2g3y0"]
+
+[resource]
+resource_name = "WelcomeWall"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_2g3y0")
+metallic = 0.175573
+texture_filter = 2

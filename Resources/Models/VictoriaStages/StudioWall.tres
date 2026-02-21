@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dftoiipvw6eoi"]
+
+[ext_resource type="Texture2D" uid="uid://deb7flycjms0h" path="res://Resources/Models/VictoriaStages/StudioWall.png" id="1_ig641"]
+
+[resource]
+resource_name = "StudioWall"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_ig641")
+metallic = 0.175573
+texture_filter = 2

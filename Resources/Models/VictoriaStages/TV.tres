@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://beqdtffcskg81"]
+
+[ext_resource type="Texture2D" uid="uid://b6djcwmre1q74" path="res://Resources/Models/VictoriaStages/TV.png" id="1_k6i7x"]
+
+[resource]
+resource_name = "TV"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_k6i7x")
+metallic = 0.17557251
+roughness = 0.86106825
+texture_filter = 2

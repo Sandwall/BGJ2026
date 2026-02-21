@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://u1iyhrh5oagm"]
+
+[ext_resource type="Texture2D" uid="uid://nxdkrr3y8e5j" path="res://Resources/Models/VictoriaStages/CrateTexture.png" id="1_gq3qd"]
+
+[resource]
+resource_name = "Crates"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_gq3qd")
+metallic = 0.7099236
+roughness = 0.9694657
+texture_filter = 2

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://4byv8qw5bbeu"]
+
+[ext_resource type="Texture2D" uid="uid://b5v0jkb8w3xbw" path="res://Resources/Models/VictoriaStages/WallAltTexture.png" id="1_pcy3n"]
+
+[resource]
+resource_name = "Wall2"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_pcy3n")
+metallic = 0.175573
+texture_filter = 2

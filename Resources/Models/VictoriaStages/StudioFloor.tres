@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dftvjc68xqahx"]
+
+[ext_resource type="Texture2D" uid="uid://cloqemf1xcj7v" path="res://Resources/Models/VictoriaStages/StudioFloor.png" id="1_ni7d1"]
+
+[resource]
+resource_name = "StudioFloor"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_ni7d1")
+metallic = 0.175573
+texture_filter = 2

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ifvodugvfxan"]
+
+[ext_resource type="Texture2D" uid="uid://q2y4u5oluxws" path="res://Resources/Models/VictoriaStages/SignTextures.png" id="1_m7knv"]
+
+[resource]
+resource_name = "Signs"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_m7knv")
+metallic = 0.147535
+roughness = 0.32360014
+texture_filter = 2

@@ -1,0 +1,16 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://baxnuh1jurpp2"]
+
+[ext_resource type="Texture2D" uid="uid://3w7e45leab4a" path="res://Resources/Models/VictoriaStages/CurtainTexture.png.png" id="1_piq6x"]
+[ext_resource type="Texture2D" uid="uid://dl1j7q03j6hc3" path="res://Resources/Models/VictoriaStages/CurtainTexture_Metalness.png-CurtainTexture_Roughness.png.png" id="2_xrs50"]
+
+[resource]
+resource_name = "Curtain.004"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_piq6x")
+metallic = 1.0
+metallic_texture = ExtResource("2_xrs50")
+metallic_texture_channel = 2
+roughness_texture = ExtResource("2_xrs50")
+roughness_texture_channel = 1
+texture_filter = 2

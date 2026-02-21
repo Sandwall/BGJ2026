@@ -1,0 +1,230 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://brbfve6ioa78w"
+path="res://.godot/imported/Stage5.gltf-6370b5ce987db2847aaacb4df5f45473.scn"
+
+[deps]
+
+source_file="res://Resources/Models/VictoriaStages/Stage5.gltf"
+dest_files=["res://.godot/imported/Stage5.gltf-6370b5ce987db2847aaacb4df5f45473.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"Applause": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Applause.tres",
+"use_external/path": "uid://b0j8311010dra"
+},
+"Books": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Books.tres",
+"use_external/path": "uid://bxv5cmxkdcu1l"
+},
+"Burger": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Burger.tres",
+"use_external/path": "uid://b8ms4t1dvoxi6"
+},
+"Caution": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Caution.tres",
+"use_external/path": "uid://2r5v7rt421s6"
+},
+"Clock": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Clock.tres",
+"use_external/path": "uid://slg7pdww23np"
+},
+"Couch": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/CouchMat.tres",
+"use_external/path": "uid://o50pxkk3x3sa"
+},
+"Couch2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/CouchMat2.tres",
+"use_external/path": "uid://bpc83lbhcgbaw"
+},
+"Couch3": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/CouchMat3.tres",
+"use_external/path": "uid://dood4torwtdhf"
+},
+"Crates": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Crates.tres",
+"use_external/path": "uid://u1iyhrh5oagm"
+},
+"Cry": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Cry.tres",
+"use_external/path": "uid://dx7hp6sexxeam"
+},
+"Curtain": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Curtain.tres",
+"use_external/path": "uid://bjbyfvnjap348"
+},
+"Door": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Door.tres",
+"use_external/path": "uid://dbxfnkoboht4h"
+},
+"Fridge.001": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Fridge.001.tres",
+"use_external/path": "uid://denqdlyu1vy04"
+},
+"FunkyFloor": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/FunkyFloor.tres",
+"use_external/path": "uid://d4mjcu436i4d7"
+},
+"FunkyFloorAlt": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/FunkyFloorAlt.tres",
+"use_external/path": "uid://ctse3bjqy12b"
+},
+"FunkyFloorAlt2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/FunkyFloorAlt2.tres",
+"use_external/path": "uid://qgc5brxafapg"
+},
+"MysteryBox": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/MysteryBox.tres",
+"use_external/path": "uid://ct7oxcluhg7pb"
+},
+"Portraits": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Portraits.tres",
+"use_external/path": "uid://b53mftyvn01vn"
+},
+"Portraits.002": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Portraits.002.tres",
+"use_external/path": "uid://bj44uwownucqa"
+},
+"Scream": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Scream.tres",
+"use_external/path": "uid://b35jmrxmvmvks"
+},
+"Signs": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Signs.tres",
+"use_external/path": "uid://ifvodugvfxan"
+},
+"SmilySun": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/SmilySun.tres",
+"use_external/path": "uid://c5dmxopre7bwd"
+},
+"StudioFloor": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/StudioFloor.tres",
+"use_external/path": "uid://dftvjc68xqahx"
+},
+"StudioLight": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/StudioLightMat.tres",
+"use_external/path": "uid://bhu6455u884mb"
+},
+"StudioWall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/StudioWall.tres",
+"use_external/path": "uid://dftoiipvw6eoi"
+},
+"TV": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/TV.tres",
+"use_external/path": "uid://beqdtffcskg81"
+},
+"Table": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Table.tres",
+"use_external/path": "uid://c51fantsmfge7"
+},
+"TableAlt": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/TableAlt.tres",
+"use_external/path": "uid://boiyom12vonyq"
+},
+"Teddy": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Teddy.tres",
+"use_external/path": "uid://bb3bwnjhnulba"
+},
+"Tree": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Tree.tres",
+"use_external/path": "uid://doib47waamltd"
+},
+"Wall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Wall.tres",
+"use_external/path": "uid://cxo4o2hxeiojr"
+},
+"Wall2": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Wall2.tres",
+"use_external/path": "uid://4byv8qw5bbeu"
+},
+"Wall3": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Wall3.tres",
+"use_external/path": "uid://cyn5ldfv05fd2"
+},
+"WelcomeRoomFloor": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/WelcomeRoomFloor.tres",
+"use_external/path": "uid://cu1s4epir5e3j"
+},
+"WelcomeWall": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/WelcomeWall.tres",
+"use_external/path": "uid://bktpjdfjtrm4v"
+},
+"Window": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/Window.tres",
+"use_external/path": "uid://b52t3exqc1mpy"
+},
+"WoodFloor": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Resources/Models/VictoriaStages/WoodFloor.tres",
+"use_external/path": "uid://h508jb6giu2k"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=1

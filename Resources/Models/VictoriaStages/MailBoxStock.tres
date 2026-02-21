@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bq4anm32c652y"]
+
+[ext_resource type="Texture2D" uid="uid://c5cvdxkfxl7mk" path="res://Resources/Models/VictoriaStages/MAILBOXSTOCK.png" id="1_0h41a"]
+
+[resource]
+resource_name = "MailBoxStock"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_0h41a")
+metallic = 0.17557251
+roughness = 0.86106825
+texture_filter = 2

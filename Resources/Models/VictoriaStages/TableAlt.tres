@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://boiyom12vonyq"]
+
+[ext_resource type="Texture2D" uid="uid://bkae2seijaxyx" path="res://Resources/Models/VictoriaStages/TableAltTexture.png" id="1_5oc2d"]
+
+[resource]
+resource_name = "TableAlt"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_5oc2d")
+metallic = 0.29706782
+roughness = 0.599386
+texture_filter = 2

@@ -1,0 +1,12 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://qivjvinyawrr"]
+
+[ext_resource type="Texture2D" uid="uid://dp8fphjv557h8" path="res://Resources/Models/VictoriaStages/SANTA.png.png" id="1_re3h3"]
+
+[resource]
+resource_name = "Santa"
+transparency = 4
+cull_mode = 2
+albedo_texture = ExtResource("1_re3h3")
+metallic = 0.17557251
+roughness = 0.86106825
+texture_filter = 2
