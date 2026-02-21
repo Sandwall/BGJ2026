@@ -23,4 +23,3 @@ func close_email():
 	
 func _process(_delta):
 	pass
-	# mouse_filter = Control.MOUSE_FILTER_STOP if visible else Control.MOUSE_FILTER_IGNORE

@@ -36,6 +36,7 @@ var respawning := false
 @export var lastRespawnPoint : Checkpoint = null
 
 func _ready():
+	Main.inst.plr = self
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _input(event):

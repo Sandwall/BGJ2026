@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="EmailResource" format=3 uid="uid://bcqguj5qsqqnw"]
+
+[ext_resource type="Script" uid="uid://bf1ybiskyl8b7" path="res://Scripts/EmailResource.gd" id="1_kuc3u"]
+
+[resource]
+script = ExtResource("1_kuc3u")
+metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

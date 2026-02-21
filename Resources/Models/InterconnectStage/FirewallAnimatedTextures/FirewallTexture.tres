@@ -1,0 +1,14 @@
+[gd_resource type="AnimatedTexture" format=3 uid="uid://bgpaa7dm6ihi1"]
+
+[ext_resource type="Texture2D" uid="uid://bxl72aspymwhc" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/ASCIIFire1.png" id="1_2n10v"]
+[ext_resource type="Texture2D" uid="uid://cemfulw2xr0x1" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/ASCIIFire2.png" id="2_6xg4p"]
+[ext_resource type="Texture2D" uid="uid://cjrt7hpp26vwd" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/ASCIIFire3.png" id="3_rwdit"]
+
+[resource]
+frames = 3
+frame_0/texture = ExtResource("1_2n10v")
+frame_0/duration = 0.25
+frame_1/texture = ExtResource("2_6xg4p")
+frame_1/duration = 0.25
+frame_2/texture = ExtResource("3_rwdit")
+frame_2/duration = 0.25

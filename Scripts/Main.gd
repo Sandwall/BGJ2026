@@ -5,9 +5,5 @@ static var inst: Main = null
 @onready var hud: HUD = $HUD
 @onready var plr: Player = null
 
-func _ready():
+func _init():
 	inst = self
-
-
-func _process(delta):
-	pass

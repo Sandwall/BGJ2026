@@ -6,8 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://qanilbdahy1v" path="res://Scenes/Stage/DuckieStageSpaceAge.tscn" id="3_p70al"]
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
 [ext_resource type="PackedScene" uid="uid://cewhef2lpvpru" path="res://Scenes/Enviroment/Platform.tscn" id="5_p70al"]
-[ext_resource type="Script" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
-[ext_resource type="Script" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
+[ext_resource type="Script" uid="uid://d0sdi3ppa8gg4" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
+[ext_resource type="PackedScene" uid="uid://13rb6aiq25xy" path="res://Scenes/Enviroment/Wall.tscn" id="7_kn06e"]
+[ext_resource type="PackedScene" uid="uid://b7cylcievqyc5" path="res://Scenes/Enviroment/MovingPlatform.tscn" id="7_uo7di"]
+[ext_resource type="Script" uid="uid://bf8jqwk1701ou" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
+[ext_resource type="Script" uid="uid://tgsi8i4qi0ec" path="res://Scripts/AlwaysFacePlayer.gd" id="8_7yo87"]
+[ext_resource type="PackedScene" uid="uid://pyo8hh6njkkh" path="res://Scenes/Enviroment/Firewall.tscn" id="12_ti1bm"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -28,6 +32,20 @@ fog_light_color = Color(0, 0, 0, 1)
 fog_density = 1.0
 fog_depth_begin = 1.5
 fog_depth_end = 160.0
+
+[sub_resource type="Curve3D" id="Curve3D_kn06e"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, -8, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_ti1bm"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, -8, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p70al"]
 size = Vector3(500, 10, 500)
@@ -50,7 +68,7 @@ environment = SubResource("Environment_5nsto")
 transform = Transform3D(1, 0, 0, 0, -0.54902303, 0.83580726, 0, -0.83580726, -0.54902303, 0, 0, 0)
 
 [node name="Player" parent="." unique_id=1703810380 instance=ExtResource("1_5cjrv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.375, 0)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.3559253, -28.255297)
 
 [node name="DuckieStage" type="Node3D" parent="." unique_id=1804239352]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.496911e-07, 0, -40.085136)
@@ -64,59 +82,83 @@ transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.4
 
 [node name="InterconnectStage" parent="." unique_id=338793185 instance=ExtResource("4_45d1s")]
 
-[node name="Parkour1" type="Node3D" parent="InterconnectStage" unique_id=1718981119]
+[node name="ParkourSegments" type="Node3D" parent="." unique_id=658885363]
+
+[node name="Parkour1" type="Node3D" parent="ParkourSegments" unique_id=1718981119]
 visible = false
 
-[node name="Platform3" parent="InterconnectStage/Parkour1" unique_id=1004886532 instance=ExtResource("5_p70al")]
+[node name="Platform3" parent="ParkourSegments/Parkour1" unique_id=1004886532 instance=ExtResource("5_p70al")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7043934, 0.22204208, 6.7452087)
 
-[node name="Platform4" parent="InterconnectStage/Parkour1" unique_id=140619556 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5572798, -0.5400677, 12.4926815)
+[node name="Platform4" parent="ParkourSegments/Parkour1" unique_id=140619556 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25499868, -0.5400677, 12.4926815)
 
-[node name="Platform9" parent="InterconnectStage/Parkour1" unique_id=1776227859 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3010688, -0.5400677, 17.576654)
+[node name="Platform9" parent="ParkourSegments/Parkour1" unique_id=1776227859 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.7897892, -0.5400677, 18.423584)
 
-[node name="Platform10" parent="InterconnectStage/Parkour1" unique_id=1955719953 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.092332, -0.22035933, 22.687082)
+[node name="Platform5" parent="ParkourSegments/Parkour1" unique_id=280326438 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0904808, -0.5400677, -6.798974)
 
-[node name="Platform5" parent="InterconnectStage/Parkour1" unique_id=280326438 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0904808, -0.5400677, -5.825266)
+[node name="Platform6" parent="ParkourSegments/Parkour1" unique_id=606120791 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.823456, -0.54006577, -11.0232315)
 
-[node name="Platform6" parent="InterconnectStage/Parkour1" unique_id=606120791 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2391098, -0.5400677, -10.1573925)
-
-[node name="Platform7" parent="InterconnectStage/Parkour1" unique_id=796756811 instance=ExtResource("5_p70al")]
+[node name="Platform7" parent="ParkourSegments/Parkour1" unique_id=796756811 instance=ExtResource("5_p70al")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -16.027029)
 
-[node name="Platform8" parent="InterconnectStage/Parkour1" unique_id=1597597321 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3221531, -0.5400677, -19.275127)
+[node name="Parkour2" type="Node3D" parent="ParkourSegments" unique_id=1493111555]
 
-[node name="Parkour2" type="Node3D" parent="InterconnectStage" unique_id=1493111555]
-visible = false
+[node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour2" unique_id=387065227]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -20)
+curve = SubResource("Curve3D_kn06e")
 
-[node name="Platform3" parent="InterconnectStage/Parkour2" unique_id=859398829 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 6.7452087)
+[node name="Platform" parent="ParkourSegments/Parkour2/Path3D" unique_id=1889139088 instance=ExtResource("7_uo7di")]
+transform = Transform3D(-4.3711346e-08, 0, 0.9999984, 0, 0.99999624, 0, -0.99999905, 0, -4.3711317e-08, 8, 0, 0)
 
-[node name="Platform4" parent="InterconnectStage/Parkour2" unique_id=1023783612 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 12.4926815)
+[node name="Wall" parent="ParkourSegments/Parkour2" unique_id=1364744415 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.517497, 0, -17.284199)
+script = ExtResource("8_7yo87")
 
-[node name="Platform9" parent="InterconnectStage/Parkour2" unique_id=1872296095 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 17.576654)
+[node name="Platform" parent="ParkourSegments/Parkour2" unique_id=859398829 instance=ExtResource("5_p70al")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 3.411869, 0, -15.643661)
 
-[node name="Platform10" parent="InterconnectStage/Parkour2" unique_id=851981915 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.22035933, 22.687082)
+[node name="Platform2" parent="ParkourSegments/Parkour2" unique_id=152506084 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.15463294, -0.10347, 0.98253894, -0.005155782, 0.99440277, 0.10553079, -0.9879588, -0.021384284, 0.15323392, -2.4854498, 0, -14.306906)
 
-[node name="Platform5" parent="InterconnectStage/Parkour2" unique_id=101745279 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -5.825266)
+[node name="Platform3" parent="ParkourSegments/Parkour2" unique_id=1854966440 instance=ExtResource("5_p70al")]
+transform = Transform3D(-0.94776505, 0.028798375, -0.31766707, -0.005155779, 0.99440277, 0.105530806, 0.3189282, 0.1016562, -0.9423115, -6.8359985, 0.1718297, -12.210685)
 
-[node name="Platform6" parent="InterconnectStage/Parkour2" unique_id=1947272875 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -10.840788)
+[node name="Platform4" parent="ParkourSegments/Parkour2" unique_id=44263086 instance=ExtResource("5_p70al")]
+transform = Transform3D(-0.83197844, 0.054282792, -0.5521465, -0.005155776, 0.9944029, 0.10553082, 0.5547844, 0.09064607, -0.8270416, -2.013857, 0.17051232, -7.3010507)
 
-[node name="Platform7" parent="InterconnectStage/Parkour2" unique_id=1241746748 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1359935, -0.5400677, -14.633625)
+[node name="Platform5" parent="ParkourSegments/Parkour2" unique_id=1367429136 instance=ExtResource("5_p70al")]
+transform = Transform3D(-0.9453491, -0.039252903, 0.32368913, -0.0051557804, 0.9944029, 0.10553083, -0.32601985, 0.09809455, -0.94026005, -3.5614393, 0.17051232, 11.377201)
 
-[node name="Platform8" parent="InterconnectStage/Parkour2" unique_id=1795844064 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -21.126675)
+[node name="Platform6" parent="ParkourSegments/Parkour2" unique_id=1042322992 instance=ExtResource("5_p70al")]
+transform = Transform3D(-0.83197844, 0.054282792, -0.5521465, -0.005155776, 0.9944029, 0.10553082, 0.5547844, 0.09064607, -0.8270416, 2.4900694, 0.17051232, 11.181736)
+
+[node name="Platform7" parent="ParkourSegments/Parkour2" unique_id=967045402 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.99115497, 0.019076679, -0.1313335, -0.0051557873, 0.9944029, 0.10553082, 0.13261166, -0.10392023, 0.9857053, -0.5606525, 0.17051232, 17.342646)
+
+[node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour2" unique_id=1467582338]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 5.843357)
+curve = SubResource("Curve3D_ti1bm")
+
+[node name="Platform" parent="ParkourSegments/Parkour2/Path3D2" unique_id=100292224 instance=ExtResource("7_uo7di")]
+transform = Transform3D(-4.3711346e-08, 0, 0.9999984, 0, 0.99999624, 0, -0.99999905, 0, -4.3711317e-08, 8, 0, 0)
+
+[node name="Parkour3" type="Node3D" parent="ParkourSegments" unique_id=354506518]
+
+[node name="Parkour4" type="Node3D" parent="ParkourSegments" unique_id=1757538292]
+
+[node name="Parkour5" type="Node3D" parent="ParkourSegments" unique_id=1492741031]
+
+[node name="Parkour6" type="Node3D" parent="ParkourSegments" unique_id=681673264]
+
+[node name="Parkour7" type="Node3D" parent="ParkourSegments" unique_id=1570808554]
+
+[node name="Parkour8" type="Node3D" parent="ParkourSegments" unique_id=548780802]
+
+[node name="Parkour9" type="Node3D" parent="ParkourSegments" unique_id=1969001246]
 
 [node name="Deathplane" type="Area3D" parent="." unique_id=1951168762]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -150, 0)
@@ -148,5 +190,12 @@ script = ExtResource("7_y7y61")
 shape = SubResource("BoxShape3D_y7y61")
 
 [node name="StartPlatform" parent="." unique_id=1559250995 instance=ExtResource("5_p70al")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, -2)
+
+[node name="StartPlatform2" parent="." unique_id=944226512 instance=ExtResource("5_p70al")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0, 2)
+
+[node name="FireWall" parent="." unique_id=1513712859 instance=ExtResource("12_ti1bm")]
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, -17.082834, 0)
 
 [connection signal="body_entered" from="Deathplane" to="Deathplane" method="_on_body_entered"]
