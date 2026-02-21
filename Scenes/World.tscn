@@ -65,29 +65,57 @@ transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -3.4
 [node name="InterconnectStage" parent="." unique_id=338793185 instance=ExtResource("4_45d1s")]
 
 [node name="Parkour1" type="Node3D" parent="InterconnectStage" unique_id=1718981119]
+visible = false
 
 [node name="Platform3" parent="InterconnectStage/Parkour1" unique_id=1004886532 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 6.7452087)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7043934, 0.22204208, 6.7452087)
 
 [node name="Platform4" parent="InterconnectStage/Parkour1" unique_id=140619556 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 12.4926815)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5572798, -0.5400677, 12.4926815)
 
 [node name="Platform9" parent="InterconnectStage/Parkour1" unique_id=1776227859 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 17.576654)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.3010688, -0.5400677, 17.576654)
 
 [node name="Platform10" parent="InterconnectStage/Parkour1" unique_id=1955719953 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.22035933, 22.687082)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.092332, -0.22035933, 22.687082)
 
 [node name="Platform5" parent="InterconnectStage/Parkour1" unique_id=280326438 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -5.825266)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0904808, -0.5400677, -5.825266)
 
 [node name="Platform6" parent="InterconnectStage/Parkour1" unique_id=606120791 instance=ExtResource("5_p70al")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -10.840788)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.2391098, -0.5400677, -10.1573925)
 
 [node name="Platform7" parent="InterconnectStage/Parkour1" unique_id=796756811 instance=ExtResource("5_p70al")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -16.027029)
 
 [node name="Platform8" parent="InterconnectStage/Parkour1" unique_id=1597597321 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3221531, -0.5400677, -19.275127)
+
+[node name="Parkour2" type="Node3D" parent="InterconnectStage" unique_id=1493111555]
+visible = false
+
+[node name="Platform3" parent="InterconnectStage/Parkour2" unique_id=859398829 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 6.7452087)
+
+[node name="Platform4" parent="InterconnectStage/Parkour2" unique_id=1023783612 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 12.4926815)
+
+[node name="Platform9" parent="InterconnectStage/Parkour2" unique_id=1872296095 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, 17.576654)
+
+[node name="Platform10" parent="InterconnectStage/Parkour2" unique_id=851981915 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.22035933, 22.687082)
+
+[node name="Platform5" parent="InterconnectStage/Parkour2" unique_id=101745279 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -5.825266)
+
+[node name="Platform6" parent="InterconnectStage/Parkour2" unique_id=1947272875 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -10.840788)
+
+[node name="Platform7" parent="InterconnectStage/Parkour2" unique_id=1241746748 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1359935, -0.5400677, -14.633625)
+
+[node name="Platform8" parent="InterconnectStage/Parkour2" unique_id=1795844064 instance=ExtResource("5_p70al")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -21.126675)
 
 [node name="Deathplane" type="Area3D" parent="." unique_id=1951168762]
