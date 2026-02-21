@@ -9,7 +9,7 @@ data = PackedVector3Array(1.4545, 1.0191, -3.4692998, 1.6363, 0.6791, -3.2867, 1
 
 [node name="Interconnect" parent="." unique_id=1823195337 instance=ExtResource("1_74vt8")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Interconnect/Plane" parent_id_path=PackedInt32Array(1823195337, 1482929248) index="0" unique_id=1323781190]
+[node name="StaticBody3D" type="StaticBody3D" parent="Interconnect/Plane" parent_id_path=PackedInt32Array(1823195337, 869712686) index="0" unique_id=1323781190]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Interconnect/Plane/StaticBody3D" unique_id=1032147185]
 shape = SubResource("ConcavePolygonShape3D_74vt8")

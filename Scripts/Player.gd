@@ -16,6 +16,7 @@ class_name Player extends CharacterBody3D
 
 @export_group("Camera Constants")
 @export var cameraSens := Vector2(0.3, 0.3)
+@export var RESPAWN_HEIGHT := 150.0
 
 #
 # INPUT VALUES
@@ -26,7 +27,13 @@ var lookInput := Vector2.ZERO
 var jumpClicked := false
 var interactClicked := false
 
-var currentEmail: EmailResource = null
+#
+# STATE VALUES
+#
+
+# player's inputs don't go through when respawning...
+var respawning := false
+@export var lastRespawnPoint : Checkpoint = null
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -64,6 +71,12 @@ func _physics_process(delta: float):
 	lookInput *= cameraSens * delta # mouse input is done in the _input function...
 	jumpClicked = Input.is_action_just_pressed("ui_accept")
 	interactClicked = Input.is_action_just_pressed("plr_interact")
+	
+	# this gets set to true when 
+	if respawning:
+		moveInput = Vector2.ZERO
+		if is_on_floor():
+			respawning = false
 
 	# pre-update updates
 	update_camera()
@@ -112,6 +125,16 @@ func _physics_process(delta: float):
 	# after-update updates
 	lookInput = Vector2.ZERO
 	prevMoveInput = moveInput
+
+func respawn() -> void:
+	if lastRespawnPoint == null: return
+	
+	respawning = true
+	global_position = lastRespawnPoint.global_position
+	global_position.y += RESPAWN_HEIGHT
+	
+	velocity.x = 0.0
+	velocity.z = 0.0
 
 func update_camera() -> void:
 	cameraRef.rotation.x -= lookInput.y
