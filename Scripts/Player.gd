@@ -93,7 +93,9 @@ func _physics_process(delta: float):
 	var floorDecelDelta := GROUND_SPEED * delta / GROUND_DECEL_TIME
 	var airDelta := AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
 
-	if is_on_floor():
+	var onFloor = is_on_floor()
+
+	if onFloor:
 		if not prevOnGround:
 			# play landing sfx
 			pass
@@ -143,7 +145,7 @@ func _physics_process(delta: float):
 	# after-update updates
 	lookInput = Vector2.ZERO
 	prevMoveInput = moveInput
-	prevOnGround = is_on_floor()
+	prevOnGround = onFloor
 
 func respawn() -> void:
 	if lastRespawnPoint == null: return
