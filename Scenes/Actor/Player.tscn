@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://0dq4hrm7g0uh"]
 
 [ext_resource type="Script" uid="uid://dy2oerujlkby3" path="res://Scripts/Player.gd" id="1_70wq3"]
-[ext_resource type="Texture2D" uid="uid://qnijjn46syjb" path="res://icon.svg" id="2_vdnb4"]
+[ext_resource type="Texture2D" uid="uid://b1w4o6iwn0cur" path="res://Resources/Sprites/Mail/MailGrabFrames/0001.png" id="2_88gag"]
 [ext_resource type="Script" uid="uid://bbtgylgnwfgps" path="res://Scripts/MailHeldVisual.gd" id="3_88gag"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0f38m"]
@@ -86,8 +86,8 @@ material_override = SubResource("StandardMaterial3D_vdnb4")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.62336195, -0.9318232)
 
 [node name="Mail" type="Sprite3D" parent="MailHolder" unique_id=1667019444]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
-texture = ExtResource("2_vdnb4")
+pixel_size = 0.0025
+texture = ExtResource("2_88gag")
 script = ExtResource("3_88gag")
 
 [node name="RespawnParticles" type="GPUParticles3D" parent="." unique_id=1326078453]

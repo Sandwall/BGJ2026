@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bldylc6f5dtgf" path="res://Scripts/Main.gd" id="1_rgh2o"]
 [ext_resource type="PackedScene" uid="uid://b0urcnetw2ffk" path="res://Scenes/World.tscn" id="2_kln2b"]
 [ext_resource type="PackedScene" uid="uid://tsnvl1id1wr8" path="res://Scenes/HUD.tscn" id="3_kln2b"]
+[ext_resource type="PackedScene" uid="uid://demn3bwpemb3n" path="res://Scenes/Actor/TransitionLayer.tscn" id="4_rgh2o"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_kln2b"]
 font_size = 64
@@ -79,3 +80,5 @@ text = "PRESS ENTER TO UNPAUSE"
 label_settings = SubResource("LabelSettings_rgh2o")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Transition" parent="." unique_id=741615814 instance=ExtResource("4_rgh2o")]

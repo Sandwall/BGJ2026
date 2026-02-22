@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dhnsrxbagojws"]
 
 [ext_resource type="PackedScene" uid="uid://buviru1a4ey6m" path="res://Resources/Models/VictoriaStages/Stage2.gltf" id="1_3rvul"]
+[ext_resource type="PackedScene" path="res://Scenes/Actor/Victoria.tscn" id="2_jjl32"]
+[ext_resource type="PackedScene" path="res://Scenes/Actor/Mail.tscn" id="3_5tyru"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3rvul"]
 size = Vector3(37, 0.5, 87.46463)
@@ -15,58 +17,58 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.3
 
 [node name="Stage2" parent="Scale/Offset" unique_id=576196214 instance=ExtResource("1_3rvul")]
 
-[node name="Point_020" parent="Scale/Offset/Stage2" index="79" unique_id=1429353407]
+[node name="Point_020" parent="Scale/Offset/Stage2" index="79" unique_id=1305842739]
 light_energy = 21.741
 
-[node name="Point_021" parent="Scale/Offset/Stage2" index="80" unique_id=1997305044]
+[node name="Point_021" parent="Scale/Offset/Stage2" index="80" unique_id=412587328]
 light_energy = 21.741
 
-[node name="Point_022" parent="Scale/Offset/Stage2" index="81" unique_id=1057378648]
+[node name="Point_022" parent="Scale/Offset/Stage2" index="81" unique_id=844069203]
 light_energy = 21.741
 
-[node name="Point_023" parent="Scale/Offset/Stage2" index="82" unique_id=1989908488]
+[node name="Point_023" parent="Scale/Offset/Stage2" index="82" unique_id=1670209008]
 light_energy = 21.741
 
-[node name="Point_024" parent="Scale/Offset/Stage2" index="83" unique_id=1248285114]
+[node name="Point_024" parent="Scale/Offset/Stage2" index="83" unique_id=1691545795]
 light_energy = 21.741
 
-[node name="Point_025" parent="Scale/Offset/Stage2" index="84" unique_id=872559208]
+[node name="Point_025" parent="Scale/Offset/Stage2" index="84" unique_id=268152247]
 light_energy = 21.741
 
-[node name="Spot_002" parent="Scale/Offset/Stage2" index="85" unique_id=890789654]
+[node name="Spot_002" parent="Scale/Offset/Stage2" index="85" unique_id=2009024354]
 light_energy = 21.741
 
-[node name="Spot_003" parent="Scale/Offset/Stage2" index="86" unique_id=1118512836]
+[node name="Spot_003" parent="Scale/Offset/Stage2" index="86" unique_id=1844749557]
 light_energy = 21.741
 
-[node name="Spot_046" parent="Scale/Offset/Stage2" index="87" unique_id=1905061207]
+[node name="Spot_046" parent="Scale/Offset/Stage2" index="87" unique_id=1639559348]
 light_energy = 21.741
 
-[node name="Spot_047" parent="Scale/Offset/Stage2" index="88" unique_id=931330425]
+[node name="Spot_047" parent="Scale/Offset/Stage2" index="88" unique_id=1753130984]
 light_energy = 21.741
 
-[node name="Spot_048" parent="Scale/Offset/Stage2" index="89" unique_id=924823228]
+[node name="Spot_048" parent="Scale/Offset/Stage2" index="89" unique_id=5506342]
 light_energy = 21.741
 
-[node name="Spot_049" parent="Scale/Offset/Stage2" index="90" unique_id=1582327943]
+[node name="Spot_049" parent="Scale/Offset/Stage2" index="90" unique_id=2088835597]
 light_energy = 21.741
 
-[node name="Spot_050" parent="Scale/Offset/Stage2" index="91" unique_id=739649401]
+[node name="Spot_050" parent="Scale/Offset/Stage2" index="91" unique_id=511515943]
 light_energy = 21.741
 
-[node name="Spot_051" parent="Scale/Offset/Stage2" index="92" unique_id=1474493902]
+[node name="Spot_051" parent="Scale/Offset/Stage2" index="92" unique_id=557896987]
 light_energy = 21.741
 
-[node name="Spot_052" parent="Scale/Offset/Stage2" index="110" unique_id=592444063]
+[node name="Spot_052" parent="Scale/Offset/Stage2" index="110" unique_id=1366745578]
 light_energy = 21.741
 
-[node name="Spot_053" parent="Scale/Offset/Stage2" index="111" unique_id=751722917]
+[node name="Spot_053" parent="Scale/Offset/Stage2" index="111" unique_id=2051353573]
 light_energy = 21.741
 
-[node name="Point_026" parent="Scale/Offset/Stage2" index="117" unique_id=1156949913]
+[node name="Point_026" parent="Scale/Offset/Stage2" index="117" unique_id=685567239]
 light_energy = 21.741
 
-[node name="Point_019" parent="Scale/Offset/Stage2" index="132" unique_id=1803550774]
+[node name="Point_019" parent="Scale/Offset/Stage2" index="132" unique_id=514066797]
 light_energy = 21.741
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1675355666]
@@ -74,5 +76,12 @@ light_energy = 21.741
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1926897910]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 10.200001, -0.24999994, 43.732246)
 shape = SubResource("BoxShape3D_3rvul")
+
+[node name="Victoria" parent="." unique_id=1331882181 node_paths=PackedStringArray("email_pickup") instance=ExtResource("2_jjl32")]
+transform = Transform3D(0.01579453, 0, 0.99987525, 0, 1, 0, -0.99987525, 0, 0.01579453, 13.280127, 0.015589384, 62.157593)
+email_pickup = NodePath("../Mail")
+
+[node name="Mail" parent="." unique_id=395569316 instance=ExtResource("3_5tyru")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 3.8669305, 1.1545147, 33.6781)
 
 [editable path="Scale/Offset/Stage2"]

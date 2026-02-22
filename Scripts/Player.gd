@@ -21,6 +21,7 @@ class_name Player extends CharacterBody3D
 @export var FOOTSTEP_TIME := 0.6;
 
 var footstepTimer := 3.0;
+
 #
 # INPUT VALUES
 #

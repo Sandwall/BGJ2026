@@ -4,14 +4,16 @@
 [ext_resource type="Script" uid="uid://byyorc4pos538" path="res://Scripts/StoryManager.gd" id="1_q2d71"]
 [ext_resource type="Script" uid="uid://dm5qswx1luuw3" path="res://Scripts/MusicManager.gd" id="2_8l3nt"]
 [ext_resource type="PackedScene" uid="uid://bhm77tctxni61" path="res://Scenes/Stage/DuckieStageOffice.tscn" id="2_gjpho"]
+[ext_resource type="PackedScene" uid="uid://qanilbdahy1v" path="res://Scenes/Stage/DuckieStageSpaceAge.tscn" id="3_p70al"]
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
-[ext_resource type="PackedScene" uid="uid://djay3cdf7ofo3" path="res://Scenes/Stage/VictoriaStage01.tscn" id="4_ti1bm"]
 [ext_resource type="PackedScene" uid="uid://cewhef2lpvpru" path="res://Scenes/Enviroment/Platform.tscn" id="5_p70al"]
 [ext_resource type="Script" uid="uid://d0sdi3ppa8gg4" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
+[ext_resource type="PackedScene" uid="uid://b6kpur7iwdl45" path="res://Scenes/Stage/DuckieStageSurreal.tscn" id="6_rwt1y"]
 [ext_resource type="PackedScene" uid="uid://13rb6aiq25xy" path="res://Scenes/Enviroment/Wall.tscn" id="7_kn06e"]
 [ext_resource type="PackedScene" uid="uid://b7cylcievqyc5" path="res://Scenes/Enviroment/MovingPlatform.tscn" id="7_uo7di"]
 [ext_resource type="Script" uid="uid://bf8jqwk1701ou" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
 [ext_resource type="Script" uid="uid://tgsi8i4qi0ec" path="res://Scripts/AlwaysFacePlayer.gd" id="8_7yo87"]
+[ext_resource type="PackedScene" uid="uid://f4u1p0feiatu" path="res://Scenes/Enviroment/AsciiBox3.tscn" id="8_xiqgv"]
 [ext_resource type="PackedScene" uid="uid://pyo8hh6njkkh" path="res://Scenes/Enviroment/Firewall.tscn" id="12_ti1bm"]
 [ext_resource type="WwiseEvent" uid="uid://bnhxern0gusg1" path="res://Wwise/resources/Event/{6343721D-3E5B-4BE6-B385-325C0D8DA43E}.tres" id="13_op4cu"]
 [ext_resource type="WwiseEvent" uid="uid://dl66vmnvxj4fx" path="res://Wwise/resources/Event/{7D9DF732-3627-476C-B449-7A8187CB2C37}.tres" id="15_kwl8l"]
@@ -70,6 +72,42 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="Curve3D" id="Curve3D_waglr"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_xiqgv"]
+closed = true
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7.65, -8.535, 0, 0, 0, 0, 0, 0, 0, 7.78, 0),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
+
+[sub_resource type="Curve3D" id="Curve3D_rwt1y"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -6.75, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_mvfa8"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6.16, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_r0dna"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -9.595, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_p70al"]
 size = Vector3(500, 10, 500)
 
@@ -111,14 +149,18 @@ transform = Transform3D(1, 0, 0, 0, -0.54902303, 0.83580726, 0, -0.83580726, -0.
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.3559253, -28.255297)
 
 [node name="DuckieStage" type="Node3D" parent="." unique_id=1804239352]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4969094e-07, 0, -40.085136)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.4969094e-07, 0, -40.18694)
 
 [node name="DuckieStageOffice" parent="DuckieStage" unique_id=1367273004 instance=ExtResource("2_gjpho")]
 
-[node name="VictoriaStage" type="Node3D" parent="." unique_id=2083918906]
-transform = Transform3D(1, 0, -1.7484554e-07, 0, 1, 0, 1.7484554e-07, 0, 1, -3.4969094e-07, 0, 40.146286)
+[node name="DuckieStageSpaceAge" parent="DuckieStage" unique_id=414288361 instance=ExtResource("3_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20, 0)
 
-[node name="VictoriaStage01" parent="VictoriaStage" unique_id=1341088577 instance=ExtResource("4_ti1bm")]
+[node name="DuckieStageSurreal" parent="DuckieStage" unique_id=1306688396 instance=ExtResource("6_rwt1y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20, 0)
+
+[node name="VictoriaStage" type="Node3D" parent="." unique_id=2083918906]
+transform = Transform3D(1, 0, -1.7484554e-07, 0, 1, 0, 1.7484554e-07, 0, 1, -3.4969094e-07, 0, 40.194927)
 
 [node name="InterconnectStage" parent="." unique_id=338793185 instance=ExtResource("4_45d1s")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034585953, 0.08090973, 0.010345459)
@@ -147,7 +189,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.823456, -0.54006577, -11.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.107664585, -0.5400677, -17.054037)
 
 [node name="Parkour2" type="Node3D" parent="ParkourSegments" unique_id=1493111555]
-visible = false
 
 [node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour2" unique_id=387065227]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -20)
@@ -156,7 +197,7 @@ curve = SubResource("Curve3D_kn06e")
 [node name="Platform" parent="ParkourSegments/Parkour2/Path3D" unique_id=111397926 instance=ExtResource("7_uo7di")]
 transform = Transform3D(-4.3711346e-08, 0, 0.9999984, 0, 0.99999624, 0, -0.99999905, 0, -4.3711317e-08, 8, 0, 0)
 
-[node name="Wall" parent="ParkourSegments/Parkour2" unique_id=1364744415 instance=ExtResource("7_kn06e")]
+[node name="Wall" parent="ParkourSegments/Parkour2" unique_id=1213530935 instance=ExtResource("7_kn06e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.517497, 0, -17.284199)
 script = ExtResource("8_7yo87")
 
@@ -179,7 +220,7 @@ transform = Transform3D(-0.9453491, -0.039252903, 0.32368913, -0.0051557804, 0.9
 transform = Transform3D(-0.83197844, 0.054282792, -0.5521465, -0.005155776, 0.9944029, 0.10553082, 0.5547844, 0.09064607, -0.8270416, 2.4900694, 0.17051232, 11.181736)
 
 [node name="Platform7" parent="ParkourSegments/Parkour2" unique_id=967045402 instance=ExtResource("5_p70al")]
-transform = Transform3D(0.99115497, 0.019076679, -0.1313335, -0.0051557873, 0.9944029, 0.10553082, 0.13261166, -0.10392023, 0.9857053, -0.5606525, 0.17051232, 17.342646)
+transform = Transform3D(0.99115497, 0.019076677, -0.13133352, -0.029615453, 0.9964535, -0.07876472, 0.1293652, 0.081957564, 0.9882043, -0.5606525, 0.17051232, 17.821718)
 
 [node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour2" unique_id=1467582338]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 5.843357)
@@ -197,7 +238,7 @@ transform = Transform3D(1, 0, 0, 0, 0.7979628, 0.60270673, 0, -0.60270673, 0.797
 [node name="Platform2" parent="ParkourSegments/Parkour3" unique_id=97203186 instance=ExtResource("5_p70al")]
 transform = Transform3D(1, 0, 0, 0, 0.99042284, -0.13806686, 0, 0.13806686, 0.99042284, 3.4862368, -0.87703645, -12.863491)
 
-[node name="Platform3" parent="ParkourSegments/Parkour3" unique_id=859398829 instance=ExtResource("5_p70al")]
+[node name="Platform3" parent="ParkourSegments/Parkour3" unique_id=1632178870 instance=ExtResource("5_p70al")]
 transform = Transform3D(0.8725557, 0.067447685, 0.48383608, 0, 0.99042284, -0.13806686, -0.48851466, 0.12047102, 0.86419904, 6.0167007, -0.87703645, -8.331785)
 
 [node name="Platform4" parent="ParkourSegments/Parkour3" unique_id=1766577520 instance=ExtResource("5_p70al")]
@@ -234,20 +275,291 @@ sitLength = 1.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2869554, 0.4728608, 13.744178)
 curve = SubResource("Curve3D_8l3nt")
 
-[node name="Platform" parent="ParkourSegments/Parkour3/Path3D2" unique_id=1889139088 instance=ExtResource("7_uo7di")]
+[node name="Platform" parent="ParkourSegments/Parkour3/Path3D2" unique_id=159337615 instance=ExtResource("7_uo7di")]
 transform = Transform3D(-1, 0, -8.7421945e-08, 0, 0.99999046, 0, 8.742278e-08, 0, -0.99999046, 0, 0, 0)
 timeLength = 4.0
 sitLength = 1.0
 
 [node name="Parkour4" type="Node3D" parent="ParkourSegments" unique_id=1757538292]
+visible = false
+
+[node name="Platform" parent="ParkourSegments/Parkour4" unique_id=1817597436 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.8113828, -1.0999017, -14.245271)
+
+[node name="Platform4" parent="ParkourSegments/Parkour4" unique_id=753532663 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9643893, -1.6319225, -18.225887)
+
+[node name="Platform2" parent="ParkourSegments/Parkour4" unique_id=740702074 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.875689, -0.67261815, -10.166039)
+
+[node name="Platform3" parent="ParkourSegments/Parkour4" unique_id=760196366 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8660694, -0.27735698, -5.5115323)
+
+[node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour4" unique_id=2057577350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.866, 0.12967956, -14.267)
+curve = SubResource("Curve3D_waglr")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour4/Path3D" unique_id=548396542 instance=ExtResource("8_xiqgv")]
+rotation_mode = 0
+timeLength = 2.0
+sitLength = 2.0
+
+[node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour4" unique_id=463980365]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.81263506, 0.12967956, -10.470444)
+curve = SubResource("Curve3D_waglr")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour4/Path3D2" unique_id=541921575 instance=ExtResource("8_xiqgv")]
+rotation_mode = 0
+timeLength = 2.0
+sitLength = 2.0
+
+[node name="Platform5" parent="ParkourSegments/Parkour4" unique_id=614706582 instance=ExtResource("5_p70al")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.5144699, -1.0999017, 14.773391)
+
+[node name="Platform6" parent="ParkourSegments/Parkour4" unique_id=1155329075 instance=ExtResource("5_p70al")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.261302, -1.6319225, 18.754007)
+
+[node name="Platform7" parent="ParkourSegments/Parkour4" unique_id=352446218 instance=ExtResource("5_p70al")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.1726022, -0.67261815, 10.6941595)
+
+[node name="Platform8" parent="ParkourSegments/Parkour4" unique_id=510338599 instance=ExtResource("5_p70al")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.5691559, -0.27735698, 6.039652)
+
+[node name="Path3D3" type="Path3D" parent="ParkourSegments/Parkour4" unique_id=362293245]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.5690873, 0.12967956, 14.79512)
+curve = SubResource("Curve3D_waglr")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour4/Path3D3" unique_id=424900282 instance=ExtResource("8_xiqgv")]
+rotation_mode = 0
+timeLength = 2.0
+sitLength = 2.0
+
+[node name="Path3D4" type="Path3D" parent="ParkourSegments/Parkour4" unique_id=1077873204]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.109548, 0.12967956, 10.998564)
+curve = SubResource("Curve3D_waglr")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour4/Path3D4" unique_id=221428613 instance=ExtResource("8_xiqgv")]
+rotation_mode = 0
+timeLength = 2.0
+sitLength = 2.0
 
 [node name="Parkour5" type="Node3D" parent="ParkourSegments" unique_id=1492741031]
+visible = false
+
+[node name="Platform" parent="ParkourSegments/Parkour5" unique_id=210361012 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18.469711)
+
+[node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour5" unique_id=292878558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.7788887, 14.090094)
+curve = SubResource("Curve3D_xiqgv")
+
+[node name="Platform2" parent="ParkourSegments/Parkour5/Path3D" unique_id=1535552722 instance=ExtResource("7_uo7di")]
+rotation_mode = 0
+
+[node name="Wall" parent="ParkourSegments/Parkour5" unique_id=296422481 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1950402, -6.744412, 12.980101)
+script = ExtResource("8_7yo87")
+
+[node name="Wall2" parent="ParkourSegments/Parkour5" unique_id=1190545398 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.587982, -3.351851, 7.852872)
+script = ExtResource("8_7yo87")
+
+[node name="Wall3" parent="ParkourSegments/Parkour5" unique_id=1372766594 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9122431, -1.1033969, 3.694563)
+script = ExtResource("8_7yo87")
+
+[node name="Platform2" parent="ParkourSegments/Parkour5" unique_id=27804926 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20858762, -0.34006786, -18.625437)
+
+[node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour5" unique_id=1132171977]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08637309, -0.3170061, -13.32374)
+curve = SubResource("Curve3D_rwt1y")
+
+[node name="Platform3" parent="ParkourSegments/Parkour5/Path3D2" unique_id=1889139088 instance=ExtResource("7_uo7di")]
+rotation_mode = 0
+
+[node name="Path3D4" type="Path3D" parent="ParkourSegments/Parkour5" unique_id=1741833840]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.08637309, -0.3170061, -4.3774443)
+curve = SubResource("Curve3D_rwt1y")
+
+[node name="Platform3" parent="ParkourSegments/Parkour5/Path3D4" unique_id=1626517203 instance=ExtResource("7_uo7di")]
+rotation_mode = 0
+
+[node name="Path3D3" type="Path3D" parent="ParkourSegments/Parkour5" unique_id=344011050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.3072658, -8.05342)
+curve = SubResource("Curve3D_mvfa8")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour5/Path3D3" unique_id=1508143948 instance=ExtResource("8_xiqgv")]
+rotation_mode = 0
 
 [node name="Parkour6" type="Node3D" parent="ParkourSegments" unique_id=681673264]
+visible = false
 
-[node name="Parkour7" type="Node3D" parent="ParkourSegments" unique_id=1570808554]
+[node name="Platform" parent="ParkourSegments/Parkour6" unique_id=859398829 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.518875, -0.7495594, 19.295208)
 
-[node name="Parkour8" type="Node3D" parent="ParkourSegments" unique_id=548780802]
+[node name="Platform2" parent="ParkourSegments/Parkour6" unique_id=521540012 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9167604, -0.7495594, 19.295208)
+
+[node name="Platform3" parent="ParkourSegments/Parkour6" unique_id=1049686339 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.518875, -0.8707123, -18.485271)
+
+[node name="Platform4" parent="ParkourSegments/Parkour6" unique_id=1209359545 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9167604, -0.8947506, -18.485271)
+
+[node name="Platform5" parent="ParkourSegments/Parkour6" unique_id=1501895165 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.518875, 0.22727394, 6.856142)
+
+[node name="Platform6" parent="ParkourSegments/Parkour6" unique_id=1764267154 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9167604, 0.22727394, 6.856142)
+
+[node name="Platform7" parent="ParkourSegments/Parkour6" unique_id=508231295 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.518875, 0.22727394, -6.857458)
+
+[node name="Platform8" parent="ParkourSegments/Parkour6" unique_id=976983415 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9167604, 0.22727394, -6.857458)
+
+[node name="Wall" parent="ParkourSegments/Parkour6" unique_id=1364744415 instance=ExtResource("7_kn06e")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 0.20104313, -0.06393862, -11.765993)
+script = ExtResource("8_7yo87")
+
+[node name="Platform9" parent="ParkourSegments/Parkour6" unique_id=123603170 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.527295, -11.402257)
+
+[node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour6" unique_id=981496132]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 0.052448034, -1.959605, -16.22948)
+curve = SubResource("Curve3D_r0dna")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour6/Path3D" unique_id=401066936 instance=ExtResource("8_xiqgv")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_mode = 0
+
+[node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour6" unique_id=385361558]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 0.052448034, -1.959605, -6.2417717)
+curve = SubResource("Curve3D_r0dna")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour6/Path3D2" unique_id=1426799286 instance=ExtResource("8_xiqgv")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_mode = 0
+
+[node name="Platform10" parent="ParkourSegments/Parkour6" unique_id=1603942059 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.527295, 12.565535)
+
+[node name="Path3D3" type="Path3D" parent="ParkourSegments/Parkour6" unique_id=603071152]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 0.052448034, -1.959605, 8.880419)
+curve = SubResource("Curve3D_r0dna")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour6/Path3D3" unique_id=711454981 instance=ExtResource("8_xiqgv")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_mode = 0
+
+[node name="Path3D4" type="Path3D" parent="ParkourSegments/Parkour6" unique_id=2105797276]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 1, 0.052448034, -1.959605, 18.868128)
+curve = SubResource("Curve3D_r0dna")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour6/Path3D4" unique_id=263614428 instance=ExtResource("8_xiqgv")]
+transform = Transform3D(0.5, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+rotation_mode = 0
+
+[node name="Parkour7" type="Node3D" parent="ParkourSegments" unique_id=551427921]
+visible = false
+
+[node name="Platform" parent="ParkourSegments/Parkour7" unique_id=8976061 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 0.7979628, 0.60270673, 0, -0.60270673, 0.7979628, 1.949208, 0.44028342, -18.138351)
+
+[node name="Platform2" parent="ParkourSegments/Parkour7" unique_id=602639770 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 0.99042284, -0.13806686, 0, 0.13806686, 0.99042284, 3.4862368, -0.87703645, -12.863491)
+
+[node name="Platform3" parent="ParkourSegments/Parkour7" unique_id=113056407 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.8725557, 0.067447685, 0.48383608, 0, 0.99042284, -0.13806686, -0.48851466, 0.12047102, 0.86419904, 6.0167007, -0.87703645, -8.331785)
+
+[node name="Platform4" parent="ParkourSegments/Parkour7" unique_id=21667336 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.59779304, -0.110681355, -0.7939729, -7.2794357e-09, 0.99042296, -0.13806686, 0.80165046, 0.08253543, 0.5920679, 5.5071154, -0.87703645, -2.9218163)
+
+[node name="Platform5" parent="ParkourSegments/Parkour7" unique_id=1822635933 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.78846186, 0.08492267, 0.6091929, -0.25348753, 0.9472676, 0.19603102, -0.5604213, -0.30898583, 0.76841116, -3.7385583, -1.9225806, -3.8025227)
+
+[node name="Platform6" parent="ParkourSegments/Parkour7" unique_id=1046427694 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.78846186, 0.08492267, 0.6091929, -0.25348753, 0.9472676, 0.19603102, -0.5604213, -0.30898583, 0.76841116, 0.314914, 1.0212954, 6.170103)
+
+[node name="Platform10" parent="ParkourSegments/Parkour7" unique_id=1287601199 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.9825031, -0.100596555, -0.15674178, 0.10340729, 0.9945904, 0.009859905, 0.15490179, -0.025895715, 0.9875903, -2.7966533, 1.0212959, 8.779432)
+
+[node name="Platform7" parent="ParkourSegments/Parkour7" unique_id=996374730 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.9902836, 0.11969539, 0.07079073, -0.13899381, 0.867918, 0.47686338, -0.004362315, -0.4820696, 0.87612194, 1.0377676, 2.9487748, 9.491353)
+
+[node name="Platform8" parent="ParkourSegments/Parkour7" unique_id=16441325 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.9902836, 0.11969539, 0.07079073, -0.11823193, 0.99268293, -0.024528235, -0.07320877, 0.015920117, 0.99718946, 1.0377676, 3.868349, 14.406673)
+
+[node name="Platform9" parent="ParkourSegments/Parkour7" unique_id=422575689 instance=ExtResource("5_p70al")]
+transform = Transform3D(0.9902836, 0.11969539, 0.07079073, -0.11823193, 0.99268293, -0.024528235, -0.07320877, 0.015920117, 0.99718946, 1.0377676, 3.868349, 19.455242)
+
+[node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour7" unique_id=1803853448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.4548993, -2.6131034, -11.81169)
+curve = SubResource("Curve3D_op4cu")
+
+[node name="Platform" parent="ParkourSegments/Parkour7/Path3D" unique_id=1042150771 instance=ExtResource("7_uo7di")]
+transform = Transform3D(1, 0, 0, 0, 0.99999046, 0, 0, 0, 0.99999046, 0, 0, 3.7774038)
+timeLength = 4.0
+sitLength = 1.0
+
+[node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour7" unique_id=643855391]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2869554, 0.4728608, 13.744178)
+curve = SubResource("Curve3D_8l3nt")
+
+[node name="Platform" parent="ParkourSegments/Parkour7/Path3D2" unique_id=1134700639 instance=ExtResource("7_uo7di")]
+transform = Transform3D(-1, 0, -8.7421945e-08, 0, 0.99999046, 0, 8.742278e-08, 0, -0.99999046, 0, 0, 0)
+timeLength = 4.0
+sitLength = 1.0
+
+[node name="Parkour8" type="Node3D" parent="ParkourSegments" unique_id=897119136]
+visible = false
+
+[node name="Platform" parent="ParkourSegments/Parkour8" unique_id=691433399 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18.469711)
+
+[node name="Path3D" type="Path3D" parent="ParkourSegments/Parkour8" unique_id=1382128849]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.7788887, 14.090094)
+curve = SubResource("Curve3D_xiqgv")
+
+[node name="Platform2" parent="ParkourSegments/Parkour8/Path3D" unique_id=1215140365 instance=ExtResource("7_uo7di")]
+rotation_mode = 0
+
+[node name="Wall" parent="ParkourSegments/Parkour8" unique_id=1189637541 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.1950402, -6.744412, 12.980101)
+script = ExtResource("8_7yo87")
+
+[node name="Wall2" parent="ParkourSegments/Parkour8" unique_id=923071030 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.587982, -3.351851, 7.852872)
+script = ExtResource("8_7yo87")
+
+[node name="Wall3" parent="ParkourSegments/Parkour8" unique_id=933236164 instance=ExtResource("7_kn06e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9122431, -1.1033969, 3.694563)
+script = ExtResource("8_7yo87")
+
+[node name="Platform2" parent="ParkourSegments/Parkour8" unique_id=436196638 instance=ExtResource("5_p70al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20858762, -0.34006786, -18.625437)
+
+[node name="Path3D2" type="Path3D" parent="ParkourSegments/Parkour8" unique_id=748576069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08637309, -0.3170061, -13.32374)
+curve = SubResource("Curve3D_rwt1y")
+
+[node name="Platform3" parent="ParkourSegments/Parkour8/Path3D2" unique_id=1652522055 instance=ExtResource("7_uo7di")]
+rotation_mode = 0
+
+[node name="Path3D4" type="Path3D" parent="ParkourSegments/Parkour8" unique_id=2037213971]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.08637309, -0.3170061, -4.3774443)
+curve = SubResource("Curve3D_rwt1y")
+
+[node name="Platform3" parent="ParkourSegments/Parkour8/Path3D4" unique_id=1351725142 instance=ExtResource("7_uo7di")]
+rotation_mode = 0
+
+[node name="Path3D3" type="Path3D" parent="ParkourSegments/Parkour8" unique_id=2138166116]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -7.3072658, -8.05342)
+curve = SubResource("Curve3D_mvfa8")
+
+[node name="AsciiBox3" parent="ParkourSegments/Parkour8/Path3D3" unique_id=1392614546 instance=ExtResource("8_xiqgv")]
+rotation_mode = 0
 
 [node name="Deathplane" type="Area3D" parent="." unique_id=1951168762]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -150, 0)

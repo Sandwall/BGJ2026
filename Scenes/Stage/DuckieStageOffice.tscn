@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bhm77tctxni61"]
 
 [ext_resource type="PackedScene" uid="uid://dpcjop8hkxis7" path="res://Resources/Models/DuckieStages/DuckieOffice.glb" id="1_yk0ef"]
-[ext_resource type="PackedScene" uid="uid://cck13ii1hncud" path="res://Scenes/Actor/DuckieOffice.tscn" id="4_if7rn"]
-[ext_resource type="PackedScene" uid="uid://djiu4prh4vksp" path="res://Scenes/Actor/Mail.tscn" id="4_mw581"]
+[ext_resource type="PackedScene" path="res://Scenes/Actor/DuckieOffice.tscn" id="4_if7rn"]
+[ext_resource type="PackedScene" path="res://Scenes/Actor/Mail.tscn" id="4_mw581"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_86ie1"]
 size = Vector3(2, 1.6100003, 1.8)
@@ -52,89 +52,95 @@ size = Vector3(17.965698, 0.5, 7.987854)
 [sub_resource type="BoxShape3D" id="BoxShape3D_472j6"]
 size = Vector3(17.965698, 0.2, 7.987854)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_84qis"]
+size = Vector3(8.787117, 4.0977783, 0.21960449)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s1p2i"]
+size = Vector3(23.762209, 4.0977783, 0.21960449)
+
 [node name="DuckieStageOffice" type="Node3D" unique_id=1367273004]
 
 [node name="DuckieOffice" parent="." unique_id=876340633 instance=ExtResource("1_yk0ef")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_001" parent_id_path=PackedInt32Array(876340633, 2136139059) index="0" unique_id=962841513]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_001" parent_id_path=PackedInt32Array(876340633, 1291720955) index="0" unique_id=962841513]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_001/StaticBody3D" unique_id=1402683909]
 shape = SubResource("BoxShape3D_86ie1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_002" parent_id_path=PackedInt32Array(876340633, 1679433848) index="0" unique_id=2002634350]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_002" parent_id_path=PackedInt32Array(876340633, 1148771898) index="0" unique_id=2002634350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_002/StaticBody3D" unique_id=443722200]
 shape = SubResource("BoxShape3D_if7rn")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_003" parent_id_path=PackedInt32Array(876340633, 552026507) index="0" unique_id=184144335]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_003" parent_id_path=PackedInt32Array(876340633, 882474331) index="0" unique_id=184144335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_003/StaticBody3D" unique_id=901935044]
 shape = SubResource("BoxShape3D_mw581")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_004" parent_id_path=PackedInt32Array(876340633, 796118866) index="0" unique_id=1704247325]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_004" parent_id_path=PackedInt32Array(876340633, 1806968557) index="0" unique_id=1704247325]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_004/StaticBody3D" unique_id=2058469145]
 shape = SubResource("BoxShape3D_cgfde")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_005" parent_id_path=PackedInt32Array(876340633, 730230420) index="0" unique_id=38413823]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_005" parent_id_path=PackedInt32Array(876340633, 2053523308) index="0" unique_id=38413823]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_005/StaticBody3D" unique_id=1638166895]
 shape = SubResource("BoxShape3D_7ar6o")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_006" parent_id_path=PackedInt32Array(876340633, 723742073) index="0" unique_id=715290802]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_006" parent_id_path=PackedInt32Array(876340633, 1699817585) index="0" unique_id=715290802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_006/StaticBody3D" unique_id=1178039062]
 shape = SubResource("BoxShape3D_3iw4w")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_007" parent_id_path=PackedInt32Array(876340633, 2071959930) index="0" unique_id=1588928292]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_007" parent_id_path=PackedInt32Array(876340633, 2094916479) index="0" unique_id=1588928292]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_007/StaticBody3D" unique_id=9828603]
 shape = SubResource("BoxShape3D_32qlp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_008" parent_id_path=PackedInt32Array(876340633, 1141810160) index="0" unique_id=878505316]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_008" parent_id_path=PackedInt32Array(876340633, 371164181) index="0" unique_id=878505316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_008/StaticBody3D" unique_id=979991645]
 shape = SubResource("BoxShape3D_6a8rp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_009" parent_id_path=PackedInt32Array(876340633, 131083016) index="0" unique_id=1087330883]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_009" parent_id_path=PackedInt32Array(876340633, 1622379729) index="0" unique_id=1087330883]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_009/StaticBody3D" unique_id=1544311064]
 shape = SubResource("BoxShape3D_8n4bb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_010" parent_id_path=PackedInt32Array(876340633, 1147140054) index="0" unique_id=1228982931]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_010" parent_id_path=PackedInt32Array(876340633, 202128256) index="0" unique_id=1228982931]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_010/StaticBody3D" unique_id=1646568760]
 shape = SubResource("BoxShape3D_7tecb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_011" parent_id_path=PackedInt32Array(876340633, 1440610060) index="0" unique_id=1395399803]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_011" parent_id_path=PackedInt32Array(876340633, 957451197) index="0" unique_id=1395399803]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_011/StaticBody3D" unique_id=1258267531]
 shape = SubResource("BoxShape3D_sw0na")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_012" parent_id_path=PackedInt32Array(876340633, 1414427195) index="0" unique_id=702612771]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_012" parent_id_path=PackedInt32Array(876340633, 308275890) index="0" unique_id=702612771]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_012/StaticBody3D" unique_id=2076964243]
 shape = SubResource("BoxShape3D_iawur")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_013" parent_id_path=PackedInt32Array(876340633, 354379312) index="0" unique_id=588569059]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_013" parent_id_path=PackedInt32Array(876340633, 1053019131) index="0" unique_id=588569059]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_013/StaticBody3D" unique_id=1622030987]
 shape = SubResource("BoxShape3D_c0xy2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_014" parent_id_path=PackedInt32Array(876340633, 2086205431) index="0" unique_id=2062874315]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_014" parent_id_path=PackedInt32Array(876340633, 1760258413) index="0" unique_id=2062874315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_014/StaticBody3D" unique_id=901820405]
@@ -157,5 +163,27 @@ email_pickup = NodePath("../Mail")
 [node name="Mail" parent="." unique_id=395569316 instance=ExtResource("4_mw581")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4.776951, 0.6, 6.3538575)
 start_available = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=925085356]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=305139682]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.442482, 1.5488892, -0.11530936)
+shape = SubResource("BoxShape3D_84qis")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" unique_id=1168568793]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 8.901606, 1.5488896, 4.087893)
+shape = SubResource("BoxShape3D_84qis")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" unique_id=95783284]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -9.065729, 1.5488896, 4.087893)
+shape = SubResource("BoxShape3D_84qis")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="StaticBody3D" unique_id=127915711]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -5.3933835, 1.5488896, -0.09081911)
+shape = SubResource("BoxShape3D_84qis")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="StaticBody3D" unique_id=282596524]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 2.3784022, 1.5488896, 8.067802)
+shape = SubResource("BoxShape3D_s1p2i")
 
 [editable path="DuckieOffice"]

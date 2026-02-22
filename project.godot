@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="BGJ2026"
-run/main_scene="uid://lknc1e8yatg"
+run/main_scene="uid://cehqq2sdqdltg"
 config/features=PackedStringArray("4.6", "Forward Plus")
 run/max_fps=60
 config/icon="res://icon.svg"
@@ -128,6 +128,7 @@ textures/canvas_textures/default_texture_filter=3
 rendering_device/driver.windows="d3d12"
 textures/decals/filter=2
 textures/light_projectors/filter=2
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 
 [wwise]
 

@@ -11,6 +11,7 @@ data = PackedVector3Array(-2.1395, -1.6463, 2.1395, -2.1395, 2.6327, -2.1395, -2
 script = ExtResource("1_iwlu6")
 
 [node name="AnimatableBody3D" type="AnimatableBody3D" parent="." unique_id=2072989168]
+sync_to_physics = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D" unique_id=1052207038]
 shape = SubResource("ConcavePolygonShape3D_iwlu6")

@@ -10,8 +10,7 @@ static var inst: Main = null
 
 func _init():
 	inst = self
-	
-	# DELETE THIS I'M JUST KEEPING IT HERE FOR TESTING
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _process(delta):
 	if Input.is_action_just_pressed("plr_pause"):

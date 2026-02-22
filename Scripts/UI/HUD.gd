@@ -3,6 +3,11 @@ class_name HUD extends CanvasLayer
 @export var vbox_container : VBoxContainer
 @export var animation_player : AnimationPlayer
 
+const CLOSE_DELAY := 2.0
+
+var open := false
+var timer := 0.0
+
 func display_email(email: EmailResource):
 	vbox_container.get_node("From").text = "From: " + email.fromAddress
 	vbox_container.get_node("To").text = "To: " + email.toAddress
@@ -10,13 +15,9 @@ func display_email(email: EmailResource):
 	vbox_container.get_node("Contents").text = email.contents
 	animation_player.play("DisplayDialog")
 	
-	#await get_tree().create_timer(0.5).timeout
-	
+	open = true
 	Wwise.post_event("PLAY_DX", self)
 
-	await get_tree().create_timer(5.0).timeout
-
-	animation_player.play("CloseDialog")
 
 func display_test_email():
 	var testEmail := EmailResource.new()
@@ -25,8 +26,14 @@ func display_test_email():
 func close_email():
 	animation_player.play("CloseDialog")
 	
-func _process(_delta):
-	pass
+func _process(delta):
+	if open:
+		timer += delta
+		if timer >= CLOSE_DELAY and Input.is_action_just_pressed("plr_interact"):
+			open = false
+			animation_player.play("CloseDialog")
+			timer = 0.0
 
 func _ready() -> void:
-	display_test_email()
+	pass
+	#display_test_email()
