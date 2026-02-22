@@ -42,6 +42,7 @@ var prevOnGround := true
 func _ready():
 	Main.inst.plr = self
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Wwise.add_default_listener($Camera3D)
 
 func _input(event):
 	if event is InputEventMouseMotion:

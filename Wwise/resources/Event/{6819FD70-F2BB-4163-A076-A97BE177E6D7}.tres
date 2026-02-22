@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://bhqqfwkna75j7"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "PLAY_SFX_Firewall"
+id = 2465207730
+guid = "{6819FD70-F2BB-4163-A076-A97BE177E6D7}"
+dummy = true

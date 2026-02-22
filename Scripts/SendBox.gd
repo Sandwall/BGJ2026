@@ -11,11 +11,13 @@ signal sent_mail
 func interact():
 	if not GlobalEmailManager.is_carrying_email:
 		print("CANT SEND IF NOT CARRYING EMAIL")
+		Wwise.post_event("PLAY_SFX_Error", self)
 		not_carrying_mail.emit()
 		return
 
 	if GlobalEmailManager.current_email.toAddress != host_email:
 		print("MAIL DOES NOT BELONG TO THIS HOST")
+		Wwise.post_event("PLAY_SFX_Error", self)
 		wrong_host.emit()
 		return
 

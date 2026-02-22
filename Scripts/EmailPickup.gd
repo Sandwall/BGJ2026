@@ -30,6 +30,7 @@ func display_email():
 func interact():
 	if GlobalEmailManager.is_carrying_email:
 		print("CANT PICKUP IF CARRYING EMAIL")
+		Wwise.post_event("PLAY_SFX_Error", self)
 		error_pickup.emit()
 		return
 

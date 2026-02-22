@@ -272,7 +272,7 @@ guid = "{6B5CAD82-7EE8-47AF-B1E2-43A5D7824906}"
 id = 1498336971
 
 [sub_resource type="WwiseTreeObjectEvent" id="WwiseTreeObjectEvent_myib7"]
-max_attenuation = 100.0
+max_attenuation = 40.0
 max_duration = 0.0
 min_duration = 0.0
 path = "\\Events\\Events\\SFX\\PLAY_SFX_Firewall"

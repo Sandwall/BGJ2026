@@ -14,8 +14,6 @@
 [ext_resource type="Script" uid="uid://tgsi8i4qi0ec" path="res://Scripts/AlwaysFacePlayer.gd" id="8_7yo87"]
 [ext_resource type="PackedScene" uid="uid://pyo8hh6njkkh" path="res://Scenes/Enviroment/Firewall.tscn" id="12_ti1bm"]
 [ext_resource type="WwiseEvent" uid="uid://bnhxern0gusg1" path="res://Wwise/resources/Event/{6343721D-3E5B-4BE6-B385-325C0D8DA43E}.tres" id="13_op4cu"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ti1bm"]
 [ext_resource type="WwiseEvent" uid="uid://dl66vmnvxj4fx" path="res://Wwise/resources/Event/{7D9DF732-3627-476C-B449-7A8187CB2C37}.tres" id="15_kwl8l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kwl8l"]
@@ -23,6 +21,8 @@ size = Vector3(23.595154, 9.411427, 67.360855)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8l3nt"]
 size = Vector3(23.595154, 9.411427, 67.360855)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ti1bm"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -93,14 +93,14 @@ script = ExtResource("2_8l3nt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -40.25653)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MusicManager/VictoriaArea3D" unique_id=1867338230]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.447235, 3.6385908, -33.64479)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7968802, 3.6385908, -33.64479)
 shape = SubResource("BoxShape3D_kwl8l")
 
 [node name="DuckyArea3D" type="Area3D" parent="MusicManager" unique_id=640874072]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 91.88364)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="MusicManager/DuckyArea3D" unique_id=1414917147]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4023476, 3.6385908, -17.91941)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.923233, 3.6385908, -17.91941)
 shape = SubResource("BoxShape3D_8l3nt")
 
 [node name="Node3D" type="Node3D" parent="." unique_id=1729482857]
@@ -131,6 +131,7 @@ transform = Transform3D(1, 0, -1.7484554e-07, 0, 1, 0, 1.7484554e-07, 0, 1, -3.4
 [node name="VictoriaStage01" parent="VictoriaStage" unique_id=1341088577 instance=ExtResource("4_ti1bm")]
 
 [node name="InterconnectStage" parent="." unique_id=338793185 instance=ExtResource("4_45d1s")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034585953, 0.08090973, 0.010345459)
 
 [node name="ParkourSegments" type="Node3D" parent="." unique_id=658885363]
 
@@ -287,35 +288,7 @@ script = ExtResource("7_y7y61")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.028223)
 shape = SubResource("BoxShape3D_q2d71")
 
-[node name="Checkpoint2" type="Area3D" parent="Checkpoints" unique_id=84843252]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -28.215914)
-script = ExtResource("7_y7y61")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoints/Checkpoint2" unique_id=1008981604]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.9167347)
-shape = SubResource("BoxShape3D_q2d71")
-
-[node name="StartCheckpoint" type="Area3D" parent="Checkpoints" unique_id=87384050]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
-script = ExtResource("7_y7y61")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoints/StartCheckpoint" unique_id=1220701681]
-shape = SubResource("BoxShape3D_y7y61")
-
-[node name="StartCheckpoint2" type="Area3D" parent="Checkpoints" unique_id=431498974]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
-script = ExtResource("7_y7y61")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoints/StartCheckpoint2" unique_id=994498112]
-shape = SubResource("BoxShape3D_y7y61")
-
-[node name="Checkpoints" type="Node3D" parent="." unique_id=470949640]
-
-[node name="Checkpoint1" type="Area3D" parent="Checkpoints" unique_id=710476031]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 30.328169)
-script = ExtResource("7_y7y61")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoints/Checkpoint1" unique_id=1220644892]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Checkpoints/Checkpoint1" unique_id=2014878219]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7.028223)
 shape = SubResource("BoxShape3D_q2d71")
 
@@ -327,6 +300,10 @@ script = ExtResource("7_y7y61")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.9167347)
 shape = SubResource("BoxShape3D_q2d71")
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Checkpoints/Checkpoint2" unique_id=1129497412]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.9167347)
+shape = SubResource("BoxShape3D_q2d71")
+
 [node name="StartCheckpoint" type="Area3D" parent="Checkpoints" unique_id=87384050]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
 script = ExtResource("7_y7y61")
@@ -334,11 +311,17 @@ script = ExtResource("7_y7y61")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoints/StartCheckpoint" unique_id=1220701681]
 shape = SubResource("BoxShape3D_y7y61")
 
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Checkpoints/StartCheckpoint" unique_id=1128177048]
+shape = SubResource("BoxShape3D_y7y61")
+
 [node name="StartCheckpoint2" type="Area3D" parent="Checkpoints" unique_id=431498974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 script = ExtResource("7_y7y61")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Checkpoints/StartCheckpoint2" unique_id=994498112]
+shape = SubResource("BoxShape3D_y7y61")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Checkpoints/StartCheckpoint2" unique_id=1799052924]
 shape = SubResource("BoxShape3D_y7y61")
 
 [node name="SetStateExploration" type="AkEvent2D" parent="." unique_id=131103738]

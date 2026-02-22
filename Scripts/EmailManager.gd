@@ -17,7 +17,7 @@ var current_email: EmailResource:
 
 func pickup_email():
 	email_picked_up.emit(current_email)
-	
+	Wwise.post_event("PLAY_SFX_EmailPickup", self)
 
 	is_carrying_email = true
 
