@@ -17,7 +17,9 @@ class_name Player extends CharacterBody3D
 @export_group("Camera Constants")
 @export var cameraSens := Vector2(0.3, 0.3)
 @export var RESPAWN_HEIGHT := 150.0
+@export var FOOTSTEP_TIME := 0.6;
 
+var footstepTimer := 3.0;
 #
 # INPUT VALUES
 #
@@ -99,6 +101,16 @@ func _physics_process(delta: float):
 			lateralVelocity.y = move_toward(lateralVelocity.y, 0.0, floorDecelDelta)
 
 		lateralVelocity = lateralVelocity.limit_length(GROUND_SPEED)
+		
+		if lateralVelocity.length() > GROUND_SPEED/2:
+			if footstepTimer >= FOOTSTEP_TIME:
+				Wwise.post_event("PLAY_SFX_Footstep", self);
+				print("Footstep");
+				footstepTimer = 0;
+			footstepTimer = footstepTimer + delta;
+		else:
+			footstepTimer = FOOTSTEP_TIME + 1.0;
+			
 
 		if jumpClicked:
 			velocity.y = JUMP_VELOCITY

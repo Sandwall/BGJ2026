@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b0urcnetw2ffk"]
 
 [ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_5cjrv"]
-[ext_resource type="Script" path="res://Scripts/StoryManager.gd" id="1_q2d71"]
+[ext_resource type="Script" uid="uid://byyorc4pos538" path="res://Scripts/StoryManager.gd" id="1_q2d71"]
 [ext_resource type="PackedScene" uid="uid://bhm77tctxni61" path="res://Scenes/Stage/DuckieStageOffice.tscn" id="2_gjpho"]
 [ext_resource type="PackedScene" uid="uid://qanilbdahy1v" path="res://Scenes/Stage/DuckieStageSpaceAge.tscn" id="3_p70al"]
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
