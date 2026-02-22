@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://dvpg67mll4ikp" path="res://Scripts/Firewall.gd" id="2_pu0yg"]
 [ext_resource type="Shader" uid="uid://cayq6jnlfe747" path="res://Resources/Firewall.gdshader" id="2_w875g"]
 [ext_resource type="Texture2D" uid="uid://bgpaa7dm6ihi1" path="res://Resources/Models/InterconnectStage/FirewallAnimatedTextures/FirewallTexture.tres" id="3_udhvb"]
-[ext_resource type="WwiseEvent" uid="uid://bhqqfwkna75j7" path="res://Wwise/resources/Event/{6819FD70-F2BB-4163-A076-A97BE177E6D7}.tres" id="5_w0k5d"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_udhvb"]
 render_priority = 0
@@ -25,8 +24,3 @@ surface_material_override/0 = SubResource("ShaderMaterial_udhvb")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0" unique_id=24650952]
 transform = Transform3D(-1, -1.629207e-07, -1.629207e-07, 1.629207e-07, 0, -1, 1.629207e-07, -1, 0, -0.005399324, 2.4171207, -0.00064369355)
 shape = SubResource("BoxShape3D_w875g")
-
-[node name="AkEvent3D" type="AkEvent3D" parent="." index="2" unique_id=75656796]
-event = ExtResource("5_w0k5d")
-trigger_on = 2
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.838479, 0)
