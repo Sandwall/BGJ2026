@@ -308,14 +308,18 @@
 				103,
 				104,
 				105,
-				106
+				106,
+				107,
+				108,
+				109,
+				110
 			]
 		}
 	],
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"Camera.001",
+			"name":"Camera.001-convcol",
 			"rotation":[
 				-0.40028345584869385,
 				-0.5790506601333618,
@@ -330,7 +334,7 @@
 		},
 		{
 			"mesh":1,
-			"name":"Camera.002",
+			"name":"Camera.002-convcol",
 			"rotation":[
 				-0.571657657623291,
 				-0.4151729345321655,
@@ -345,7 +349,7 @@
 		},
 		{
 			"mesh":2,
-			"name":"Camera.003",
+			"name":"Camera.003-convcol",
 			"rotation":[
 				-0.7109996676445007,
 				0.012722218409180641,
@@ -360,7 +364,7 @@
 		},
 		{
 			"mesh":3,
-			"name":"Camera.004",
+			"name":"Camera.004-convcol",
 			"rotation":[
 				-0.43468809127807617,
 				-0.5541794300079346,
@@ -375,7 +379,7 @@
 		},
 		{
 			"mesh":4,
-			"name":"Camera.005",
+			"name":"Camera.005-convcol",
 			"rotation":[
 				-0.46059563755989075,
 				-0.5332779288291931,
@@ -390,7 +394,7 @@
 		},
 		{
 			"mesh":5,
-			"name":"Camera.006",
+			"name":"Camera.006-convcol",
 			"rotation":[
 				-0.5901438593864441,
 				-0.3891620934009552,
@@ -405,7 +409,7 @@
 		},
 		{
 			"mesh":6,
-			"name":"Couch.001",
+			"name":"Couch.001-convcol",
 			"rotation":[
 				0,
 				0.9712366461753845,
@@ -425,7 +429,7 @@
 		},
 		{
 			"mesh":7,
-			"name":"Cube.002",
+			"name":"Cube.002-col",
 			"translation":[
 				76.04074096679688,
 				3.9222302436828613,
@@ -479,7 +483,7 @@
 		},
 		{
 			"mesh":11,
-			"name":"Cube.006",
+			"name":"Cube.006-convcol",
 			"rotation":[
 				-0.0006800369010306895,
 				0.015143864788115025,
@@ -494,7 +498,7 @@
 		},
 		{
 			"mesh":12,
-			"name":"Cube.007",
+			"name":"Cube.007-convcol",
 			"rotation":[
 				-0.0006800369010306895,
 				0.015143864788115025,
@@ -509,7 +513,7 @@
 		},
 		{
 			"mesh":13,
-			"name":"Cube.008",
+			"name":"Cube.008-convcol",
 			"rotation":[
 				0,
 				0.6893529295921326,
@@ -524,7 +528,7 @@
 		},
 		{
 			"mesh":14,
-			"name":"Cube.009",
+			"name":"Cube.009-convcol",
 			"rotation":[
 				0,
 				-0.650274395942688,
@@ -539,7 +543,7 @@
 		},
 		{
 			"mesh":15,
-			"name":"Cube.010",
+			"name":"Cube.010-convcol",
 			"translation":[
 				-34.76719284057617,
 				5.928470611572266,
@@ -563,7 +567,7 @@
 		},
 		{
 			"mesh":17,
-			"name":"Cube.013",
+			"name":"Cube.013-convcol",
 			"rotation":[
 				0,
 				-0.7071065902709961,
@@ -578,7 +582,7 @@
 		},
 		{
 			"mesh":18,
-			"name":"Cube.014",
+			"name":"Cube.014-convcol",
 			"rotation":[
 				0,
 				0.9321273565292358,
@@ -608,7 +612,7 @@
 		},
 		{
 			"mesh":20,
-			"name":"Cube.020",
+			"name":"Cube.020-convcol",
 			"rotation":[
 				0.7071068286895752,
 				-0.7071068286895752,
@@ -623,7 +627,7 @@
 		},
 		{
 			"mesh":21,
-			"name":"Cube.021",
+			"name":"Cube.021-convcol",
 			"rotation":[
 				0,
 				0.7569907307624817,
@@ -728,7 +732,7 @@
 		},
 		{
 			"mesh":28,
-			"name":"Cube.028",
+			"name":"Cube.028-convcol",
 			"rotation":[
 				0,
 				-0.9911050796508789,
@@ -748,7 +752,7 @@
 		},
 		{
 			"mesh":29,
-			"name":"Cube.029",
+			"name":"Cube.029-convcol",
 			"rotation":[
 				0,
 				-0.7424539923667908,
@@ -778,7 +782,7 @@
 		},
 		{
 			"mesh":31,
-			"name":"Cube.031",
+			"name":"Cube.031-convcol",
 			"rotation":[
 				0,
 				-0.7071065902709961,
@@ -798,7 +802,7 @@
 		},
 		{
 			"mesh":32,
-			"name":"Cube.032",
+			"name":"Cube.032-convcol",
 			"rotation":[
 				0,
 				-0.9517574310302734,
@@ -813,7 +817,7 @@
 		},
 		{
 			"mesh":33,
-			"name":"Cube.033",
+			"name":"Cube.033-convcol",
 			"rotation":[
 				0,
 				-1,
@@ -833,7 +837,7 @@
 		},
 		{
 			"mesh":34,
-			"name":"Cube.034",
+			"name":"Cube.034-convcol",
 			"rotation":[
 				0.6989628672599792,
 				-0.10700908303260803,
@@ -848,7 +852,7 @@
 		},
 		{
 			"mesh":35,
-			"name":"Cube.038",
+			"name":"Cube.038-convcol",
 			"rotation":[
 				0,
 				-0.08259571343660355,
@@ -863,7 +867,7 @@
 		},
 		{
 			"mesh":36,
-			"name":"Cube.039",
+			"name":"Cube.039-convcol",
 			"rotation":[
 				0.12422031909227371,
 				0.696110188961029,
@@ -878,7 +882,7 @@
 		},
 		{
 			"mesh":37,
-			"name":"Cube.040",
+			"name":"Cube.040-convcol",
 			"rotation":[
 				0,
 				0.7818422913551331,
@@ -908,7 +912,7 @@
 		},
 		{
 			"mesh":39,
-			"name":"Cube.048",
+			"name":"Cube.048-convcol",
 			"rotation":[
 				0,
 				0.7071070671081543,
@@ -928,7 +932,7 @@
 		},
 		{
 			"mesh":40,
-			"name":"Cube.049",
+			"name":"Cube.049-convcol",
 			"rotation":[
 				0,
 				-1,
@@ -943,7 +947,7 @@
 		},
 		{
 			"mesh":41,
-			"name":"Cube.050",
+			"name":"Cube.050-convcol",
 			"rotation":[
 				-0.5000002384185791,
 				0.5000001788139343,
@@ -958,7 +962,7 @@
 		},
 		{
 			"mesh":42,
-			"name":"Cube.051",
+			"name":"Cube.051-convcol",
 			"rotation":[
 				0,
 				0.44768017530441284,
@@ -973,7 +977,7 @@
 		},
 		{
 			"mesh":43,
-			"name":"Cube.052",
+			"name":"Cube.052-convcol",
 			"rotation":[
 				0,
 				-0.07114965468645096,
@@ -1003,7 +1007,7 @@
 		},
 		{
 			"mesh":45,
-			"name":"Cube.055",
+			"name":"Cube.055-convcol",
 			"rotation":[
 				0.5311911702156067,
 				-0.46672898530960083,
@@ -1018,7 +1022,7 @@
 		},
 		{
 			"mesh":46,
-			"name":"Cube.056",
+			"name":"Cube.056-convcol",
 			"rotation":[
 				0.5974987745285034,
 				-0.37814706563949585,
@@ -1033,7 +1037,7 @@
 		},
 		{
 			"mesh":47,
-			"name":"Cube.057",
+			"name":"Cube.057-convcol",
 			"rotation":[
 				0,
 				0.7071070671081543,
@@ -1053,7 +1057,7 @@
 		},
 		{
 			"mesh":48,
-			"name":"Cube.115",
+			"name":"Cube.115-convcol",
 			"rotation":[
 				0,
 				-0.999721109867096,
@@ -1068,7 +1072,7 @@
 		},
 		{
 			"mesh":49,
-			"name":"Cube.116",
+			"name":"Cube.116-convcol",
 			"rotation":[
 				0,
 				-0.7071065902709961,
@@ -1083,7 +1087,7 @@
 		},
 		{
 			"mesh":50,
-			"name":"Cube.118",
+			"name":"Cube.118-convcol",
 			"rotation":[
 				0,
 				0.9478456377983093,
@@ -1098,7 +1102,7 @@
 		},
 		{
 			"mesh":51,
-			"name":"Cube.119",
+			"name":"Cube.119-convcol",
 			"rotation":[
 				-0.5000002384185791,
 				0.5000001788139343,
@@ -1113,7 +1117,7 @@
 		},
 		{
 			"mesh":52,
-			"name":"Cube.137",
+			"name":"Cube.137-convcol",
 			"rotation":[
 				0,
 				-0.7071065902709961,
@@ -1128,7 +1132,7 @@
 		},
 		{
 			"mesh":53,
-			"name":"Cube.138",
+			"name":"Cube.138-convcol",
 			"rotation":[
 				0,
 				0.7071070671081543,
@@ -1173,7 +1177,7 @@
 		},
 		{
 			"mesh":56,
-			"name":"Cube.154",
+			"name":"Cube.154-col",
 			"rotation":[
 				0,
 				-1,
@@ -1188,7 +1192,7 @@
 		},
 		{
 			"mesh":57,
-			"name":"Dresser2",
+			"name":"Dresser2-convcol",
 			"rotation":[
 				0,
 				-0.7212350368499756,
@@ -1203,7 +1207,7 @@
 		},
 		{
 			"mesh":58,
-			"name":"Dresser3",
+			"name":"Dresser3-convcol",
 			"rotation":[
 				0,
 				-0.7071065902709961,
@@ -1218,7 +1222,7 @@
 		},
 		{
 			"mesh":59,
-			"name":"Fridge",
+			"name":"Fridge-convcol",
 			"rotation":[
 				0,
 				-1,
@@ -1283,7 +1287,7 @@
 		},
 		{
 			"mesh":63,
-			"name":"Plane.001",
+			"name":"Plane.001-convcol",
 			"rotation":[
 				0.6207864284515381,
 				-0.2658737301826477,
@@ -1298,7 +1302,7 @@
 		},
 		{
 			"mesh":64,
-			"name":"Plane.002",
+			"name":"Plane.002-convcol",
 			"rotation":[
 				0.6740601658821106,
 				0.38645607233047485,
@@ -1313,7 +1317,7 @@
 		},
 		{
 			"mesh":65,
-			"name":"Plane.004",
+			"name":"Plane.004-convcol",
 			"rotation":[
 				0.030041353777050972,
 				-0.3465927541255951,
@@ -1348,7 +1352,7 @@
 		},
 		{
 			"mesh":67,
-			"name":"Plane.006",
+			"name":"Plane.006-convcol",
 			"rotation":[
 				0.6731800436973572,
 				-0.23851680755615234,
@@ -1368,7 +1372,7 @@
 		},
 		{
 			"mesh":68,
-			"name":"Plane.007",
+			"name":"Plane.007-convcol",
 			"rotation":[
 				0.6015451550483704,
 				-0.0962904840707779,
@@ -1383,7 +1387,7 @@
 		},
 		{
 			"mesh":69,
-			"name":"Plane.008",
+			"name":"Plane.008-convcol",
 			"rotation":[
 				-0.8638638854026794,
 				0.3987747132778168,
@@ -1398,7 +1402,7 @@
 		},
 		{
 			"mesh":70,
-			"name":"Plane.009",
+			"name":"Plane.009-convcol",
 			"rotation":[
 				0.7359572052955627,
 				-0.22208814322948456,
@@ -1413,7 +1417,7 @@
 		},
 		{
 			"mesh":71,
-			"name":"Plane.010",
+			"name":"Plane.010-convcol",
 			"rotation":[
 				0.06395219266414642,
 				-0.30736100673675537,
@@ -1428,7 +1432,7 @@
 		},
 		{
 			"mesh":72,
-			"name":"Plane.011",
+			"name":"Plane.011-convcol",
 			"rotation":[
 				0.6317772269248962,
 				-0.26234114170074463,
@@ -1443,7 +1447,7 @@
 		},
 		{
 			"mesh":73,
-			"name":"Plane.012",
+			"name":"Plane.012-convcol",
 			"rotation":[
 				0.9055308699607849,
 				0.16930438578128815,
@@ -1458,7 +1462,7 @@
 		},
 		{
 			"mesh":74,
-			"name":"Plane.057",
+			"name":"Plane.057-convcol",
 			"rotation":[
 				0.09755722433328629,
 				-0.20744779706001282,
@@ -1473,7 +1477,7 @@
 		},
 		{
 			"mesh":75,
-			"name":"Plane.063",
+			"name":"Plane.063-convcol",
 			"rotation":[
 				0.8000446557998657,
 				0.03838596120476723,
@@ -1488,7 +1492,7 @@
 		},
 		{
 			"mesh":76,
-			"name":"Plane.064",
+			"name":"Plane.064-convcol",
 			"rotation":[
 				0.9255815744400024,
 				0.1587236225605011,
@@ -1503,7 +1507,7 @@
 		},
 		{
 			"mesh":77,
-			"name":"Plane.065",
+			"name":"Plane.065-convcol",
 			"rotation":[
 				0.5113232135772705,
 				-0.29552146792411804,
@@ -1518,7 +1522,7 @@
 		},
 		{
 			"mesh":78,
-			"name":"Plane.066",
+			"name":"Plane.066-convcol",
 			"rotation":[
 				0.8511455059051514,
 				-0.15402600169181824,
@@ -1814,7 +1818,7 @@
 		},
 		{
 			"mesh":80,
-			"name":"StudioLight2",
+			"name":"StudioLight2-convcol",
 			"rotation":[
 				0.03448687866330147,
 				0.11205769330263138,
@@ -1829,7 +1833,7 @@
 		},
 		{
 			"mesh":81,
-			"name":"StudioLight2.001",
+			"name":"StudioLight2.001-convcol",
 			"rotation":[
 				0.03459177911281586,
 				-0.08092353492975235,
@@ -1844,7 +1848,7 @@
 		},
 		{
 			"mesh":82,
-			"name":"Table1",
+			"name":"Table1-convcol",
 			"rotation":[
 				0,
 				-0.9517574310302734,
@@ -1859,7 +1863,7 @@
 		},
 		{
 			"mesh":83,
-			"name":"Table2",
+			"name":"Table2-convcol",
 			"rotation":[
 				0,
 				0.9999426007270813,
@@ -1874,7 +1878,7 @@
 		},
 		{
 			"mesh":84,
-			"name":"Table3",
+			"name":"Table3-convcol",
 			"rotation":[
 				0,
 				-0.9839118123054504,
@@ -1889,7 +1893,7 @@
 		},
 		{
 			"mesh":85,
-			"name":"Table4",
+			"name":"Table4-convcol",
 			"rotation":[
 				0,
 				-0.9517574310302734,
@@ -1964,7 +1968,7 @@
 		},
 		{
 			"mesh":90,
-			"name":"Welcome",
+			"name":"Welcome-col",
 			"rotation":[
 				0.4999998211860657,
 				0.5000002384185791,
@@ -1990,6 +1994,66 @@
 				62.11600875854492,
 				12.01468276977539,
 				-0.08642578125
+			]
+		},
+		{
+			"mesh":92,
+			"name":"Cube.001-colonly",
+			"rotation":[
+				0,
+				0.18066701292991638,
+				0,
+				0.9835444092750549
+			],
+			"translation":[
+				13.60698413848877,
+				7.1479949951171875,
+				5.562167167663574
+			]
+		},
+		{
+			"mesh":92,
+			"name":"Cube.001-colonly.001",
+			"rotation":[
+				0,
+				0.18066701292991638,
+				0,
+				0.9835444092750549
+			],
+			"translation":[
+				27.535236358642578,
+				7.1479949951171875,
+				5.562167167663574
+			]
+		},
+		{
+			"mesh":92,
+			"name":"Cube.001-colonly.002",
+			"rotation":[
+				0,
+				0.18066701292991638,
+				0,
+				0.9835444092750549
+			],
+			"translation":[
+				-0.326381653547287,
+				7.1479949951171875,
+				5.562167167663574
+			]
+		},
+		{
+			"mesh":92,
+			"name":"Cube.001-colonly.003",
+			"rotation":[
+				0,
+				0.18066701292991638,
+				0,
+				0.9835444092750549
+			],
+			"translation":[
+				-14.26273250579834,
+				7.1479949951171875,
+				5.562167167663574
 			]
 		},
 		{
@@ -3888,6 +3952,20 @@
 					},
 					"indices":34,
 					"material":2
+				}
+			]
+		},
+		{
+			"name":"Cube.001",
+			"primitives":[
+				{
+					"attributes":{
+						"POSITION":381,
+						"NORMAL":382,
+						"TEXCOORD_0":383
+					},
+					"indices":384,
+					"material":19
 				}
 			]
 		}
@@ -7632,6 +7710,40 @@
 			"componentType":5126,
 			"count":24,
 			"type":"VEC2"
+		},
+		{
+			"bufferView":381,
+			"componentType":5126,
+			"count":44,
+			"max":[
+				6.778560638427734,
+				-2.3522324562072754,
+				12.382944107055664
+			],
+			"min":[
+				-10.221701622009277,
+				-7.138362407684326,
+				-3.0319862365722656
+			],
+			"type":"VEC3"
+		},
+		{
+			"bufferView":382,
+			"componentType":5126,
+			"count":44,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":383,
+			"componentType":5126,
+			"count":44,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":384,
+			"componentType":5123,
+			"count":162,
+			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
@@ -9920,6 +10032,30 @@
 			"byteLength":192,
 			"byteOffset":1254460,
 			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":528,
+			"byteOffset":1254652,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":528,
+			"byteOffset":1255180,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":352,
+			"byteOffset":1255708,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":324,
+			"byteOffset":1256060,
+			"target":34963
 		}
 	],
 	"samplers":[
@@ -9934,7 +10070,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":1254652,
+			"byteLength":1256384,
 			"uri":"Stage1.bin"
 		}
 	]

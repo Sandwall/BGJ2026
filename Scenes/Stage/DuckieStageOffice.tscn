@@ -70,85 +70,85 @@ points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1
 
 [node name="DuckieOffice" parent="." unique_id=876340633 instance=ExtResource("1_yk0ef")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_001" parent_id_path=PackedInt32Array(876340633, 634903263) index="0" unique_id=962841513]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_001" parent_id_path=PackedInt32Array(876340633, 2136139059) index="0" unique_id=962841513]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_001/StaticBody3D" unique_id=1402683909]
 shape = SubResource("BoxShape3D_86ie1")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_002" parent_id_path=PackedInt32Array(876340633, 1569681144) index="0" unique_id=2002634350]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_002" parent_id_path=PackedInt32Array(876340633, 1679433848) index="0" unique_id=2002634350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_002/StaticBody3D" unique_id=443722200]
 shape = SubResource("BoxShape3D_if7rn")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_003" parent_id_path=PackedInt32Array(876340633, 1949119439) index="0" unique_id=184144335]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_003" parent_id_path=PackedInt32Array(876340633, 552026507) index="0" unique_id=184144335]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_003/StaticBody3D" unique_id=901935044]
 shape = SubResource("BoxShape3D_mw581")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_004" parent_id_path=PackedInt32Array(876340633, 935131904) index="0" unique_id=1704247325]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_004" parent_id_path=PackedInt32Array(876340633, 796118866) index="0" unique_id=1704247325]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_004/StaticBody3D" unique_id=2058469145]
 shape = SubResource("BoxShape3D_cgfde")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_005" parent_id_path=PackedInt32Array(876340633, 813194641) index="0" unique_id=38413823]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_005" parent_id_path=PackedInt32Array(876340633, 730230420) index="0" unique_id=38413823]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_005/StaticBody3D" unique_id=1638166895]
 shape = SubResource("BoxShape3D_7ar6o")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_006" parent_id_path=PackedInt32Array(876340633, 1933660662) index="0" unique_id=715290802]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_006" parent_id_path=PackedInt32Array(876340633, 723742073) index="0" unique_id=715290802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_006/StaticBody3D" unique_id=1178039062]
 shape = SubResource("BoxShape3D_3iw4w")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_007" parent_id_path=PackedInt32Array(876340633, 827324426) index="0" unique_id=1588928292]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_007" parent_id_path=PackedInt32Array(876340633, 2071959930) index="0" unique_id=1588928292]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_007/StaticBody3D" unique_id=9828603]
 shape = SubResource("BoxShape3D_32qlp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_008" parent_id_path=PackedInt32Array(876340633, 396659421) index="0" unique_id=878505316]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_008" parent_id_path=PackedInt32Array(876340633, 1141810160) index="0" unique_id=878505316]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_008/StaticBody3D" unique_id=979991645]
 shape = SubResource("BoxShape3D_6a8rp")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_009" parent_id_path=PackedInt32Array(876340633, 2020802972) index="0" unique_id=1087330883]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_009" parent_id_path=PackedInt32Array(876340633, 131083016) index="0" unique_id=1087330883]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_009/StaticBody3D" unique_id=1544311064]
 shape = SubResource("BoxShape3D_8n4bb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_010" parent_id_path=PackedInt32Array(876340633, 1750929656) index="0" unique_id=1228982931]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_010" parent_id_path=PackedInt32Array(876340633, 1147140054) index="0" unique_id=1228982931]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_010/StaticBody3D" unique_id=1646568760]
 shape = SubResource("BoxShape3D_7tecb")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_011" parent_id_path=PackedInt32Array(876340633, 171741461) index="0" unique_id=1395399803]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_011" parent_id_path=PackedInt32Array(876340633, 1440610060) index="0" unique_id=1395399803]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_011/StaticBody3D" unique_id=1258267531]
 shape = SubResource("BoxShape3D_sw0na")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_012" parent_id_path=PackedInt32Array(876340633, 1143436994) index="0" unique_id=702612771]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_012" parent_id_path=PackedInt32Array(876340633, 1414427195) index="0" unique_id=702612771]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_012/StaticBody3D" unique_id=2076964243]
 shape = SubResource("BoxShape3D_iawur")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_013" parent_id_path=PackedInt32Array(876340633, 1820103898) index="0" unique_id=588569059]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_013" parent_id_path=PackedInt32Array(876340633, 354379312) index="0" unique_id=588569059]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_013/StaticBody3D" unique_id=1622030987]
 shape = SubResource("BoxShape3D_c0xy2")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_014" parent_id_path=PackedInt32Array(876340633, 746722739) index="0" unique_id=2062874315]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieOffice/Cubicle_014" parent_id_path=PackedInt32Array(876340633, 2086205431) index="0" unique_id=2062874315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8050001, -0.100000024)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieOffice/Cubicle_014/StaticBody3D" unique_id=901820405]

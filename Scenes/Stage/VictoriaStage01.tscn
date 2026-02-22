@@ -2,53 +2,64 @@
 
 [ext_resource type="PackedScene" uid="uid://cvduc8p5v57g0" path="res://Resources/Models/VictoriaStages/Stage1.gltf" id="1_k1l8y"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_k1l8y"]
+size = Vector3(33.600002, 0.5, 111.4)
+
 [node name="VictoriaStage01" type="Node3D" unique_id=1341088577]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 
-[node name="Stage1" parent="." unique_id=1478590738 instance=ExtResource("1_k1l8y")]
+[node name="Stage1" parent="." unique_id=1800197430 instance=ExtResource("1_k1l8y")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.3, 0, 76.3)
 
-[node name="Point" parent="Stage1" index="79" unique_id=1005591668]
+[node name="Point" parent="Stage1" index="79" unique_id=656669079]
 light_energy = 21.7
 
-[node name="Point_001" parent="Stage1" index="80" unique_id=154805638]
+[node name="Point_001" parent="Stage1" index="80" unique_id=2077664907]
 light_energy = 21.7
 
-[node name="Point_002" parent="Stage1" index="81" unique_id=1497009236]
+[node name="Point_002" parent="Stage1" index="81" unique_id=348804751]
 light_energy = 21.7
 
-[node name="Point_003" parent="Stage1" index="82" unique_id=1790671609]
+[node name="Point_003" parent="Stage1" index="82" unique_id=1689981861]
 light_energy = 21.7
 
-[node name="Point_017" parent="Stage1" index="83" unique_id=85438964]
+[node name="Point_017" parent="Stage1" index="83" unique_id=830556821]
 light_energy = 21.7
 
-[node name="Point_018" parent="Stage1" index="84" unique_id=1043890474]
+[node name="Point_018" parent="Stage1" index="84" unique_id=1103426206]
 light_energy = 21.7
 
-[node name="Spot" parent="Stage1" index="85" unique_id=1795715297]
+[node name="Spot" parent="Stage1" index="85" unique_id=1173747144]
 light_energy = 21.7
 
-[node name="Spot_001" parent="Stage1" index="86" unique_id=763993663]
+[node name="Spot_001" parent="Stage1" index="86" unique_id=1446148738]
 light_energy = 21.7
 
-[node name="Spot_004" parent="Stage1" index="87" unique_id=1542365163]
+[node name="Spot_004" parent="Stage1" index="87" unique_id=362140083]
 light_energy = 21.7
 
-[node name="Spot_005" parent="Stage1" index="88" unique_id=1436950905]
+[node name="Spot_005" parent="Stage1" index="88" unique_id=1501051586]
 light_energy = 21.7
 
-[node name="Spot_006" parent="Stage1" index="89" unique_id=1652983634]
+[node name="Spot_006" parent="Stage1" index="89" unique_id=1323157512]
 light_energy = 21.7
 
-[node name="Spot_007" parent="Stage1" index="90" unique_id=1409818803]
+[node name="Spot_007" parent="Stage1" index="90" unique_id=1308146725]
 light_energy = 21.7
 
-[node name="Spot_008" parent="Stage1" index="91" unique_id=379337966]
+[node name="Spot_008" parent="Stage1" index="91" unique_id=1051009688]
 light_energy = 21.7
 
-[node name="Spot_009" parent="Stage1" index="92" unique_id=1197917591]
+[node name="Spot_009" parent="Stage1" index="92" unique_id=945658695]
 light_energy = 21.7
 
-[node name="Point_006" parent="Stage1" index="106" unique_id=32768919]
+[node name="Point_006" parent="Stage1" index="110" unique_id=700761678]
 light_energy = 21.7
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=977291953]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1932348439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.200001, -0.25, 55.7)
+shape = SubResource("BoxShape3D_k1l8y")
 
 [editable path="Stage1"]

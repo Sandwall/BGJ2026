@@ -1,0 +1,44 @@
+FRAME RATE: 24 FPS
+
+Business Idle Anim:
+	BuisnessIdle1: 6 frames
+	BuisnessIdle2: 6 frames
+	BuisnessIdle1: 6 frames
+	BuisnessIdle2: 6 frames
+	BuisnessIdle3: 6 frames
+	BuisnessIdle2: 6 frames
+	restart loop
+Business Talk Anim:
+	BuisnessTalk1: 4 frames
+	BuisnessTalk2: 4 frames
+	BuisnessTalk3: 4 frames
+	BuisnessTalk2: 4 frames
+	restart loop
+Casual Idle Anim:
+	CasualIdle1: 6 frames
+	CasualIdle2: 6 frames
+	CausualIdle1: 6 frames
+	CasualIdle2: 6 frames
+	CasualIdle3: 6 frames
+	CasualIdle2: 6 frames
+	restart loop
+Casual Talk Anim:
+	CasualTalk1: 4 frames
+	CasualTalk2: 4 frames
+	CasualTalk3: 4 frames
+	CasualTalk2: 4 frames
+	restart loop
+Fem Idle Anim:
+	FemIdle1: 6 frames
+	FemIdle2: 6 frames
+	FemIdle1: 6 frames
+	FemIdle2: 6 frames
+	FemIdle3: 6 frames
+	FemIdle2: 6 frames
+	restart loop
+Fem Talk Anim:
+	FemTalk1: 4 frames
+	FemTalk2: 4 frames
+	FemTalk3: 4 frames
+	FemTalk2: 4 frames
+	restart loop
