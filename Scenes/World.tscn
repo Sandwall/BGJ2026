@@ -6,12 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
 [ext_resource type="PackedScene" uid="uid://djay3cdf7ofo3" path="res://Scenes/Stage/VictoriaStage01.tscn" id="4_ti1bm"]
 [ext_resource type="PackedScene" uid="uid://cewhef2lpvpru" path="res://Scenes/Enviroment/Platform.tscn" id="5_p70al"]
-[ext_resource type="Script" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
+[ext_resource type="Script" uid="uid://d0sdi3ppa8gg4" path="res://Scripts/Deathplane.gd" id="6_45d1s"]
 [ext_resource type="PackedScene" uid="uid://13rb6aiq25xy" path="res://Scenes/Enviroment/Wall.tscn" id="7_kn06e"]
-[ext_resource type="PackedScene" path="res://Scenes/Enviroment/MovingPlatform.tscn" id="7_uo7di"]
-[ext_resource type="Script" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
-[ext_resource type="Script" path="res://Scripts/AlwaysFacePlayer.gd" id="8_7yo87"]
-[ext_resource type="PackedScene" path="res://Scenes/Enviroment/Firewall.tscn" id="12_ti1bm"]
+[ext_resource type="PackedScene" uid="uid://b7cylcievqyc5" path="res://Scenes/Enviroment/MovingPlatform.tscn" id="7_uo7di"]
+[ext_resource type="Script" uid="uid://bf8jqwk1701ou" path="res://Scripts/Checkpoint.gd" id="7_y7y61"]
+[ext_resource type="Script" uid="uid://tgsi8i4qi0ec" path="res://Scripts/AlwaysFacePlayer.gd" id="8_7yo87"]
+[ext_resource type="PackedScene" uid="uid://pyo8hh6njkkh" path="res://Scenes/Enviroment/Firewall.tscn" id="12_ti1bm"]
+[ext_resource type="WwiseEvent" uid="uid://bnhxern0gusg1" path="res://Wwise/resources/Event/{6343721D-3E5B-4BE6-B385-325C0D8DA43E}.tres" id="13_op4cu"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
 
@@ -197,5 +198,9 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0
 
 [node name="FireWall" parent="." unique_id=1513712859 instance=ExtResource("12_ti1bm")]
 transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, -17.082834, 0)
+
+[node name="AkEvent2D" type="AkEvent2D" parent="." unique_id=484776442]
+event = ExtResource("13_op4cu")
+trigger_on = 2
 
 [connection signal="body_entered" from="Deathplane" to="Deathplane" method="_on_body_entered"]
