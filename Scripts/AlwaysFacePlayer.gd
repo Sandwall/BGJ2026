@@ -3,7 +3,7 @@ extends Node3D
 
 @onready var playerRef := Main.inst.plr
 
-func _process(delta):
+func _process(_delta):
 	if playerRef == null: return
 	
 	# basically says that if my forward vector is misaligned with the player's forward vector,

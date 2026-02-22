@@ -7,6 +7,7 @@
 size = Vector3(2, 0.19999999, 4)
 
 [node name="Platform" type="PathFollow3D" unique_id=1889139088]
+rotation_mode = 1
 script = ExtResource("1_jjlio")
 
 [node name="Platform" parent="." unique_id=2108940440 instance=ExtResource("1_5sa3q")]

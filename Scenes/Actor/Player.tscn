@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://0dq4hrm7g0uh"]
 
 [ext_resource type="Script" uid="uid://dy2oerujlkby3" path="res://Scripts/Player.gd" id="1_70wq3"]
-[ext_resource type="Texture2D" uid="uid://c4dotpdjndhkp" path="res://Resources/Sprites/Mail/StaticMail.png" id="2_88gag"]
+[ext_resource type="Texture2D" uid="uid://qnijjn46syjb" path="res://icon.svg" id="2_vdnb4"]
 [ext_resource type="Script" uid="uid://bbtgylgnwfgps" path="res://Scripts/MailHeldVisual.gd" id="3_88gag"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0f38m"]
@@ -34,6 +34,37 @@ stencil_flags = 2
 stencil_color = Color(1, 0, 1, 1)
 stencil_outline_thickness = 0.02
 
+[sub_resource type="Curve" id="Curve_88gag"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.06472081, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_olaw0"]
+width = 128
+curve = SubResource("Curve_88gag")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_88gag"]
+emission_shape = 3
+emission_box_extents = Vector3(0.375, 0.1, 0.375)
+direction = Vector3(0, 1, 0)
+spread = 30.0
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+scale_min = 0.0
+scale_curve = SubResource("CurveTexture_olaw0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_olaw0"]
+shading_mode = 0
+albedo_color = Color(0.33670002, 0.804895, 0.91, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_wd5h5"]
+material = SubResource("StandardMaterial3D_olaw0")
+size = Vector2(0.15, 0.15)
+
 [node name="Player" type="CharacterBody3D" unique_id=1703810380]
 script = ExtResource("1_70wq3")
 
@@ -44,17 +75,27 @@ current = true
 target_position = Vector3(0, 0, -2)
 collision_mask = 3
 
-[node name="MailHolder" type="Node3D" parent="Camera3D" unique_id=704548742]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.62336195, -0.9318232)
-
-[node name="Mail" type="Sprite3D" parent="Camera3D/MailHolder" unique_id=1667019444]
-transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
-texture = ExtResource("2_88gag")
-script = ExtResource("3_88gag")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1465559978]
 shape = SubResource("CapsuleShape3D_0f38m")
 
 [node name="TargetOutline" type="MeshInstance3D" parent="." unique_id=1823053433]
 top_level = true
 material_override = SubResource("StandardMaterial3D_vdnb4")
+
+[node name="MailHolder" type="Node3D" parent="." unique_id=704548742]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.62336195, -0.9318232)
+
+[node name="Mail" type="Sprite3D" parent="MailHolder" unique_id=1667019444]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+texture = ExtResource("2_vdnb4")
+script = ExtResource("3_88gag")
+
+[node name="RespawnParticles" type="GPUParticles3D" parent="." unique_id=1326078453]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+emitting = false
+amount = 64
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_88gag")
+draw_pass_1 = SubResource("QuadMesh_wd5h5")

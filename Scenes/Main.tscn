@@ -4,13 +4,18 @@
 [ext_resource type="PackedScene" uid="uid://b0urcnetw2ffk" path="res://Scenes/World.tscn" id="2_kln2b"]
 [ext_resource type="PackedScene" uid="uid://tsnvl1id1wr8" path="res://Scenes/HUD.tscn" id="3_kln2b"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_kln2b"]
+font_size = 64
+
+[sub_resource type="LabelSettings" id="LabelSettings_rgh2o"]
+font_size = 32
+
 [node name="Main" type="Node" unique_id=367523833]
+process_mode = 3
 script = ExtResource("1_rgh2o")
 
-[node name="Persistent" type="Node" parent="." unique_id=2026146721]
-process_mode = 4
-
 [node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=1206231782]
+process_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -32,3 +37,45 @@ render_target_update_mode = 4
 [node name="World" parent="SubViewportContainer/SubViewport" unique_id=45579773 instance=ExtResource("2_kln2b")]
 
 [node name="HUD" parent="." unique_id=1455864251 instance=ExtResource("3_kln2b")]
+process_mode = 1
+
+[node name="Pause" type="CanvasLayer" parent="." unique_id=551699895]
+process_mode = 3
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Pause" unique_id=1425618529]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.7058824)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Pause" unique_id=399621303]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -34.0
+offset_bottom = 34.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Pause/VBoxContainer" unique_id=290162649]
+layout_mode = 2
+text = "<PAUSED>"
+label_settings = SubResource("LabelSettings_kln2b")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpacingDummy" type="ColorRect" parent="Pause/VBoxContainer" unique_id=830852003]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Label2" type="Label" parent="Pause/VBoxContainer" unique_id=2061798137]
+layout_mode = 2
+text = "PRESS ENTER TO UNPAUSE"
+label_settings = SubResource("LabelSettings_rgh2o")
+horizontal_alignment = 1
+vertical_alignment = 1

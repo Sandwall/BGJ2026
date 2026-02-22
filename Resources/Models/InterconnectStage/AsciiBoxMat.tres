@@ -3,7 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://b4rkqarypcj6g" path="res://Resources/Models/InterconnectStage/ASCIIBox_Invert.png" id="1_lofvy"]
 
 [resource]
-shading_mode = 0
-albedo_color = Color(1, 0.45599997, 0.36, 1)
+albedo_color = Color(0.35605982, 0.9999998, 0.95929486, 1)
 albedo_texture = ExtResource("1_lofvy")
 texture_filter = 2

@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://bcvkbda7xl8c8" path="res://Scripts/UI/HUD.gd" id="1_jo1ms"]
 [ext_resource type="Texture2D" uid="uid://bjj74tyorh2ph" path="res://Resources/Sprites/CursorReticleWhite.png" id="2_jo1ms"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_jo1ms"]
+atlas = ExtResource("2_jo1ms")
+region = Rect2(96, 96, 64, 64)
+
 [sub_resource type="Animation" id="Animation_s3jbq"]
 resource_name = "CloseDialog"
 length = 0.2
@@ -251,21 +255,23 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Crosshair" type="TextureRect" parent="HUD" unique_id=893772226]
-custom_minimum_size = Vector2(64, 64)
+custom_minimum_size = Vector2(128, 128)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -16.0
+offset_top = -15.0
+offset_right = 16.0
+offset_bottom = 17.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
 mouse_filter = 2
-texture = ExtResource("2_jo1ms")
+texture = SubResource("AtlasTexture_jo1ms")
+expand_mode = 1
 
 [node name="DialogueBox" type="Control" parent="HUD" unique_id=1891873408]
 visible = false

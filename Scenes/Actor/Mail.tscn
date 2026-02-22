@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://djiu4prh4vksp"]
 
 [ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/EmailPickup.gd" id="1_tlgbn"]
-[ext_resource type="Script" uid="uid://b6lgsyhmvhsvb" path="res://Scripts/MailAnimator.gd" id="2_s8xg7"]
+[ext_resource type="Script" path="res://Scripts/MailAnimator.gd" id="2_s8xg7"]
 [ext_resource type="Texture2D" uid="uid://xvc7nv1gmqre" path="res://Resources/Sprites/Mail/MailSpinFrames/0001.png" id="3_kwg73"]
 [ext_resource type="Texture2D" uid="uid://8y6vcbj7d6jo" path="res://Resources/Sprites/Mail/MailSpinFrames/0002.png" id="4_6yyg5"]
 [ext_resource type="Texture2D" uid="uid://dyet532h1xrms" path="res://Resources/Sprites/Mail/MailSpinFrames/0003.png" id="5_i7l7u"]

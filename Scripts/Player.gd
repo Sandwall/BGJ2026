@@ -9,13 +9,14 @@ class_name Player extends CharacterBody3D
 
 @export var GROUND_ACCEL_TIME := 0.1
 @export var GROUND_DECEL_TIME := 0.3
-@export var GROUND_SPEED := 3.0
+@export var GROUND_SPEED := 4.0
 @export var AIR_ACCEL_DECEL_TIME := 0.25
-@export var AIR_SPEED := 2.0
+@export var AIR_SPEED := 3.0
 @export var JUMP_VELOCITY := 4.5
 
 @export_group("Camera Constants")
 @export var cameraSens := Vector2(0.3, 0.3)
+@export var cameraSensController := Vector2(2.0, 2.0)
 @export var RESPAWN_HEIGHT := 150.0
 @export var FOOTSTEP_TIME := 0.6;
 
@@ -73,15 +74,19 @@ func _physics_process(delta: float):
 	# gather relevant inputs
 	moveInput = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").limit_length(1.0)
 	lookInput *= cameraSens * delta # mouse input is done in the _input function...
-	jumpClicked = Input.is_action_just_pressed("ui_accept")
+	jumpClicked = Input.is_action_just_pressed("plr_jump")
 	interactClicked = Input.is_action_just_pressed("plr_interact")
+	
+	var conLook := Vector2(Input.get_axis("con_look_left", "con_look_right"), Input.get_axis("con_look_up", "con_look_down"))
+	if(conLook.length_squared() > 0.05):
+		lookInput = conLook * delta * cameraSensController
 	
 	# this gets set to true by the deathplane when the player collides with it
 	if respawning:
 		moveInput = Vector2.ZERO
 		if is_on_floor():
-			Wwise.post_event("PLAY_SFX_Respawn", self)
 			respawning = false
+			$RespawnParticles.emitting = true
 
 	# pre-update updates
 	update_camera()
@@ -98,9 +103,7 @@ func _physics_process(delta: float):
 
 	if onFloor:
 		if not prevOnGround:
-			Wwise.post_event("PLAY_SFX_Footstep", self);
-			#print("landing SFX")
-			footstepTimer = 0;
+			# play landing sfx
 			pass
 		
 		if moveInput.length_squared() > 0.0005:
@@ -115,7 +118,6 @@ func _physics_process(delta: float):
 		if lateralVelocity.length() > GROUND_SPEED/2:
 			if footstepTimer >= FOOTSTEP_TIME:
 				Wwise.post_event("PLAY_SFX_Footstep", self);
-				#print("Footstep");
 				footstepTimer = 0;
 			footstepTimer = footstepTimer + delta;
 		else:
