@@ -47,7 +47,7 @@ func on_email_obtained(email: EmailResource):
 		"email_07":
 			enable_parkour(3)
 		"email_08":
-			pass
+			Wwise.post_event("RTPC_MX_Layering", self)
 		"email_09":
 			enable_parkour(4)
 		"email_10":

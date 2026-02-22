@@ -1,0 +1,8 @@
+[gd_resource type="WwiseEvent" format=3 uid="uid://dl66vmnvxj4fx"]
+
+[resource]
+is_in_user_defined_sound_bank = true
+name = "STATE_MX_Exploration"
+id = 3396848926
+guid = "{7D9DF732-3627-476C-B449-7A8187CB2C37}"
+dummy = true

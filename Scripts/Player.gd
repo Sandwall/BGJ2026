@@ -85,6 +85,8 @@ func _physics_process(delta: float):
 	if respawning:
 		moveInput = Vector2.ZERO
 		if is_on_floor():
+			Wwise.post_event("PLAY_SFX_Error", self)
+			Wwise.post_event("STOP_SFX_Falling", self)
 			respawning = false
 			$RespawnParticles.emitting = true
 
@@ -155,6 +157,7 @@ func _physics_process(delta: float):
 func respawn() -> void:
 	if lastRespawnPoint == null: return
 	
+	Wwise.post_event("PLAY_SFX_Falling", self)
 	respawning = true
 	global_position = lastRespawnPoint.global_position
 	global_position.y += RESPAWN_HEIGHT
