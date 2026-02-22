@@ -2,62 +2,77 @@
 
 [ext_resource type="PackedScene" uid="uid://buviru1a4ey6m" path="res://Resources/Models/VictoriaStages/Stage2.gltf" id="1_3rvul"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_3rvul"]
+size = Vector3(37, 0.5, 87.46463)
+
 [node name="VictoriaStage02" type="Node3D" unique_id=1858577213]
 
-[node name="Stage2" parent="." unique_id=576196214 instance=ExtResource("1_3rvul")]
+[node name="Scale" type="Node3D" parent="." unique_id=1872086]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 
-[node name="Point_020" parent="Stage2" index="79" unique_id=1510985614]
+[node name="Offset" type="Node3D" parent="Scale" unique_id=1899417465]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.3, 0, 76.3)
+
+[node name="Stage2" parent="Scale/Offset" unique_id=576196214 instance=ExtResource("1_3rvul")]
+
+[node name="Point_020" parent="Scale/Offset/Stage2" index="79" unique_id=1429353407]
 light_energy = 21.741
 
-[node name="Point_021" parent="Stage2" index="80" unique_id=1758801759]
+[node name="Point_021" parent="Scale/Offset/Stage2" index="80" unique_id=1997305044]
 light_energy = 21.741
 
-[node name="Point_022" parent="Stage2" index="81" unique_id=1391397838]
+[node name="Point_022" parent="Scale/Offset/Stage2" index="81" unique_id=1057378648]
 light_energy = 21.741
 
-[node name="Point_023" parent="Stage2" index="82" unique_id=511798066]
+[node name="Point_023" parent="Scale/Offset/Stage2" index="82" unique_id=1989908488]
 light_energy = 21.741
 
-[node name="Point_024" parent="Stage2" index="83" unique_id=1043897338]
+[node name="Point_024" parent="Scale/Offset/Stage2" index="83" unique_id=1248285114]
 light_energy = 21.741
 
-[node name="Point_025" parent="Stage2" index="84" unique_id=1951437547]
+[node name="Point_025" parent="Scale/Offset/Stage2" index="84" unique_id=872559208]
 light_energy = 21.741
 
-[node name="Spot_002" parent="Stage2" index="85" unique_id=1678109544]
+[node name="Spot_002" parent="Scale/Offset/Stage2" index="85" unique_id=890789654]
 light_energy = 21.741
 
-[node name="Spot_003" parent="Stage2" index="86" unique_id=231206868]
+[node name="Spot_003" parent="Scale/Offset/Stage2" index="86" unique_id=1118512836]
 light_energy = 21.741
 
-[node name="Spot_046" parent="Stage2" index="87" unique_id=798145630]
+[node name="Spot_046" parent="Scale/Offset/Stage2" index="87" unique_id=1905061207]
 light_energy = 21.741
 
-[node name="Spot_047" parent="Stage2" index="88" unique_id=1031821864]
+[node name="Spot_047" parent="Scale/Offset/Stage2" index="88" unique_id=931330425]
 light_energy = 21.741
 
-[node name="Spot_048" parent="Stage2" index="89" unique_id=1777852830]
+[node name="Spot_048" parent="Scale/Offset/Stage2" index="89" unique_id=924823228]
 light_energy = 21.741
 
-[node name="Spot_049" parent="Stage2" index="90" unique_id=951654498]
+[node name="Spot_049" parent="Scale/Offset/Stage2" index="90" unique_id=1582327943]
 light_energy = 21.741
 
-[node name="Spot_050" parent="Stage2" index="91" unique_id=992616231]
+[node name="Spot_050" parent="Scale/Offset/Stage2" index="91" unique_id=739649401]
 light_energy = 21.741
 
-[node name="Spot_051" parent="Stage2" index="92" unique_id=1632693428]
+[node name="Spot_051" parent="Scale/Offset/Stage2" index="92" unique_id=1474493902]
 light_energy = 21.741
 
-[node name="Spot_052" parent="Stage2" index="110" unique_id=1550847976]
+[node name="Spot_052" parent="Scale/Offset/Stage2" index="110" unique_id=592444063]
 light_energy = 21.741
 
-[node name="Spot_053" parent="Stage2" index="111" unique_id=1065793575]
+[node name="Spot_053" parent="Scale/Offset/Stage2" index="111" unique_id=751722917]
 light_energy = 21.741
 
-[node name="Point_026" parent="Stage2" index="117" unique_id=107359991]
+[node name="Point_026" parent="Scale/Offset/Stage2" index="117" unique_id=1156949913]
 light_energy = 21.741
 
-[node name="Point_019" parent="Stage2" index="126" unique_id=213677693]
+[node name="Point_019" parent="Scale/Offset/Stage2" index="132" unique_id=1803550774]
 light_energy = 21.741
 
-[editable path="Stage2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1675355666]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1926897910]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 10.200001, -0.24999994, 43.732246)
+shape = SubResource("BoxShape3D_3rvul")
+
+[editable path="Scale/Offset/Stage2"]

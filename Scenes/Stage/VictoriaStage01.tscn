@@ -3,63 +3,68 @@
 [ext_resource type="PackedScene" uid="uid://cvduc8p5v57g0" path="res://Resources/Models/VictoriaStages/Stage1.gltf" id="1_k1l8y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k1l8y"]
-size = Vector3(33.600002, 0.5, 111.4)
+size = Vector3(40, 0.5, 70.77469)
 
 [node name="VictoriaStage01" type="Node3D" unique_id=1341088577]
+
+[node name="Scale" type="Node3D" parent="." unique_id=907856307]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, 0)
 
-[node name="Stage1" parent="." unique_id=1800197430 instance=ExtResource("1_k1l8y")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10.3, 0, 76.3)
+[node name="Offset" type="Node3D" parent="Scale" unique_id=1145696952]
+transform = Transform3D(-2.6226834e-08, 0, 0.6, 0, 0.6, 0, -0.6, 0, -2.6226834e-08, 10.3, 0, 76.3)
 
-[node name="Point" parent="Stage1" index="79" unique_id=656669079]
+[node name="Stage1" parent="Scale/Offset" unique_id=1970348387 instance=ExtResource("1_k1l8y")]
+transform = Transform3D(1.6666665, 0, 0, 0, 1.6666665, 0, 0, 0, 1.6666665, 0, 0, 0)
+
+[node name="Point" parent="Scale/Offset/Stage1" index="79" unique_id=1084474465]
 light_energy = 21.7
 
-[node name="Point_001" parent="Stage1" index="80" unique_id=2077664907]
+[node name="Point_001" parent="Scale/Offset/Stage1" index="80" unique_id=383544195]
 light_energy = 21.7
 
-[node name="Point_002" parent="Stage1" index="81" unique_id=348804751]
+[node name="Point_002" parent="Scale/Offset/Stage1" index="81" unique_id=2061628644]
 light_energy = 21.7
 
-[node name="Point_003" parent="Stage1" index="82" unique_id=1689981861]
+[node name="Point_003" parent="Scale/Offset/Stage1" index="82" unique_id=1692142260]
 light_energy = 21.7
 
-[node name="Point_017" parent="Stage1" index="83" unique_id=830556821]
+[node name="Point_017" parent="Scale/Offset/Stage1" index="83" unique_id=1002216292]
 light_energy = 21.7
 
-[node name="Point_018" parent="Stage1" index="84" unique_id=1103426206]
+[node name="Point_018" parent="Scale/Offset/Stage1" index="84" unique_id=1427265374]
 light_energy = 21.7
 
-[node name="Spot" parent="Stage1" index="85" unique_id=1173747144]
+[node name="Spot" parent="Scale/Offset/Stage1" index="85" unique_id=2084328642]
 light_energy = 21.7
 
-[node name="Spot_001" parent="Stage1" index="86" unique_id=1446148738]
+[node name="Spot_001" parent="Scale/Offset/Stage1" index="86" unique_id=699414711]
 light_energy = 21.7
 
-[node name="Spot_004" parent="Stage1" index="87" unique_id=362140083]
+[node name="Spot_004" parent="Scale/Offset/Stage1" index="87" unique_id=160617645]
 light_energy = 21.7
 
-[node name="Spot_005" parent="Stage1" index="88" unique_id=1501051586]
+[node name="Spot_005" parent="Scale/Offset/Stage1" index="88" unique_id=858928568]
 light_energy = 21.7
 
-[node name="Spot_006" parent="Stage1" index="89" unique_id=1323157512]
+[node name="Spot_006" parent="Scale/Offset/Stage1" index="89" unique_id=1770562439]
 light_energy = 21.7
 
-[node name="Spot_007" parent="Stage1" index="90" unique_id=1308146725]
+[node name="Spot_007" parent="Scale/Offset/Stage1" index="90" unique_id=147947743]
 light_energy = 21.7
 
-[node name="Spot_008" parent="Stage1" index="91" unique_id=1051009688]
+[node name="Spot_008" parent="Scale/Offset/Stage1" index="91" unique_id=1994670327]
 light_energy = 21.7
 
-[node name="Spot_009" parent="Stage1" index="92" unique_id=945658695]
+[node name="Spot_009" parent="Scale/Offset/Stage1" index="92" unique_id=1645138128]
 light_energy = 21.7
 
-[node name="Point_006" parent="Stage1" index="110" unique_id=700761678]
+[node name="Point_006" parent="Scale/Offset/Stage1" index="110" unique_id=42263081]
 light_energy = 21.7
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=977291953]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1932348439]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.200001, -0.25, 55.7)
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 10.200001, -0.24999994, 35.387283)
 shape = SubResource("BoxShape3D_k1l8y")
 
-[editable path="Stage1"]
+[editable path="Scale/Offset/Stage1"]
