@@ -19,5 +19,7 @@ func _process(delta):
 		pauseScreen.visible = get_tree().paused
 		if get_tree().paused:
 			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+			Wwise.post_event("PLAY_SFX_UISelect", self)
 		else:
 			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			Wwise.post_event("PLAY_SFX_UIBack", self)

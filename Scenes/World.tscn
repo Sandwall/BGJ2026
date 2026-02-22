@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://0dq4hrm7g0uh" path="res://Scenes/Actor/Player.tscn" id="1_5cjrv"]
 [ext_resource type="Script" uid="uid://byyorc4pos538" path="res://Scripts/StoryManager.gd" id="1_q2d71"]
-[ext_resource type="Script" path="res://Scripts/MusicManager.gd" id="2_8l3nt"]
+[ext_resource type="Script" uid="uid://dm5qswx1luuw3" path="res://Scripts/MusicManager.gd" id="2_8l3nt"]
 [ext_resource type="PackedScene" uid="uid://bhm77tctxni61" path="res://Scenes/Stage/DuckieStageOffice.tscn" id="2_gjpho"]
 [ext_resource type="PackedScene" uid="uid://bexsfkb2puprc" path="res://Scenes/Stage/InterconnectStage.tscn" id="4_45d1s"]
 [ext_resource type="PackedScene" uid="uid://djay3cdf7ofo3" path="res://Scenes/Stage/VictoriaStage01.tscn" id="4_ti1bm"]
@@ -14,7 +14,7 @@
 [ext_resource type="Script" uid="uid://tgsi8i4qi0ec" path="res://Scripts/AlwaysFacePlayer.gd" id="8_7yo87"]
 [ext_resource type="PackedScene" uid="uid://pyo8hh6njkkh" path="res://Scenes/Enviroment/Firewall.tscn" id="12_ti1bm"]
 [ext_resource type="WwiseEvent" uid="uid://bnhxern0gusg1" path="res://Wwise/resources/Event/{6343721D-3E5B-4BE6-B385-325C0D8DA43E}.tres" id="13_op4cu"]
-[ext_resource type="WwiseEvent" path="res://Wwise/resources/Event/{7D9DF732-3627-476C-B449-7A8187CB2C37}.tres" id="15_kwl8l"]
+[ext_resource type="WwiseEvent" uid="uid://dl66vmnvxj4fx" path="res://Wwise/resources/Event/{7D9DF732-3627-476C-B449-7A8187CB2C37}.tres" id="15_kwl8l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kwl8l"]
 size = Vector3(23.595154, 9.411427, 67.360855)
@@ -124,8 +124,6 @@ transform = Transform3D(1, 0, -1.7484554e-07, 0, 1, 0, 1.7484554e-07, 0, 1, -3.4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.034585953, 0.08090973, 0.010345459)
 
 [node name="ParkourSegments" type="Node3D" parent="." unique_id=658885363]
-
-[node name="Parkour4" type="Node3D" parent="ParkourSegments" unique_id=1757538292]
 
 [node name="Parkour1" type="Node3D" parent="ParkourSegments" unique_id=1718981119]
 visible = false
@@ -240,6 +238,8 @@ curve = SubResource("Curve3D_8l3nt")
 transform = Transform3D(-1, 0, -8.7421945e-08, 0, 0.99999046, 0, 8.742278e-08, 0, -0.99999046, 0, 0, 0)
 timeLength = 4.0
 sitLength = 1.0
+
+[node name="Parkour4" type="Node3D" parent="ParkourSegments" unique_id=1757538292]
 
 [node name="Parkour5" type="Node3D" parent="ParkourSegments" unique_id=1492741031]
 
