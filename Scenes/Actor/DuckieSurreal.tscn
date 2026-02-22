@@ -1,0 +1,191 @@
+[gd_scene format=3 uid="uid://2n0vrgk72w4"]
+
+[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="1_yo750"]
+[ext_resource type="Texture2D" uid="uid://dnrc8uob13t5h" path="res://Resources/Models/Duckie/BuisnessIdle1.png" id="2_16w5y"]
+[ext_resource type="Texture2D" uid="uid://lcc7ftrrye0j" path="res://Resources/Models/Duckie/BuisnessIdle2.png" id="3_7ftyx"]
+[ext_resource type="Texture2D" uid="uid://cgtd0pt670bgr" path="res://Resources/Models/Duckie/BuisnessIdle3.png" id="4_7oxfr"]
+[ext_resource type="Texture2D" uid="uid://cnxjjkfnl0ai" path="res://Resources/Models/Duckie/BuisnessTalk1.png" id="5_kwmdc"]
+[ext_resource type="Texture2D" uid="uid://dxo4sorgbgw25" path="res://Resources/Models/Duckie/BuisnessTalk2.png" id="6_os8sb"]
+[ext_resource type="Texture2D" uid="uid://dnvyebyv3soo6" path="res://Resources/Models/Duckie/BuisnessTalk3.png" id="7_e46cx"]
+[ext_resource type="Texture2D" uid="uid://7racwg55xxpm" path="res://Resources/Models/Duckie/CasualIdle1.png" id="8_e8k01"]
+[ext_resource type="Texture2D" uid="uid://debidbwbehx58" path="res://Resources/Models/Duckie/CasualIdle2.png" id="9_d4mcd"]
+[ext_resource type="Texture2D" uid="uid://bld6a0v7fitwe" path="res://Resources/Models/Duckie/CasualIdle3.png" id="10_i2vi3"]
+[ext_resource type="Texture2D" uid="uid://d2mehefqta8xu" path="res://Resources/Models/Duckie/CasualTalk1.png" id="11_j40qy"]
+[ext_resource type="Texture2D" uid="uid://b7i1f7jcp3jwh" path="res://Resources/Models/Duckie/CasualTalk2.png" id="12_gxhuq"]
+[ext_resource type="Texture2D" uid="uid://dh0xntpxvh8ll" path="res://Resources/Models/Duckie/CasualTalk3.png" id="13_b765u"]
+[ext_resource type="Texture2D" uid="uid://2b5fuoapgyyk" path="res://Resources/Models/Duckie/FemIdle1.png" id="14_tf15x"]
+[ext_resource type="Texture2D" uid="uid://gaytq8dmlqo8" path="res://Resources/Models/Duckie/FemIdle2.png" id="15_jajmu"]
+[ext_resource type="Texture2D" uid="uid://boqftlxgxcaep" path="res://Resources/Models/Duckie/FemIdle3.png" id="16_66qff"]
+[ext_resource type="Texture2D" uid="uid://cd6hs3gd5sve0" path="res://Resources/Models/Duckie/FemTalk1.png" id="17_bx1bw"]
+[ext_resource type="Texture2D" uid="uid://bs1qsy54cnkqc" path="res://Resources/Models/Duckie/FemTalk2.png" id="18_5n5jy"]
+[ext_resource type="Texture2D" uid="uid://c04psg76j2bub" path="res://Resources/Models/Duckie/FemTalk3.png" id="19_jc74l"]
+[ext_resource type="Script" uid="uid://cprp4ly3afbbn" path="res://Scripts/DuckieAnimator.gd" id="20_ivorl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d7mq3"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0)
+billboard_mode = 2
+
+[sub_resource type="QuadMesh" id="QuadMesh_d7mq3"]
+size = Vector2(1, 2.8)
+center_offset = Vector3(0, 1.3, 0)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p3rw8"]
+radius = 0.72998047
+height = 2.8278809
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ug55"]
+animations = [{
+"frames": [{
+"duration": 4.0,
+"texture": ExtResource("2_16w5y")
+}, {
+"duration": 4.0,
+"texture": ExtResource("3_7ftyx")
+}, {
+"duration": 4.0,
+"texture": ExtResource("2_16w5y")
+}, {
+"duration": 4.0,
+"texture": ExtResource("3_7ftyx")
+}, {
+"duration": 4.0,
+"texture": ExtResource("4_7oxfr")
+}, {
+"duration": 4.0,
+"texture": ExtResource("3_7ftyx")
+}],
+"loop": true,
+"name": &"business_idle",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("5_kwmdc")
+}, {
+"duration": 6.0,
+"texture": ExtResource("6_os8sb")
+}, {
+"duration": 6.0,
+"texture": ExtResource("7_e46cx")
+}, {
+"duration": 6.0,
+"texture": ExtResource("6_os8sb")
+}],
+"loop": true,
+"name": &"business_talk",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 4.0,
+"texture": ExtResource("8_e8k01")
+}, {
+"duration": 4.0,
+"texture": ExtResource("9_d4mcd")
+}, {
+"duration": 4.0,
+"texture": ExtResource("8_e8k01")
+}, {
+"duration": 4.0,
+"texture": ExtResource("9_d4mcd")
+}, {
+"duration": 4.0,
+"texture": ExtResource("10_i2vi3")
+}, {
+"duration": 4.0,
+"texture": ExtResource("9_d4mcd")
+}],
+"loop": true,
+"name": &"casual_idle",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("11_j40qy")
+}, {
+"duration": 6.0,
+"texture": ExtResource("12_gxhuq")
+}, {
+"duration": 6.0,
+"texture": ExtResource("13_b765u")
+}, {
+"duration": 6.0,
+"texture": ExtResource("12_gxhuq")
+}],
+"loop": true,
+"name": &"casual_talk",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 4.0,
+"texture": ExtResource("14_tf15x")
+}, {
+"duration": 4.0,
+"texture": ExtResource("15_jajmu")
+}, {
+"duration": 4.0,
+"texture": ExtResource("14_tf15x")
+}, {
+"duration": 4.0,
+"texture": ExtResource("15_jajmu")
+}, {
+"duration": 4.0,
+"texture": ExtResource("16_66qff")
+}, {
+"duration": 4.0,
+"texture": ExtResource("15_jajmu")
+}],
+"loop": true,
+"name": &"fem_idle",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 6.0,
+"texture": ExtResource("17_bx1bw")
+}, {
+"duration": 6.0,
+"texture": ExtResource("18_5n5jy")
+}, {
+"duration": 6.0,
+"texture": ExtResource("19_jc74l")
+}, {
+"duration": 6.0,
+"texture": ExtResource("18_5n5jy")
+}],
+"loop": true,
+"name": &"fem_talk",
+"speed": 24.0
+}]
+
+[node name="Duckie" type="MeshInstance3D" unique_id=7679287]
+material_override = SubResource("StandardMaterial3D_d7mq3")
+mesh = SubResource("QuadMesh_d7mq3")
+script = ExtResource("1_yo750")
+host_email = "dsmith@rchs.edu"
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=902598042]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.3640266, 0)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=579616003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.91906786, 0)
+shape = SubResource("CapsuleShape3D_p3rw8")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=314423343]
+transform = Transform3D(0.26, 0, 0, 0, 0.26, 0, 0, 0, 0.26, 0, 0, 0)
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Node3D" unique_id=2108416315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_7ug55")
+animation = &"business_talk"
+frame_progress = 0.5944838
+
+[node name="DuckieAnimator" type="Node" parent="." unique_id=464707142 node_paths=PackedStringArray("send_box", "animated_sprite_3d")]
+script = ExtResource("20_ivorl")
+send_box = NodePath("..")
+animated_sprite_3d = NodePath("../Node3D/AnimatedSprite3D")
+idle_name = "fem_idle"
+talk_name = "fem_talk"

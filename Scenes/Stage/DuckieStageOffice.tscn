@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bhm77tctxni61"]
 
 [ext_resource type="PackedScene" uid="uid://dpcjop8hkxis7" path="res://Resources/Models/DuckieStages/DuckieOffice.glb" id="1_yk0ef"]
-[ext_resource type="PackedScene" uid="uid://cck13ii1hncud" path="res://Scenes/Actor/Duckie.tscn" id="4_if7rn"]
+[ext_resource type="PackedScene" uid="uid://cck13ii1hncud" path="res://Scenes/Actor/DuckieOffice.tscn" id="4_if7rn"]
 [ext_resource type="PackedScene" uid="uid://djiu4prh4vksp" path="res://Scenes/Actor/Mail.tscn" id="4_mw581"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_86ie1"]
