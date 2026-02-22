@@ -34,8 +34,9 @@ var interactClicked := false
 #
 
 # player's inputs don't go through when respawning...
-var respawning := false
 @export var lastRespawnPoint : Checkpoint = null
+var respawning := false
+var prevOnGround := true
 
 func _ready():
 	Main.inst.plr = self
@@ -75,7 +76,7 @@ func _physics_process(delta: float):
 	jumpClicked = Input.is_action_just_pressed("ui_accept")
 	interactClicked = Input.is_action_just_pressed("plr_interact")
 	
-	# this gets set to true when 
+	# this gets set to true by the deathplane when the player collides with it
 	if respawning:
 		moveInput = Vector2.ZERO
 		if is_on_floor():
@@ -93,6 +94,10 @@ func _physics_process(delta: float):
 	var airDelta := AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
 
 	if is_on_floor():
+		if not prevOnGround:
+			# play landing sfx
+			pass
+		
 		if moveInput.length_squared() > 0.0005:
 			lateralVelocity.x = move_toward(lateralVelocity.x, wantLateralVelocity.x * GROUND_SPEED, floorAccelDelta)
 			lateralVelocity.y = move_toward(lateralVelocity.y, wantLateralVelocity.z * GROUND_SPEED, floorAccelDelta)
@@ -110,7 +115,6 @@ func _physics_process(delta: float):
 			footstepTimer = footstepTimer + delta;
 		else:
 			footstepTimer = FOOTSTEP_TIME + 1.0;
-			
 
 		if jumpClicked:
 			velocity.y = JUMP_VELOCITY
@@ -138,6 +142,7 @@ func _physics_process(delta: float):
 	# after-update updates
 	lookInput = Vector2.ZERO
 	prevMoveInput = moveInput
+	prevOnGround = is_on_floor()
 
 func respawn() -> void:
 	if lastRespawnPoint == null: return
