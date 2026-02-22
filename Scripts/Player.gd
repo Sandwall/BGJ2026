@@ -9,7 +9,7 @@ class_name Player extends CharacterBody3D
 
 @export var GROUND_ACCEL_TIME := 0.1
 @export var GROUND_DECEL_TIME := 0.3
-@export var GROUND_SPEED := 3.0 * 10.0
+@export var GROUND_SPEED := 3.0
 @export var AIR_ACCEL_DECEL_TIME := 0.25
 @export var AIR_SPEED := 2.0
 @export var JUMP_VELOCITY := 4.5
