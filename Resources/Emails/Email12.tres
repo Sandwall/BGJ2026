@@ -4,4 +4,10 @@
 
 [resource]
 script = ExtResource("1_b8abo")
+id = &"email_12"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "vickyyyyy2001@hotmail.com"
+toAddress = "dsmith@rchs.edu"
+contents = "college what’s that lmao i didn’t have enough savings to get all the way through and mom and dad would never give me the money after what happened :p i kept going between service jobs while i sculpted until i found montcleave
+so where are you off to??"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

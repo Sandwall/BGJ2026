@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_wi7k3")
 id = &"email_01"
-subject = "[MISSING SUBJECT]"
+subject = "Cleaning Out Old Room"
 fromAddress = "dsmith@rchs.edu"
 toAddress = "vickyyyyy2001@hotmail.com"
 contents = "Dear Victoria,

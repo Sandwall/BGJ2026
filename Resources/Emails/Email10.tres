@@ -4,4 +4,11 @@
 
 [resource]
 script = ExtResource("1_v8kx4")
+id = &"email_10"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "vickyyyyy2001@hotmail.com"
+toAddress = "dsmith@rchs.edu"
+contents = "omg im so old O_O wdym college already????
+ig its been that long damn thats craaaaaaazy
+sooooo whadaya think?"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

@@ -4,4 +4,11 @@
 
 [resource]
 script = ExtResource("1_jhw03")
+id = &"email_06"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "vickyyyyy2001@hotmail.com"
+toAddress = "dsmith@rchs.edu"
+contents = "nope emily left for college and the distance was too much ;-; we stayed in contact for a bit after but haven’t heard from her in like 4 years 
+i met laura at montcleave while i still worked there tho :D we been together for 2 years now talking abt moving in together soon
+wbu anyone special :3"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

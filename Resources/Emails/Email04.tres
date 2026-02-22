@@ -4,4 +4,11 @@
 
 [resource]
 script = ExtResource("1_230oy")
+id = &"email_04"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "vickyyyyy2001@hotmail.com"
+toAddress = "dsmith@rchs.edu"
+contents = "let it all BURN >:) i dont care abt anything i left in that evil house :P so anyway theres this nice gallery down the street called montcleave gallery of arts right? i worked there for a few years and the owner is such a sweetheart anyways she is doing a big exposition with an auction at the end and she goes tori can you make a few pieces for the expo and i say yes of course ^-^ money is still tight but things are awesome rn
+i miss you so much tho :( i tried to text you but then mom and dad kept harassing me so i got a new # i totally forgot abt this email address too i was surprised i got your email seven years after i thought i deleted it
+so how have you been holding up"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

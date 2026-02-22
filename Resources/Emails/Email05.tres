@@ -4,4 +4,14 @@
 
 [resource]
 script = ExtResource("1_41qfj")
+id = &"email_05"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "dsmith@rchs.edu"
+toAddress = "vickyyyyy2001@hotmail.com"
+contents = "Victoria,
+	I’m happy to hear you’re doing well! That art installation sounds incredible. Please send photos of your work when you can. I hope the auction goes well.
+	I’m “holding up” alright. Mom and Dad are the same as always. I’m looking forward to moving out.
+	How is your personal life? Are you still with Emily?
+-Duckie
+"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

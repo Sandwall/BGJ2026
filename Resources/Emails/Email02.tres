@@ -1,12 +1,14 @@
 [gd_resource type="Resource" script_class="EmailResource" format=3 uid="uid://dfnwsnkyy64hf"]
 
 [ext_resource type="Script" uid="uid://bf1ybiskyl8b7" path="res://Scripts/EmailResource.gd" id="1_1xwsv"]
+[ext_resource type="Texture2D" uid="uid://dd5so5f7ydc1t" path="res://Resources/Emails/CatMemeSmall.png" id="1_qs3f7"]
 
 [resource]
 script = ExtResource("1_1xwsv")
 id = &"email_02"
-subject = "[MISSING SUBJECT]"
+subject = "Re: Cleaning Out Old Room"
 fromAddress = "vickyyyyy2001@hotmail.com"
 toAddress = "dsmith@rchs.edu"
+attachment = ExtResource("1_qs3f7")
 contents = "meme.png"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

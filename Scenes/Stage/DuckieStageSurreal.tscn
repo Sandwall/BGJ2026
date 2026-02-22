@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b6kpur7iwdl45"]
 
 [ext_resource type="PackedScene" uid="uid://dyfnfoe287n0e" path="res://Resources/Models/DuckieStages/DuckieSurreal.glb" id="1_m5g8p"]
-[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="2_thnpl"]
-[ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/EmailPickup.gd" id="3_ot7w1"]
+[ext_resource type="PackedScene" path="res://Scenes/Actor/DuckieSurreal.tscn" id="3_ot7w1"]
+[ext_resource type="PackedScene" path="res://Scenes/Actor/Mail.tscn" id="3_thnpl"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_m5g8p"]
 points = PackedVector3Array(-5, 0, -36, -5, 0, -26, -0.40035248, 4, -31.400352, 5, 0, -36, 5, 0, -26, -0.40035248, 4, -30.600626, 0.39937353, 4, -31.400352, 0.39937353, 4, -30.600626)
@@ -67,30 +67,16 @@ size = Vector3(20, 0.001, 20)
 [sub_resource type="SphereShape3D" id="SphereShape3D_2dbgi"]
 radius = 1.0
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ach7"]
-albedo_color = Color(0.1764706, 1, 1, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ytigw"]
-emission_enabled = true
-emission = Color(0, 0.65882355, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_hbu8m"]
-material = SubResource("StandardMaterial3D_ytigw")
-size = Vector3(2, 2, 0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qcm1h"]
-points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
-
 [node name="DuckieStageSurreal" type="Node3D" unique_id=1306688396]
 
 [node name="DuckieSurreal" parent="." unique_id=1038564518 instance=ExtResource("1_m5g8p")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube" parent_id_path=PackedInt32Array(1038564518, 921223404) index="0" unique_id=856352191]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube" parent_id_path=PackedInt32Array(1038564518, 1666553191) index="0" unique_id=856352191]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Cube/StaticBody3D" unique_id=2028148521]
 shape = SubResource("ConvexPolygonShape3D_m5g8p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube_001" parent_id_path=PackedInt32Array(1038564518, 1378152000) index="0" unique_id=186820313]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube_001" parent_id_path=PackedInt32Array(1038564518, 305875998) index="0" unique_id=186820313]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Cube_001/StaticBody3D" unique_id=356301647]
 shape = SubResource("ConvexPolygonShape3D_ntwjk")
@@ -110,7 +96,7 @@ shape = SubResource("ConvexPolygonShape3D_ytigw")
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="DuckieSurreal/Cube_001/StaticBody3D" unique_id=170848996]
 shape = SubResource("ConvexPolygonShape3D_hbu8m")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cylinder_003" parent_id_path=PackedInt32Array(1038564518, 1115802714) index="0" unique_id=1424543184]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cylinder_003" parent_id_path=PackedInt32Array(1038564518, 2065111636) index="0" unique_id=1424543184]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Cylinder_003/StaticBody3D" unique_id=218778183]
 shape = SubResource("ConvexPolygonShape3D_kg3c5")
@@ -148,50 +134,22 @@ shape = SubResource("ConvexPolygonShape3D_fpr3y")
 [node name="CollisionShape3D12" type="CollisionShape3D" parent="DuckieSurreal/Cylinder_003/StaticBody3D" unique_id=497364572]
 shape = SubResource("ConvexPolygonShape3D_4ytvw")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Plane" parent_id_path=PackedInt32Array(1038564518, 2022474217) index="0" unique_id=330113259]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Plane" parent_id_path=PackedInt32Array(1038564518, 1195799907) index="0" unique_id=330113259]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5e-06, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Plane/StaticBody3D" unique_id=1160119362]
 shape = SubResource("BoxShape3D_qcm1h")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Sphere_003" parent_id_path=PackedInt32Array(1038564518, 1644191204) index="0" unique_id=185901886]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Sphere_003" parent_id_path=PackedInt32Array(1038564518, 2075551929) index="0" unique_id=185901886]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9604645e-08, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Sphere_003/StaticBody3D" unique_id=932948549]
 shape = SubResource("SphereShape3D_2dbgi")
 
-[node name="SendBox" type="MeshInstance3D" parent="." unique_id=1540737586]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6819234, 0.41443968, 1.5086403)
-material_override = SubResource("StandardMaterial3D_8ach7")
-mesh = SubResource("BoxMesh_hbu8m")
-script = ExtResource("2_thnpl")
-host_email = "dsmith@rchs.edu"
+[node name="Mail" parent="." unique_id=395569316 instance=ExtResource("3_thnpl")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 7.2823505, 0.6005055, 16.907986)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="SendBox" unique_id=1018409083]
-collision_layer = 3
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SendBox/StaticBody3D" unique_id=700336853]
-shape = SubResource("ConvexPolygonShape3D_qcm1h")
-
-[node name="Label3D" type="Label3D" parent="SendBox" unique_id=1681943288]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7156017, 0)
-text = "SEND"
-font_size = 167
-
-[node name="EmailPickup" type="MeshInstance3D" parent="." unique_id=1508128437]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2828255, 0.4144404, 18.058298)
-mesh = SubResource("BoxMesh_hbu8m")
-script = ExtResource("3_ot7w1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="EmailPickup" unique_id=1768684990]
-collision_layer = 3
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EmailPickup/StaticBody3D" unique_id=328325804]
-shape = SubResource("ConvexPolygonShape3D_qcm1h")
-
-[node name="Label3D2" type="Label3D" parent="EmailPickup" unique_id=212915022]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.716, 0)
-text = "PICKUP"
-font_size = 167
+[node name="Duckie" parent="." unique_id=7679287 instance=ExtResource("3_ot7w1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.222414, 0.100504994, 16.852806)
 
 [editable path="DuckieSurreal"]

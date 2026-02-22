@@ -4,4 +4,12 @@
 
 [resource]
 script = ExtResource("1_l5v6l")
+id = &"email_11"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "dsmith@rchs.edu"
+toAddress = "vickyyyyy2001@hotmail.com"
+contents = "	What do I think about college? Well, it’ll be nice to be away from our parents, at least. Freedom, at last! And the school part will probably be easy. I know college isn’t really like high school, but I’ve never struggled with class or studying.
+	I’m not outgoing like you are, though. Starting a conversation with a stranger, joining clubs, partying… I don’t know.
+	How did you deal, like, socially in college?
+"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

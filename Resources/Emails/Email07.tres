@@ -4,4 +4,14 @@
 
 [resource]
 script = ExtResource("1_4gheb")
+id = &"email_07"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "dsmith@rchs.edu"
+toAddress = "vickyyyyy2001@hotmail.com"
+contents = "Victoria,
+	No, I am not seeing anyone. I didn’t think it was a good idea to start a relationship right before college. As you said, long-distance is hard. 
+	That sculpture is incredible! How did you get it to balance on one leg like that?
+	What kind of art does Laura make?
+-Duckie
+"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

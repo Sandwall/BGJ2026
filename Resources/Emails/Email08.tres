@@ -4,4 +4,11 @@
 
 [resource]
 script = ExtResource("1_kuc3u")
+id = &"email_08"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "vickyyyyy2001@hotmail.com"
+toAddress = "dsmith@rchs.edu"
+contents = "the sculpture is magiiiiiiiiic >:) lol 
+laura is actually a writer!!! she is so good too had nothing to do with the gallery she was a receptionist to make ends meet while she finish her book and thats how we met :D
+btw wha happened w/ alex tho?"
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"

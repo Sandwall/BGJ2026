@@ -4,4 +4,11 @@
 
 [resource]
 script = ExtResource("1_537b2")
+id = &"email_15"
+subject = "Re: Cleaning Out Old Room"
+fromAddress = "dsmith@rchs.edu"
+toAddress = "vickyyyyy2001@hotmail.com"
+contents = "	Technically, Oberlin *does* have a business school, so it wasn’t too hard to convince them. Plus, I got a pretty good scholarship. 1600 on the SAT will do that.
+	I’m kind of interested in art history. Totally useless in the real world, so I’m still going to major in business just to get Dad off my back.
+He’s still not super happy with my decision, but I honestly don’t even care anymore. I just want to get out of here."
 metadata/_custom_type_script = "uid://bf1ybiskyl8b7"
