@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cehqq2sdqdltg"]
 
 [ext_resource type="Script" uid="uid://djyprokqcblwj" path="res://Scripts/UI/TitleMenu.gd" id="1_edb64"]
+[ext_resource type="WwiseEvent" uid="uid://ba1tqgphded6h" path="res://Wwise/resources/Event/{200EAE80-EC9E-47A2-97B2-227C46B3B7E4}.tres" id="2_2xwo8"]
 
 [node name="MainMenu" type="Control" unique_id=584282346]
 layout_mode = 3
@@ -33,3 +34,7 @@ text = "Options"
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=193044322]
 layout_mode = 2
 text = "Quit"
+
+[node name="AkEvent2D" type="AkEvent2D" parent="." unique_id=90143707]
+event = ExtResource("2_2xwo8")
+trigger_on = 2

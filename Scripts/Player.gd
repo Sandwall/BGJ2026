@@ -80,6 +80,7 @@ func _physics_process(delta: float):
 	if respawning:
 		moveInput = Vector2.ZERO
 		if is_on_floor():
+			Wwise.post_event("PLAY_SFX_Respawn", self)
 			respawning = false
 
 	# pre-update updates
@@ -97,7 +98,9 @@ func _physics_process(delta: float):
 
 	if onFloor:
 		if not prevOnGround:
-			# play landing sfx
+			Wwise.post_event("PLAY_SFX_Footstep", self);
+			#print("landing SFX")
+			footstepTimer = 0;
 			pass
 		
 		if moveInput.length_squared() > 0.0005:
@@ -112,7 +115,7 @@ func _physics_process(delta: float):
 		if lateralVelocity.length() > GROUND_SPEED/2:
 			if footstepTimer >= FOOTSTEP_TIME:
 				Wwise.post_event("PLAY_SFX_Footstep", self);
-				print("Footstep");
+				#print("Footstep");
 				footstepTimer = 0;
 			footstepTimer = footstepTimer + delta;
 		else:
