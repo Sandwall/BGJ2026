@@ -28,3 +28,5 @@ func submit_email():
 	
 	_index += 1
 	is_carrying_email = false
+	
+	Wwise.post_event("PLAY_SFX_EmailWhoosh", self)

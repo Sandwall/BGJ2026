@@ -17,7 +17,9 @@ class_name Player extends CharacterBody3D
 @export_group("Camera Constants")
 @export var cameraSens := Vector2(0.3, 0.3)
 @export var RESPAWN_HEIGHT := 150.0
+@export var FOOTSTEP_TIME := 0.6;
 
+var footstepTimer := 3.0;
 #
 # INPUT VALUES
 #
@@ -32,8 +34,9 @@ var interactClicked := false
 #
 
 # player's inputs don't go through when respawning...
-var respawning := false
 @export var lastRespawnPoint : Checkpoint = null
+var respawning := false
+var prevOnGround := true
 
 func _ready():
 	Main.inst.plr = self
@@ -73,7 +76,7 @@ func _physics_process(delta: float):
 	jumpClicked = Input.is_action_just_pressed("ui_accept")
 	interactClicked = Input.is_action_just_pressed("plr_interact")
 	
-	# this gets set to true when 
+	# this gets set to true by the deathplane when the player collides with it
 	if respawning:
 		moveInput = Vector2.ZERO
 		if is_on_floor():
@@ -90,7 +93,13 @@ func _physics_process(delta: float):
 	var floorDecelDelta := GROUND_SPEED * delta / GROUND_DECEL_TIME
 	var airDelta := AIR_SPEED * delta / AIR_ACCEL_DECEL_TIME
 
-	if is_on_floor():
+	var onFloor = is_on_floor()
+
+	if onFloor:
+		if not prevOnGround:
+			# play landing sfx
+			pass
+		
 		if moveInput.length_squared() > 0.0005:
 			lateralVelocity.x = move_toward(lateralVelocity.x, wantLateralVelocity.x * GROUND_SPEED, floorAccelDelta)
 			lateralVelocity.y = move_toward(lateralVelocity.y, wantLateralVelocity.z * GROUND_SPEED, floorAccelDelta)
@@ -99,9 +108,19 @@ func _physics_process(delta: float):
 			lateralVelocity.y = move_toward(lateralVelocity.y, 0.0, floorDecelDelta)
 
 		lateralVelocity = lateralVelocity.limit_length(GROUND_SPEED)
+		
+		if lateralVelocity.length() > GROUND_SPEED/2:
+			if footstepTimer >= FOOTSTEP_TIME:
+				Wwise.post_event("PLAY_SFX_Footstep", self);
+				print("Footstep");
+				footstepTimer = 0;
+			footstepTimer = footstepTimer + delta;
+		else:
+			footstepTimer = FOOTSTEP_TIME + 1.0;
 
 		if jumpClicked:
 			velocity.y = JUMP_VELOCITY
+			Wwise.post_event("PLAY_SFX_Jump", self)
 		else:
 			velocity.y = get_gravity().normalized().y
 	else:
@@ -126,6 +145,7 @@ func _physics_process(delta: float):
 	# after-update updates
 	lookInput = Vector2.ZERO
 	prevMoveInput = moveInput
+	prevOnGround = onFloor
 
 func respawn() -> void:
 	if lastRespawnPoint == null: return
