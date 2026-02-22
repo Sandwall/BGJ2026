@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://tsnvl1id1wr8"]
 
 [ext_resource type="Script" uid="uid://bcvkbda7xl8c8" path="res://Scripts/UI/HUD.gd" id="1_jo1ms"]
-[ext_resource type="Texture2D" uid="uid://t6c6hckr7uvn" path="res://TestNoiseTex.tres" id="2_psnte"]
+[ext_resource type="Texture2D" uid="uid://bjj74tyorh2ph" path="res://Resources/Sprites/CursorReticleWhite.png" id="2_jo1ms"]
 
 [sub_resource type="Animation" id="Animation_s3jbq"]
 resource_name = "CloseDialog"
@@ -251,7 +251,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Crosshair" type="TextureRect" parent="HUD" unique_id=893772226]
-custom_minimum_size = Vector2(32, 32)
+custom_minimum_size = Vector2(64, 64)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -265,8 +265,7 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("2_psnte")
-expand_mode = 1
+texture = ExtResource("2_jo1ms")
 
 [node name="DialogueBox" type="Control" parent="HUD" unique_id=1891873408]
 visible = false

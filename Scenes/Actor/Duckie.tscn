@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cck13ii1hncud"]
 
 [ext_resource type="Texture2D" uid="uid://dnrc8uob13t5h" path="res://Resources/Models/Duckie/BuisnessIdle1.png" id="1_8wk70"]
+[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="1_d7mq3"]
 [ext_resource type="Texture2D" uid="uid://lcc7ftrrye0j" path="res://Resources/Models/Duckie/BuisnessIdle2.png" id="2_qgrp4"]
 [ext_resource type="Texture2D" uid="uid://cgtd0pt670bgr" path="res://Resources/Models/Duckie/BuisnessIdle3.png" id="3_4w65n"]
 [ext_resource type="Texture2D" uid="uid://cnxjjkfnl0ai" path="res://Resources/Models/Duckie/BuisnessTalk1.png" id="4_kfyv4"]
@@ -18,6 +19,21 @@
 [ext_resource type="Texture2D" uid="uid://cd6hs3gd5sve0" path="res://Resources/Models/Duckie/FemTalk1.png" id="16_tti7x"]
 [ext_resource type="Texture2D" uid="uid://bs1qsy54cnkqc" path="res://Resources/Models/Duckie/FemTalk2.png" id="17_36w0l"]
 [ext_resource type="Texture2D" uid="uid://c04psg76j2bub" path="res://Resources/Models/Duckie/FemTalk3.png" id="18_682fg"]
+[ext_resource type="Script" uid="uid://cprp4ly3afbbn" path="res://Scripts/DuckieAnimator.gd" id="20_p3rw8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d7mq3"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0)
+billboard_mode = 2
+
+[sub_resource type="QuadMesh" id="QuadMesh_d7mq3"]
+size = Vector2(1, 2.8)
+center_offset = Vector3(0, 1.3, 0)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p3rw8"]
+radius = 0.72998047
+height = 2.8278809
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_7ug55"]
 animations = [{
@@ -142,12 +158,34 @@ animations = [{
 "speed": 24.0
 }]
 
-[node name="Duckie" type="Node3D" unique_id=448658655]
+[node name="Duckie" type="MeshInstance3D" unique_id=7679287]
+material_override = SubResource("StandardMaterial3D_d7mq3")
+mesh = SubResource("QuadMesh_d7mq3")
+script = ExtResource("1_d7mq3")
+host_email = "dsmith@rchs.edu"
 
-[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=2108416315]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=902598042]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.3640266, 0)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=579616003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.91906786, 0)
+shape = SubResource("CapsuleShape3D_p3rw8")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=314423343]
+transform = Transform3D(0.26, 0, 0, 0, 0.26, 0, 0, 0, 0.26, 0, 0, 0)
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="Node3D" unique_id=2108416315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
 billboard = 2
 sprite_frames = SubResource("SpriteFrames_7ug55")
-animation = &"business_idle"
-frame = 4
-frame_progress = 0.3439574
+animation = &"business_talk"
+frame_progress = 0.5944838
+
+[node name="DuckieAnimator" type="Node" parent="." unique_id=464707142 node_paths=PackedStringArray("send_box", "animated_sprite_3d")]
+script = ExtResource("20_p3rw8")
+send_box = NodePath("..")
+animated_sprite_3d = NodePath("../Node3D/AnimatedSprite3D")
+idle_name = "business_idle"
+talk_name = "business_talk"

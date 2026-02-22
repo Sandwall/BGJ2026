@@ -6,6 +6,7 @@ var parkourSegments : Array[Node3D] = []
 var currentActiveIdx := 0
 
 func _ready():
+	GlobalEmailManager.email_picked_up.connect(_on_email_picked_up)
 	GlobalEmailManager.connect("email_submitted", on_email_submitted)
 	
 	for segment in parkourContainer.get_children():
@@ -29,6 +30,10 @@ func enable_parkour(idx: int):
 	
 	parkourContainer.add_child(parkourSegments[currentActiveIdx])
 	parkourSegments[currentActiveIdx].visible = true
+
+func _on_email_picked_up(email: EmailResource):
+	if email.id == "email_01":
+		enable_parkour(0)
 
 # Maybe we can switch on the index of an email and hard-code the paths to scenes that contain what we want to swap out
 func on_email_submitted(email_id: StringName):

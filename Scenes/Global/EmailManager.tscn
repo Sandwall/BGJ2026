@@ -5,7 +5,20 @@
 [ext_resource type="Resource" uid="uid://bpv68bhlomao8" path="res://Resources/Emails/Email01.tres" id="3_fqrrj"]
 [ext_resource type="Resource" uid="uid://dfnwsnkyy64hf" path="res://Resources/Emails/Email02.tres" id="4_nbtdr"]
 [ext_resource type="Resource" uid="uid://tio8uxxer6ro" path="res://Resources/Emails/Email03.tres" id="5_6sgb3"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email04.tres" id="6_uksqp"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email05.tres" id="7_r2xej"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email06.tres" id="8_tpnlp"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email07.tres" id="9_k4edx"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email08.tres" id="10_m3bea"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email09.tres" id="11_8g6x7"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email10.tres" id="12_fw41c"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email11.tres" id="13_1hqkr"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email12.tres" id="14_mlvvh"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email13.tres" id="15_clh55"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email14.tres" id="16_uw3a8"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email15.tres" id="17_p3gc8"]
+[ext_resource type="Resource" path="res://Resources/Emails/Email16.tres" id="18_x7d4x"]
 
 [node name="EmailManager" type="Node" unique_id=1592708895]
 script = ExtResource("1_wg6ps")
-email_order = Array[ExtResource("2_efss2")]([ExtResource("3_fqrrj"), ExtResource("4_nbtdr"), ExtResource("5_6sgb3")])
+email_order = Array[ExtResource("2_efss2")]([ExtResource("3_fqrrj"), ExtResource("4_nbtdr"), ExtResource("5_6sgb3"), ExtResource("6_uksqp"), ExtResource("7_r2xej"), ExtResource("8_tpnlp"), ExtResource("9_k4edx"), ExtResource("10_m3bea"), ExtResource("11_8g6x7"), ExtResource("12_fw41c"), ExtResource("13_1hqkr"), ExtResource("14_mlvvh"), ExtResource("15_clh55"), ExtResource("16_uw3a8"), ExtResource("17_p3gc8"), ExtResource("18_x7d4x")])

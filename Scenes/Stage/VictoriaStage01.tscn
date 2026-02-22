@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://djay3cdf7ofo3"]
 
 [ext_resource type="PackedScene" uid="uid://cvduc8p5v57g0" path="res://Resources/Models/VictoriaStages/Stage1.gltf" id="1_k1l8y"]
+[ext_resource type="PackedScene" uid="uid://bgql4l0ttk4qi" path="res://Scenes/Actor/Victoria.tscn" id="2_ex2qk"]
+[ext_resource type="PackedScene" uid="uid://djiu4prh4vksp" path="res://Scenes/Actor/Mail.tscn" id="3_54o20"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k1l8y"]
 size = Vector3(40, 0.5, 70.77469)
@@ -66,5 +68,12 @@ light_energy = 21.7
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1932348439]
 transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 10.200001, -0.24999994, 35.387283)
 shape = SubResource("BoxShape3D_k1l8y")
+
+[node name="Victoria" parent="." unique_id=1331882181 node_paths=PackedStringArray("email_pickup") instance=ExtResource("2_ex2qk")]
+transform = Transform3D(0.72661066, 0, 0.6870495, 0, 1, 0, -0.6870495, 0, 0.72661066, 13.450529, 0.0155890435, 48.65932)
+email_pickup = NodePath("../Mail")
+
+[node name="Mail" parent="." unique_id=395569316 instance=ExtResource("3_54o20")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 11.711605, 0.5999999, 7.492786)
 
 [editable path="Scale/Offset/Stage1"]

@@ -1,0 +1,491 @@
+[gd_scene format=3 uid="uid://djiu4prh4vksp"]
+
+[ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/EmailPickup.gd" id="1_tlgbn"]
+[ext_resource type="Script" uid="uid://b6lgsyhmvhsvb" path="res://Scripts/MailAnimator.gd" id="2_s8xg7"]
+[ext_resource type="Texture2D" uid="uid://xvc7nv1gmqre" path="res://Resources/Sprites/Mail/MailSpinFrames/0001.png" id="3_kwg73"]
+[ext_resource type="Texture2D" uid="uid://8y6vcbj7d6jo" path="res://Resources/Sprites/Mail/MailSpinFrames/0002.png" id="4_6yyg5"]
+[ext_resource type="Texture2D" uid="uid://dyet532h1xrms" path="res://Resources/Sprites/Mail/MailSpinFrames/0003.png" id="5_i7l7u"]
+[ext_resource type="Texture2D" uid="uid://cu5cjafr6ilmv" path="res://Resources/Sprites/Mail/MailSpinFrames/0004.png" id="6_mpylq"]
+[ext_resource type="Texture2D" uid="uid://ccwtp0n1rcgjj" path="res://Resources/Sprites/Mail/MailSpinFrames/0005.png" id="7_ok3f6"]
+[ext_resource type="Texture2D" uid="uid://cqd13fh70wvx4" path="res://Resources/Sprites/Mail/MailSpinFrames/0006.png" id="8_56wvi"]
+[ext_resource type="Texture2D" uid="uid://blhlikxue0pxp" path="res://Resources/Sprites/Mail/MailSpinFrames/0007.png" id="9_ieag6"]
+[ext_resource type="Texture2D" uid="uid://commsabi7f2w" path="res://Resources/Sprites/Mail/MailSpinFrames/0008.png" id="10_v748n"]
+[ext_resource type="Texture2D" uid="uid://pmyggtobp071" path="res://Resources/Sprites/Mail/MailSpinFrames/0009.png" id="11_s7n0o"]
+[ext_resource type="Texture2D" uid="uid://cs8n5i4qw58nu" path="res://Resources/Sprites/Mail/MailSpinFrames/0010.png" id="12_pgkjc"]
+[ext_resource type="Texture2D" uid="uid://cnjh1ghmj1y6" path="res://Resources/Sprites/Mail/MailSpinFrames/0011.png" id="13_1cvlg"]
+[ext_resource type="Texture2D" uid="uid://b6t1ybuu0l46" path="res://Resources/Sprites/Mail/MailSpinFrames/0012.png" id="14_dlteh"]
+[ext_resource type="Texture2D" uid="uid://pukuglyplb08" path="res://Resources/Sprites/Mail/MailSpinFrames/0013.png" id="15_l1eh1"]
+[ext_resource type="Texture2D" uid="uid://duwc5pt26gj15" path="res://Resources/Sprites/Mail/MailSpinFrames/0014.png" id="16_4dwsx"]
+[ext_resource type="Texture2D" uid="uid://dwmrui71a7ald" path="res://Resources/Sprites/Mail/MailSpinFrames/0015.png" id="17_a0jh0"]
+[ext_resource type="Texture2D" uid="uid://k7fs58pns201" path="res://Resources/Sprites/Mail/MailSpinFrames/0016.png" id="18_r4b56"]
+[ext_resource type="Texture2D" uid="uid://ds262j025yv03" path="res://Resources/Sprites/Mail/MailSpinFrames/0017.png" id="19_mrrld"]
+[ext_resource type="Texture2D" uid="uid://x2sb7lt5m032" path="res://Resources/Sprites/Mail/MailSpinFrames/0018.png" id="20_0otpn"]
+[ext_resource type="Texture2D" uid="uid://dvr26fjhdhnej" path="res://Resources/Sprites/Mail/MailSpinFrames/0019.png" id="21_3lq3n"]
+[ext_resource type="Texture2D" uid="uid://cfxu6laqcfde8" path="res://Resources/Sprites/Mail/MailSpinFrames/0020.png" id="22_o60wt"]
+[ext_resource type="Texture2D" uid="uid://d3bo5k4sdwejy" path="res://Resources/Sprites/Mail/MailSpinFrames/0021.png" id="23_mune6"]
+[ext_resource type="Texture2D" uid="uid://cqlnuxyslp2p4" path="res://Resources/Sprites/Mail/MailSpinFrames/0022.png" id="24_in1jj"]
+[ext_resource type="Texture2D" uid="uid://b7xuepevrisv2" path="res://Resources/Sprites/Mail/MailSpinFrames/0023.png" id="25_es7hk"]
+[ext_resource type="Texture2D" uid="uid://ew4xxuiy38pg" path="res://Resources/Sprites/Mail/MailSpinFrames/0024.png" id="26_xtyos"]
+[ext_resource type="Texture2D" uid="uid://dta2s13vp2t51" path="res://Resources/Sprites/Mail/MailSpinFrames/0025.png" id="27_yhbni"]
+[ext_resource type="Texture2D" uid="uid://dtf8ptjnyhxrw" path="res://Resources/Sprites/Mail/MailSpinFrames/0026.png" id="28_ffw5x"]
+[ext_resource type="Texture2D" uid="uid://bq3mkh074lixd" path="res://Resources/Sprites/Mail/MailSpinFrames/0027.png" id="29_nmye4"]
+[ext_resource type="Texture2D" uid="uid://d2jwnko7s82y5" path="res://Resources/Sprites/Mail/MailSpinFrames/0028.png" id="30_fexf1"]
+[ext_resource type="Texture2D" uid="uid://cv2p74cblwrj3" path="res://Resources/Sprites/Mail/MailSpinFrames/0029.png" id="31_srcka"]
+[ext_resource type="Texture2D" uid="uid://cekvgpp1thru0" path="res://Resources/Sprites/Mail/MailSpinFrames/0030.png" id="32_bhnxr"]
+[ext_resource type="Texture2D" uid="uid://bxljoylfi8ub2" path="res://Resources/Sprites/Mail/MailSpinFrames/0031.png" id="33_4ir7c"]
+[ext_resource type="Texture2D" uid="uid://cathdcydwrwsp" path="res://Resources/Sprites/Mail/MailSpinFrames/0032.png" id="34_wxjv3"]
+[ext_resource type="Texture2D" uid="uid://bsenoef8sx0yj" path="res://Resources/Sprites/Mail/MailSpinFrames/0033.png" id="35_ijg17"]
+[ext_resource type="Texture2D" uid="uid://bup8w8f660tb6" path="res://Resources/Sprites/Mail/MailSpinFrames/0034.png" id="36_k6m2p"]
+[ext_resource type="Texture2D" uid="uid://byniqagto7en5" path="res://Resources/Sprites/Mail/MailSpinFrames/0035.png" id="37_yw4qq"]
+[ext_resource type="Texture2D" uid="uid://bqxg1swgk54jh" path="res://Resources/Sprites/Mail/MailSpinFrames/0036.png" id="38_uegku"]
+[ext_resource type="Texture2D" uid="uid://bpkc2vgj24gcs" path="res://Resources/Sprites/Mail/MailSpinFrames/0037.png" id="39_ux2v6"]
+[ext_resource type="Texture2D" uid="uid://c6c3thqcdov16" path="res://Resources/Sprites/Mail/MailSpinFrames/0038.png" id="40_kluo1"]
+[ext_resource type="Texture2D" uid="uid://biadkrjk3q5fe" path="res://Resources/Sprites/Mail/MailSpinFrames/0039.png" id="41_hx2ns"]
+[ext_resource type="Texture2D" uid="uid://dks3ipmtiij25" path="res://Resources/Sprites/Mail/MailSpinFrames/0040.png" id="42_6bgjv"]
+[ext_resource type="Texture2D" uid="uid://bkiytdtc585xd" path="res://Resources/Sprites/Mail/MailSpinFrames/0041.png" id="43_xsg2x"]
+[ext_resource type="Texture2D" uid="uid://cqrqgq4jl7iip" path="res://Resources/Sprites/Mail/MailSpinFrames/0042.png" id="44_bi88c"]
+[ext_resource type="Texture2D" uid="uid://blowm4o0fmiu8" path="res://Resources/Sprites/Mail/MailSpinFrames/0043.png" id="45_84qxs"]
+[ext_resource type="Texture2D" uid="uid://hknkvu7a1kde" path="res://Resources/Sprites/Mail/MailSpinFrames/0044.png" id="46_ym0gw"]
+[ext_resource type="Texture2D" uid="uid://chtrg50k2jips" path="res://Resources/Sprites/Mail/MailSpinFrames/0045.png" id="47_wkejm"]
+[ext_resource type="Texture2D" uid="uid://bx0cvwrq814tv" path="res://Resources/Sprites/Mail/MailSpinFrames/0046.png" id="48_bbbca"]
+[ext_resource type="Texture2D" uid="uid://cf860e1u3mw1u" path="res://Resources/Sprites/Mail/MailSpinFrames/0047.png" id="49_3xu8w"]
+[ext_resource type="Texture2D" uid="uid://cugi4tfwk64w6" path="res://Resources/Sprites/Mail/MailSpinFrames/0048.png" id="50_3iv40"]
+[ext_resource type="Texture2D" uid="uid://d3jig2mtcyw7a" path="res://Resources/Sprites/Mail/MailSpinFrames/0049.png" id="51_17787"]
+[ext_resource type="Texture2D" uid="uid://ddi242tp8spjh" path="res://Resources/Sprites/Mail/MailSpinFrames/0050.png" id="52_7qic4"]
+[ext_resource type="Texture2D" uid="uid://l7vaswydl06x" path="res://Resources/Sprites/Mail/MailSpinFrames/0051.png" id="53_otlvn"]
+[ext_resource type="Texture2D" uid="uid://blp4agldodpsh" path="res://Resources/Sprites/Mail/MailSpinFrames/0052.png" id="54_cmi0k"]
+[ext_resource type="Texture2D" uid="uid://cxi8sk1viibd6" path="res://Resources/Sprites/Mail/MailSpinFrames/0053.png" id="55_5ysox"]
+[ext_resource type="Texture2D" uid="uid://b65aum3umjtg7" path="res://Resources/Sprites/Mail/MailSpinFrames/0054.png" id="56_ku7eu"]
+[ext_resource type="Texture2D" uid="uid://bhx5dfwlru37x" path="res://Resources/Sprites/Mail/MailSpinFrames/0055.png" id="57_vp54r"]
+[ext_resource type="Texture2D" uid="uid://c14dpe834gheh" path="res://Resources/Sprites/Mail/MailSpinFrames/0056.png" id="58_k0p70"]
+[ext_resource type="Texture2D" uid="uid://66vmy7d713gh" path="res://Resources/Sprites/Mail/MailSpinFrames/0057.png" id="59_lw200"]
+[ext_resource type="Texture2D" uid="uid://dg4o4y3gtc3cg" path="res://Resources/Sprites/Mail/MailSpinFrames/0058.png" id="60_5byyl"]
+[ext_resource type="Texture2D" uid="uid://d13tmb7mvh00c" path="res://Resources/Sprites/Mail/MailSpinFrames/0059.png" id="61_ger82"]
+[ext_resource type="Texture2D" uid="uid://c0hyllmoxg4w4" path="res://Resources/Sprites/Mail/MailSpinFrames/0060.png" id="62_wejmn"]
+[ext_resource type="Texture2D" uid="uid://doy0jxc8ghe8y" path="res://Resources/Sprites/Mail/MailSpinFrames/0061.png" id="63_i8rg8"]
+[ext_resource type="Texture2D" uid="uid://ixa4e2s0x3qr" path="res://Resources/Sprites/Mail/MailSpinFrames/0062.png" id="64_hmwid"]
+[ext_resource type="Texture2D" uid="uid://c25nmjvcy67kf" path="res://Resources/Sprites/Mail/MailSpinFrames/0063.png" id="65_2gkx0"]
+[ext_resource type="Texture2D" uid="uid://cfykhr2mbyw46" path="res://Resources/Sprites/Mail/MailSpinFrames/0064.png" id="66_ioumi"]
+[ext_resource type="Texture2D" uid="uid://b0whh45n82tx3" path="res://Resources/Sprites/Mail/MailSpinFrames/0065.png" id="67_2in8l"]
+[ext_resource type="Texture2D" uid="uid://clsr53byc8qf6" path="res://Resources/Sprites/Mail/MailSpinFrames/0066.png" id="68_yrpfn"]
+[ext_resource type="Texture2D" uid="uid://ctdw3madtf68l" path="res://Resources/Sprites/Mail/MailSpinFrames/0067.png" id="69_qt7tq"]
+[ext_resource type="Texture2D" uid="uid://diqnr814dbj7o" path="res://Resources/Sprites/Mail/MailSpinFrames/0068.png" id="70_j4gpg"]
+[ext_resource type="Texture2D" uid="uid://cejcnmoqlrfhi" path="res://Resources/Sprites/Mail/MailSpinFrames/0069.png" id="71_lwi52"]
+[ext_resource type="Texture2D" uid="uid://clhhqtoakf0l4" path="res://Resources/Sprites/Mail/MailSpinFrames/0070.png" id="72_rul1c"]
+[ext_resource type="Texture2D" uid="uid://ckws3nenxb5c0" path="res://Resources/Sprites/Mail/MailSpinFrames/0071.png" id="73_iogx3"]
+[ext_resource type="Texture2D" uid="uid://dbefx7rawm5mu" path="res://Resources/Sprites/Mail/MailSpinFrames/0072.png" id="74_7gc2w"]
+[ext_resource type="Texture2D" uid="uid://cpfyfr07hryr" path="res://Resources/Sprites/Mail/MailSpinFrames/0073.png" id="75_n78fj"]
+[ext_resource type="Texture2D" uid="uid://djm6eybq70ye0" path="res://Resources/Sprites/Mail/MailSpinFrames/0074.png" id="76_ulaf4"]
+[ext_resource type="Texture2D" uid="uid://bkka5go32y3id" path="res://Resources/Sprites/Mail/MailSpinFrames/0075.png" id="77_mwv2w"]
+[ext_resource type="Texture2D" uid="uid://cm24wyhekdukr" path="res://Resources/Sprites/Mail/MailSpinFrames/0076.png" id="78_kc3xy"]
+[ext_resource type="Texture2D" uid="uid://c8rm0xg00fhnb" path="res://Resources/Sprites/Mail/MailSpinFrames/0077.png" id="79_fj5wu"]
+[ext_resource type="Texture2D" uid="uid://1i0kr7umjrsy" path="res://Resources/Sprites/Mail/MailSpinFrames/0078.png" id="80_a4gg4"]
+[ext_resource type="Texture2D" uid="uid://c3yel4ox0x0oe" path="res://Resources/Sprites/Mail/MailSpinFrames/0079.png" id="81_8g6nn"]
+[ext_resource type="Texture2D" uid="uid://b6qs052824wh4" path="res://Resources/Sprites/Mail/MailSpinFrames/0080.png" id="82_fq4v3"]
+[ext_resource type="Texture2D" uid="uid://de6l28bs6y1k1" path="res://Resources/Sprites/Mail/MailSpinFrames/0081.png" id="83_d7k55"]
+[ext_resource type="Texture2D" uid="uid://f8b0r6ureg0x" path="res://Resources/Sprites/Mail/MailSpinFrames/0082.png" id="84_yhit0"]
+[ext_resource type="Texture2D" uid="uid://3veybsuh0sxb" path="res://Resources/Sprites/Mail/MailSpinFrames/0083.png" id="85_33eyu"]
+[ext_resource type="Texture2D" uid="uid://bfoqa8vsr35p" path="res://Resources/Sprites/Mail/MailSpinFrames/0084.png" id="86_cqxt5"]
+[ext_resource type="Texture2D" uid="uid://77chgdlc56ug" path="res://Resources/Sprites/Mail/MailSpinFrames/0085.png" id="87_il6aw"]
+[ext_resource type="Texture2D" uid="uid://cejedrgqvvhtk" path="res://Resources/Sprites/Mail/MailSpinFrames/0086.png" id="88_3wifo"]
+[ext_resource type="Texture2D" uid="uid://bu7e0ioa7i3vw" path="res://Resources/Sprites/Mail/MailSpinFrames/0087.png" id="89_5ssds"]
+[ext_resource type="Texture2D" uid="uid://d4bkagjoak1vt" path="res://Resources/Sprites/Mail/MailSpinFrames/0088.png" id="90_c45mt"]
+[ext_resource type="Texture2D" uid="uid://c85mrilnf1wbh" path="res://Resources/Sprites/Mail/MailSpinFrames/0089.png" id="91_olt3x"]
+[ext_resource type="Texture2D" uid="uid://qnky6rq8gypd" path="res://Resources/Sprites/Mail/MailSpinFrames/0090.png" id="92_e3ed2"]
+[ext_resource type="Texture2D" uid="uid://qacmdgbxu63l" path="res://Resources/Sprites/Mail/MailSpinFrames/0091.png" id="93_v0w82"]
+[ext_resource type="Texture2D" uid="uid://dunysxtfs8674" path="res://Resources/Sprites/Mail/MailSpinFrames/0092.png" id="94_uixq8"]
+[ext_resource type="Texture2D" uid="uid://2ymv7q8yguhg" path="res://Resources/Sprites/Mail/MailSpinFrames/0093.png" id="95_nf5ii"]
+[ext_resource type="Texture2D" uid="uid://1gtejvt5n4sd" path="res://Resources/Sprites/Mail/MailSpinFrames/0094.png" id="96_1x1h6"]
+[ext_resource type="Texture2D" uid="uid://d4jgdnm5i571c" path="res://Resources/Sprites/Mail/MailSpinFrames/0095.png" id="97_kfyy0"]
+[ext_resource type="Texture2D" uid="uid://cktlau2umdpxh" path="res://Resources/Sprites/Mail/MailSpinFrames/0096.png" id="98_eg6bw"]
+[ext_resource type="Texture2D" uid="uid://b76buy2qfo5kf" path="res://Resources/Sprites/Mail/MailSpinFrames/0097.png" id="99_5l2k0"]
+[ext_resource type="Texture2D" uid="uid://b21ra0ake3knx" path="res://Resources/Sprites/Mail/MailSpinFrames/0098.png" id="100_6ehaq"]
+[ext_resource type="Texture2D" uid="uid://cpodxrnryvvqk" path="res://Resources/Sprites/Mail/MailSpinFrames/0099.png" id="101_r04kp"]
+[ext_resource type="Texture2D" uid="uid://cefa0ndp7sjct" path="res://Resources/Sprites/Mail/MailSpinFrames/0100.png" id="102_qbm8y"]
+[ext_resource type="Texture2D" uid="uid://b1w4o6iwn0cur" path="res://Resources/Sprites/Mail/MailGrabFrames/0001.png" id="103_s7n0o"]
+[ext_resource type="Texture2D" uid="uid://b02478tghu1a0" path="res://Resources/Sprites/Mail/MailGrabFrames/0002.png" id="104_pgkjc"]
+[ext_resource type="Texture2D" uid="uid://caoycge4bg6r5" path="res://Resources/Sprites/Mail/MailGrabFrames/0003.png" id="105_1cvlg"]
+[ext_resource type="Texture2D" uid="uid://nbwjop7eihcq" path="res://Resources/Sprites/Mail/MailGrabFrames/0004.png" id="106_dlteh"]
+[ext_resource type="Texture2D" uid="uid://dpvrjwd6ajs8b" path="res://Resources/Sprites/Mail/MailGrabFrames/0005.png" id="107_l1eh1"]
+[ext_resource type="Texture2D" uid="uid://cfefeq8qedo3h" path="res://Resources/Sprites/Mail/MailGrabFrames/0006.png" id="108_4dwsx"]
+[ext_resource type="Texture2D" uid="uid://bvwsqmol6dcel" path="res://Resources/Sprites/Mail/MailGrabFrames/0007.png" id="109_a0jh0"]
+[ext_resource type="Texture2D" uid="uid://50ebokh2duu5" path="res://Resources/Sprites/Mail/MailGrabFrames/0008.png" id="110_r4b56"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6eiv"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 1, 1, 0)
+billboard_mode = 2
+
+[sub_resource type="SphereMesh" id="SphereMesh_s7n0o"]
+radius = 2.0
+height = 2.974
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_s7n0o"]
+radius = 1.3746053
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mgfh2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_kwg73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_6yyg5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i7l7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_mpylq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ok3f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_56wvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ieag6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_v748n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s7n0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pgkjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1cvlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dlteh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_l1eh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_4dwsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_a0jh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_r4b56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mrrld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0otpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_3lq3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_o60wt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_mune6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_in1jj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_es7hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_xtyos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_yhbni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ffw5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_nmye4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fexf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_srcka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_bhnxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_4ir7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_wxjv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ijg17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_k6m2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_yw4qq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_uegku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ux2v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_kluo1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_hx2ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_6bgjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_xsg2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_bi88c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_84qxs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ym0gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_wkejm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_bbbca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_3xu8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_3iv40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_17787")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_7qic4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_otlvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_cmi0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_5ysox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_ku7eu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_vp54r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_k0p70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_lw200")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_5byyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ger82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_wejmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_i8rg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_hmwid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_2gkx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_ioumi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_2in8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_yrpfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_qt7tq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_j4gpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_lwi52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_rul1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_iogx3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_7gc2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_n78fj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_ulaf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_mwv2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_kc3xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_fj5wu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_a4gg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_8g6nn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_fq4v3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_d7k55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_yhit0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_33eyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_cqxt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_il6aw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_3wifo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_5ssds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_c45mt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_olt3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_e3ed2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_v0w82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_uixq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_nf5ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_1x1h6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_kfyy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_eg6bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_5l2k0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_6ehaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_r04kp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_qbm8y")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("103_s7n0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_pgkjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_1cvlg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_dlteh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_l1eh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_4dwsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_a0jh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_r4b56")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"pickup",
+"speed": 24.0
+}]
+
+[node name="Mail" type="MeshInstance3D" unique_id=395569316]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_g6eiv")
+mesh = SubResource("SphereMesh_s7n0o")
+script = ExtResource("1_tlgbn")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=17662102]
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.9999998, 0, 0.3640266, 0)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1075421795]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, -0.2729491, 0)
+shape = SubResource("SphereShape3D_s7n0o")
+
+[node name="MailAnimator" type="Node" parent="." unique_id=1523632976 node_paths=PackedStringArray("email_pickup", "animated_sprite_3d")]
+script = ExtResource("2_s8xg7")
+email_pickup = NodePath("..")
+animated_sprite_3d = NodePath("../AnimatedSprite3D")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=1357885767]
+billboard = 1
+sprite_frames = SubResource("SpriteFrames_mgfh2")
+animation = &"idle"
+autoplay = "idle"

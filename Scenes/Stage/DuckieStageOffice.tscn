@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bhm77tctxni61"]
 
 [ext_resource type="PackedScene" uid="uid://dpcjop8hkxis7" path="res://Resources/Models/DuckieStages/DuckieOffice.glb" id="1_yk0ef"]
-[ext_resource type="Script" uid="uid://dg1ftibgy4jbx" path="res://Scripts/SendBox.gd" id="2_86ie1"]
-[ext_resource type="Script" uid="uid://cu2t85r61axpp" path="res://Scripts/EmailPickup.gd" id="3_if7rn"]
+[ext_resource type="PackedScene" uid="uid://cck13ii1hncud" path="res://Scenes/Actor/Duckie.tscn" id="4_if7rn"]
+[ext_resource type="PackedScene" uid="uid://djiu4prh4vksp" path="res://Scenes/Actor/Mail.tscn" id="4_mw581"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_86ie1"]
 size = Vector3(2, 1.6100003, 1.8)
@@ -51,20 +51,6 @@ size = Vector3(17.965698, 0.5, 7.987854)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_472j6"]
 size = Vector3(17.965698, 0.2, 7.987854)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lc8k6"]
-albedo_color = Color(0.1764706, 1, 1, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_64q2b"]
-emission_enabled = true
-emission = Color(0, 0.65882355, 0, 1)
-
-[sub_resource type="BoxMesh" id="BoxMesh_lc8k6"]
-material = SubResource("StandardMaterial3D_64q2b")
-size = Vector3(2, 2, 0.5)
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_4ni1k"]
-points = PackedVector3Array(1, 1, 0.25, 1, 1, -0.25, -1, 1, 0.25, 1, -1, 0.25, 1, -1, -0.25, -1, 1, -0.25, -1, -1, 0.25, -1, -1, -0.25)
 
 [node name="DuckieStageOffice" type="Node3D" unique_id=1367273004]
 
@@ -164,38 +150,12 @@ shape = SubResource("BoxShape3D_yk0ef")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016052246, 3.1, 4.0003357)
 shape = SubResource("BoxShape3D_472j6")
 
-[node name="SendBox" type="MeshInstance3D" parent="." unique_id=305985993]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.855757, 0.41443968, 0.38744402)
-material_override = SubResource("StandardMaterial3D_lc8k6")
-mesh = SubResource("BoxMesh_lc8k6")
-script = ExtResource("2_86ie1")
-host_email = "dsmith@rchs.edu"
+[node name="Duckie" parent="." unique_id=7679287 node_paths=PackedStringArray("email_pickup") instance=ExtResource("4_if7rn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.392594, 0, 0.9502946)
+email_pickup = NodePath("../Mail")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="SendBox" unique_id=1371483918]
-collision_layer = 3
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="SendBox/StaticBody3D" unique_id=1803957102]
-shape = SubResource("ConvexPolygonShape3D_4ni1k")
-
-[node name="Label3D" type="Label3D" parent="SendBox" unique_id=278676616]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7156017, 0)
-text = "SEND"
-font_size = 167
-
-[node name="EmailPickup" type="MeshInstance3D" parent="." unique_id=852621424]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.640834, 0.41444135, 7.221301)
-mesh = SubResource("BoxMesh_lc8k6")
-script = ExtResource("3_if7rn")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="EmailPickup" unique_id=445685644]
-collision_layer = 3
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="EmailPickup/StaticBody3D" unique_id=544805488]
-shape = SubResource("ConvexPolygonShape3D_4ni1k")
-
-[node name="Label3D2" type="Label3D" parent="EmailPickup" unique_id=1848894951]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1.716, 0)
-text = "PICKUP"
-font_size = 167
+[node name="Mail" parent="." unique_id=395569316 instance=ExtResource("4_mw581")]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 4.776951, 0.6, 6.3538575)
+start_available = true
 
 [editable path="DuckieOffice"]
