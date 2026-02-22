@@ -118,6 +118,7 @@ func _physics_process(delta: float):
 
 		if jumpClicked:
 			velocity.y = JUMP_VELOCITY
+			Wwise.post_event("PLAY_SFX_Jump", self)
 		else:
 			velocity.y = get_gravity().normalized().y
 	else:
