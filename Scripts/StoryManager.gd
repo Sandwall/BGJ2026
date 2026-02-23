@@ -70,11 +70,13 @@ func swap_ducky(idx: int):
 	if duckyContainer.get_children().size() > 0:
 		duckyContainer.remove_child(duckySegments[duckyIdx])
 		duckySegments[duckyIdx].visible = false
+		duckySegments[duckyIdx].position.y = -20.0
 	
 	duckyIdx = idx
 	
 	duckyContainer.add_child(duckySegments[duckyIdx])
 	duckySegments[duckyIdx].visible = true
+	duckySegments[duckyIdx].position.y = 0.0
 
 func swap_victoria(idx: int):
 	if idx < 0 or idx >= victoriaSegments.size():
