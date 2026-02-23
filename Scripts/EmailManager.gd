@@ -7,7 +7,7 @@ signal new_email(email: EmailResource)
 @export var email_order: Array[EmailResource]
 
 var is_carrying_email: bool = false
-var _index: int = 15
+var _index: int = 0
 
 var current_email: EmailResource:
 	get():

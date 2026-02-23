@@ -1,0 +1,21 @@
+[gd_resource type="Environment" format=3 uid="uid://lpprjvq1s1nc"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_j0p05"]
+
+[sub_resource type="Sky" id="Sky_0a7su"]
+sky_material = SubResource("PanoramaSkyMaterial_j0p05")
+radiance_size = 1
+
+[resource]
+background_mode = 1
+sky = SubResource("Sky_0a7su")
+tonemap_mode = 2
+tonemap_exposure = 0.67
+ssao_enabled = true
+glow_enabled = true
+fog_enabled = true
+fog_mode = 1
+fog_light_color = Color(0, 0, 0, 1)
+fog_density = 1.0
+fog_depth_begin = 1.5
+fog_depth_end = 160.0

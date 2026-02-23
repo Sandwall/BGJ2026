@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b6kpur7iwdl45"]
 
 [ext_resource type="PackedScene" uid="uid://dyfnfoe287n0e" path="res://Resources/Models/DuckieStages/DuckieSurreal.glb" id="1_m5g8p"]
-[ext_resource type="PackedScene" path="res://Scenes/Actor/DuckieSurreal.tscn" id="3_ot7w1"]
-[ext_resource type="PackedScene" path="res://Scenes/Actor/Mail.tscn" id="3_thnpl"]
+[ext_resource type="PackedScene" uid="uid://2n0vrgk72w4" path="res://Scenes/Actor/DuckieSurreal.tscn" id="3_ot7w1"]
+[ext_resource type="PackedScene" uid="uid://djiu4prh4vksp" path="res://Scenes/Actor/Mail.tscn" id="3_thnpl"]
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_m5g8p"]
 points = PackedVector3Array(-5, 0, -36, -5, 0, -26, -0.40035248, 4, -31.400352, 5, 0, -36, 5, 0, -26, -0.40035248, 4, -30.600626, 0.39937353, 4, -31.400352, 0.39937353, 4, -30.600626)
@@ -71,12 +71,12 @@ radius = 1.0
 
 [node name="DuckieSurreal" parent="." unique_id=1038564518 instance=ExtResource("1_m5g8p")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube" parent_id_path=PackedInt32Array(1038564518, 1666553191) index="0" unique_id=856352191]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube" parent_id_path=PackedInt32Array(1038564518, 207148930) index="0" unique_id=856352191]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Cube/StaticBody3D" unique_id=2028148521]
 shape = SubResource("ConvexPolygonShape3D_m5g8p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube_001" parent_id_path=PackedInt32Array(1038564518, 305875998) index="0" unique_id=186820313]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cube_001" parent_id_path=PackedInt32Array(1038564518, 504328015) index="0" unique_id=186820313]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Cube_001/StaticBody3D" unique_id=356301647]
 shape = SubResource("ConvexPolygonShape3D_ntwjk")
@@ -96,7 +96,7 @@ shape = SubResource("ConvexPolygonShape3D_ytigw")
 [node name="CollisionShape3D6" type="CollisionShape3D" parent="DuckieSurreal/Cube_001/StaticBody3D" unique_id=170848996]
 shape = SubResource("ConvexPolygonShape3D_hbu8m")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cylinder_003" parent_id_path=PackedInt32Array(1038564518, 2065111636) index="0" unique_id=1424543184]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Cylinder_003" parent_id_path=PackedInt32Array(1038564518, 1587940452) index="0" unique_id=1424543184]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Cylinder_003/StaticBody3D" unique_id=218778183]
 shape = SubResource("ConvexPolygonShape3D_kg3c5")
@@ -134,13 +134,13 @@ shape = SubResource("ConvexPolygonShape3D_fpr3y")
 [node name="CollisionShape3D12" type="CollisionShape3D" parent="DuckieSurreal/Cylinder_003/StaticBody3D" unique_id=497364572]
 shape = SubResource("ConvexPolygonShape3D_4ytvw")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Plane" parent_id_path=PackedInt32Array(1038564518, 1195799907) index="0" unique_id=330113259]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Plane" parent_id_path=PackedInt32Array(1038564518, 517874448) index="0" unique_id=330113259]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5e-06, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Plane/StaticBody3D" unique_id=1160119362]
 shape = SubResource("BoxShape3D_qcm1h")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Sphere_003" parent_id_path=PackedInt32Array(1038564518, 2075551929) index="0" unique_id=185901886]
+[node name="StaticBody3D" type="StaticBody3D" parent="DuckieSurreal/Sphere_003" parent_id_path=PackedInt32Array(1038564518, 1509906896) index="0" unique_id=185901886]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9604645e-08, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="DuckieSurreal/Sphere_003/StaticBody3D" unique_id=932948549]
@@ -151,5 +151,16 @@ transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 7.2823505, 0.6005055, 1
 
 [node name="Duckie" parent="." unique_id=7679287 instance=ExtResource("3_ot7w1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.222414, 0.100504994, 16.852806)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=683460440]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 10.5)
+omni_range = 17.5
+omni_attenuation = 0.2
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1764747744]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.3069353, 0.1811508, 16.719364)
+light_color = Color(1, 0, 0, 1)
+omni_range = 1.0
+omni_shadow_mode = 0
 
 [editable path="DuckieSurreal"]
