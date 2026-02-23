@@ -183,8 +183,9 @@ shape = SubResource("CylinderShape3D_mmisq")
 transform = Transform3D(-0.77745616, 0, -0.6289372, 0, 1, 0, 0.6289372, 0, -0.77745616, 3.7660675, 1.2010254, 7.430994)
 shape = SubResource("BoxShape3D_nhynw")
 
-[node name="Duckie" parent="." unique_id=7679287 instance=ExtResource("2_km3le")]
+[node name="Duckie" parent="." unique_id=7679287 node_paths=PackedStringArray("email_pickup") instance=ExtResource("2_km3le")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.294196, 0.021750212, 6.5150213)
+email_pickup = NodePath("../Mail")
 
 [node name="Mail" parent="." unique_id=395569316 instance=ExtResource("3_nyhi3")]
 transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.76869404, 0.7061683, 8.599649)
