@@ -7,20 +7,19 @@ signal available_changed(value: bool)
 
 @export var start_available: bool = false
 
-var _start_position: Vector3
+@onready var collisionRef := $StaticBody3D/CollisionShape3D
 
 func _ready() -> void:
-	_start_position = global_position
-
 	set_available(start_available)
 
 func set_available(value: bool):
 	if value:
-		global_position = _start_position
+		visible = true
+		collisionRef.disabled = false
 	else:
-		global_position = _start_position
-		global_position.y -= 2
-	
+		visible = false
+		collisionRef.disabled = true
+
 	available_changed.emit(value)
 
 func display_email():
